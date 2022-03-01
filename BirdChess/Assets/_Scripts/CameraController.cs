@@ -77,8 +77,8 @@ public class CameraController : MonoBehaviour
             case "P1":
                 activePlayer = "P2";
                 Debug.Log("active player: " + activePlayer);
-                cinemachineVirtualCamera.m_XAxis.m_MinValue = -P2_XRange;
-                cinemachineVirtualCamera.m_XAxis.m_MaxValue = P2_XRange;
+                //cinemachineVirtualCamera.m_XAxis.m_MinValue = -P2_XRange;
+                //cinemachineVirtualCamera.m_XAxis.m_MaxValue = P2_XRange;
                 defaultPos = new Vector2(P2_XValue, 0.5f);
                 StartCoroutine(ReturnCamera(defaultPos, 1));
                 //switch from p1 to p2 always turn to the left
@@ -86,8 +86,8 @@ public class CameraController : MonoBehaviour
             case "P2":
                 activePlayer = "P1";
                 Debug.Log("active player: " + activePlayer);
-                cinemachineVirtualCamera.m_XAxis.m_MinValue = -P1_XRange;
-                cinemachineVirtualCamera.m_XAxis.m_MaxValue = P1_XRange;
+                //cinemachineVirtualCamera.m_XAxis.m_MinValue = -P1_XRange;
+                //cinemachineVirtualCamera.m_XAxis.m_MaxValue = P1_XRange;
                 defaultPos = new Vector2(P1_XValue, 0.5f);
                 StartCoroutine(ReturnCamera(defaultPos, 1));
                 //switch from p2 to p1 always turn to the right

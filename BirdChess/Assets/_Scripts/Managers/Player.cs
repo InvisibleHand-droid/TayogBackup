@@ -61,6 +61,7 @@ public class Player : MonoBehaviourPun
     [PunRPC]
     public void RPCGenerateTayogReserve()
     {
+        Debug.Log("generated tayog");
         if (!this.photonView.IsMine) return;
         GameSettings gameSettings = GameManager.Instance.gameSettings;
         int amountToPool = 0;
@@ -87,7 +88,7 @@ public class Player : MonoBehaviourPun
 
             for (int i = 0; i < amountToPool; i++)
             {
-                this.photonView.RPC("RPCGenerateTayogPiece", RpcTarget.All, prefabPieceSetTarget, prefabPieceTarget);
+                this.photonView.RPC(nameof(RPCGenerateTayogPiece), RpcTarget.All, prefabPieceSetTarget, prefabPieceTarget);
             }
         }
     }

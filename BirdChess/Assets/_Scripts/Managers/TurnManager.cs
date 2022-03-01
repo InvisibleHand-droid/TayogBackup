@@ -16,6 +16,7 @@ public class TurnManager : Singleton<TurnManager>
     [PunRPC]
     public void RPCSetPlayerColors()
     {
+        Debug.Log("called");
         //Decide the player
         _playerNumber = Random.Range(0, GameManager.Instance.players.Count);
         Player playerTarget = GameManager.Instance.players[_playerNumber];
@@ -46,7 +47,7 @@ public class TurnManager : Singleton<TurnManager>
                 teamColor = TeamColor.White;
                 break;
             case 2:
-                teamColor = TeamColor.White;
+                teamColor = TeamColor.Black;
                 break;
             default:
                 break;
