@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3320469049309234063
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3320469049309234161}
+  - component: {fileID: 3320469049309234062}
+  - component: {fileID: 3320469049309234163}
+  - component: {fileID: 3320469049309234160}
+  - component: {fileID: 3320469049309234162}
+  - component: {fileID: 3320469049309234165}
+  m_Layer: 0
+  m_Name: SinglePlayerManager
+  m_TagString: Manager
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3320469049309234161
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3320469049309234063}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.9745622, y: -5.263118, z: 6.7450747}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3320469049309234062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3320469049309234063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb21a41cc60e8924188f6661d12e6eed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allTiles: []
+  selectedTile: {fileID: 0}
+--- !u!114 &3320469049309234163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3320469049309234063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9da529163beb5564c960b45227d5602e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedTayogPiece: {fileID: 0}
+--- !u!114 &3320469049309234160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3320469049309234063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcb1241fa2a1d654e8109e4bb8eb8e77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameSettings:
+    ManokCount: 8
+    BibeCount: 6
+    LawinCount: 4
+    AgilaCount: 2
+  tayogSetCollection: {fileID: 11400000, guid: 34939ace07cde72469adc8c82f919326, type: 2}
+  players:
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &3320469049309234162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3320469049309234063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c635331b10eea943b56dfc0ea629172, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onTurnEnd: {fileID: 11400000, guid: 839596b49441a1b41bc3d75276187c24, type: 2}
+--- !u!114 &3320469049309234165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3320469049309234063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5184f668263ad6449abaff9ac2244f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerUI:
+  - playerHeaderText: {fileID: 0}
+    manokCountText: {fileID: 0}
+    bibeCountText: {fileID: 0}
+    lawinCountText: {fileID: 0}
+    agilaCountText: {fileID: 0}
+    manokButton: {fileID: 0}
+    bibeButton: {fileID: 0}
+    lawinButton: {fileID: 0}
+    agilaButton: {fileID: 0}
+    panel: {fileID: 0}
+  - playerHeaderText: {fileID: 0}
+    manokCountText: {fileID: 0}
+    bibeCountText: {fileID: 0}
+    lawinCountText: {fileID: 0}
+    agilaCountText: {fileID: 0}
+    manokButton: {fileID: 0}
+    bibeButton: {fileID: 0}
+    lawinButton: {fileID: 0}
+    agilaButton: {fileID: 0}
+    panel: {fileID: 0}
+  _stateText: {fileID: 0}
+  _victoryPanel: {fileID: 0}
+  _victoryText: {fileID: 0}

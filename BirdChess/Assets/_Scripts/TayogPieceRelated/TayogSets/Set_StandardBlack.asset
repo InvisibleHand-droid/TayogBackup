@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b627d53c8ea67747b248ff9d14cd49a, type: 3}
+  m_Name: Set_StandardBlack
+  m_EditorClassIdentifier: 
+  DeveloperNote: 
+  generatedTayogPieces:
+  - _tayogPiecePrefab: {fileID: -5382110701207105815, guid: 64b3c234d55b68a44842112619b5e77b, type: 3}
+    _pieceType: 0
+  - _tayogPiecePrefab: {fileID: -910155491960092738, guid: 9f77906285e1359419d806b469fdf807, type: 3}
+    _pieceType: 1
+  - _tayogPiecePrefab: {fileID: -2969565110354116509, guid: 6dccb3e7ac5930945bf2148b7027e7ed, type: 3}
+    _pieceType: 2
+  - _tayogPiecePrefab: {fileID: 9045358483908805594, guid: 2136bdb2b8e456d42abe619cdd9505f8, type: 3}
+    _pieceType: 3
+  ID: StandardBlack
