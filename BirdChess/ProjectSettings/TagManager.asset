@@ -9,6 +9,8 @@ TagManager:
   - Manager
   - Player1
   - Player2
+  - Player1001
+  - Player1002
   layers:
   - Default
   - TransparentFX

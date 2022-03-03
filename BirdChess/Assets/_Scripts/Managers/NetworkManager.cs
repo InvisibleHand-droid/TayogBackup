@@ -9,6 +9,7 @@ using Photon.Realtime;
 public class NetworkManager : SingletonPersistent<NetworkManager>, ILobbyCallbacks
 {
     [SerializeField] TextMeshProUGUI connectionStatus;
+    public GameObject multiplayerPanelUI;
     public bool isPhotonOffline;
     public int multiplayerSceneBuildIndex;
 
@@ -26,7 +27,7 @@ public class NetworkManager : SingletonPersistent<NetworkManager>, ILobbyCallbac
     public override void OnDisable()
     {
         base.OnDisable();
-         PhotonNetwork.RemoveCallbackTarget(this);
+        PhotonNetwork.RemoveCallbackTarget(this);
     }
 
     private void Start()
@@ -56,7 +57,7 @@ public class NetworkManager : SingletonPersistent<NetworkManager>, ILobbyCallbac
 
     public void StartGame()
     {
-        if(!PhotonNetwork.IsMasterClient) return;
+        if (!PhotonNetwork.IsMasterClient) return;
 
         PhotonNetwork.LoadLevel(multiplayerSceneBuildIndex);
     }
@@ -69,6 +70,10 @@ public class NetworkManager : SingletonPersistent<NetworkManager>, ILobbyCallbac
         if (PhotonNetwork.OfflineMode)
         {
             PhotonNetwork.JoinRandomRoom();
+        }
+        else
+        {
+            multiplayerPanelUI.SetActive(true);
         }
     }
 

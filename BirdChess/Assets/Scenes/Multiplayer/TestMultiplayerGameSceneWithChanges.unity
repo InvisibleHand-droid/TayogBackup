@@ -544,16 +544,9 @@ MonoBehaviour:
   m_IgnoreTimeScale: 0
   m_WorldUpOverride: {fileID: 0}
   m_UpdateMethod: 2
-  m_BlendUpdateMethod: 1
   m_DefaultBlend:
     m_Style: 1
     m_Time: 2
-    m_CustomCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
   m_CustomBlends: {fileID: 0}
   m_CameraCutEvent:
     m_PersistentCalls:
@@ -588,7 +581,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 0
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -611,7 +604,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_LocalRotation: {x: 0.3658152, y: 0.000000016014116, z: -0.000000006293572, w: 0.9306875}
+  m_LocalRotation: {x: 0.36581582, y: 0, z: 0, w: 0.9306873}
   m_LocalPosition: {x: 2.1499996, y: 12.23999, z: -7.0899963}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -3469,11 +3462,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2449781083243975370, guid: 863b5ff8fb8e73c4696cdd3b4369574d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9371708
+      value: 0.9371709
       objectReference: {fileID: 0}
     - target: {fileID: 2449781083243975370, guid: 863b5ff8fb8e73c4696cdd3b4369574d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.34887102
+      value: 0.34887064
       objectReference: {fileID: 0}
     - target: {fileID: 2449781083243975370, guid: 863b5ff8fb8e73c4696cdd3b4369574d, type: 3}
       propertyPath: m_LocalRotation.y
@@ -4256,6 +4249,7 @@ GameObject:
   - component: {fileID: 1808243377}
   - component: {fileID: 1808243379}
   - component: {fileID: 1808243380}
+  - component: {fileID: 1808243381}
   m_Layer: 0
   m_Name: MultiplayerManager
   m_TagString: Untagged
@@ -4316,6 +4310,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 8841901748755255315, guid: 89bd68daae105f44f8d46d73454fc4e7, type: 3}
   playerUI: {fileID: 4590396227538084129, guid: 4073075903266514287a4e85abcb2393, type: 3}
+--- !u!114 &1808243381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808243376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 2
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1850936204
 GameObject:
   m_ObjectHideFlags: 0

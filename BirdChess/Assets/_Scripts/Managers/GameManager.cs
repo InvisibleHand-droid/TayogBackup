@@ -113,76 +113,90 @@ public class GameManager : Singleton<GameManager>
     {
         if (PhotonNetwork.IsMasterClient)
         {
-            Debug.LogError(photonView.ControllerActorNr.ToString());
-            Debug.LogError(photonView.OwnerActorNr.ToString());
-            Debug.LogError(photonView.CreatorActorNr.ToString());
-            while (players.Count != 2 && !NetworkManager.Instance.isPhotonOffline)
-            {
-                yield return null;
-            }
-
-            yield return shortWait;
-
-            //TurnManager.Instance.Initialize(1);
-            TurnManager.Instance.photonView.RPC("RPCSetPlayerColors",RpcTarget.All);
-            TurnManager.Instance.photonView.RPC("RPCSetCurrentPlayer", RpcTarget.All, 1);
-            Debug.LogError("master");
-
-            foreach(Player player in players)
-            {
-                player.photonView.RPC("RPCSetTayogReserve", RpcTarget.All);
-                player.photonView.RPC("RPCGenerateTayogReserve", RpcTarget.All);
-                Debug.LogError("master2");
-            }
-            Debug.LogError("master worked");
-            //InitialSetup();
-
-
-            ///yield return shortWait;
-
-
-            /* _currentGameState = GameState.Setup;
-             UIManager.Instance.SetPlayerHeaderTexts();
-             UIManager.Instance.UpdateStateText();
-
-             while (!players[0].GetReserveCountOfPieceType(PieceType.Manok).Equals(0) || !players[1].GetReserveCountOfPieceType(PieceType.Manok).Equals(0))
-             {
-                 yield return null;
-             }
-
-             yield return shortWait;
-
-             UIManager.Instance.EnableEverythingElse();
-             TurnManager.Instance.SetCurrentPlayer(2);
-             UIManager.Instance.UpdateStateText();
-
-             _currentGameState = GameState.GoingOn;*/
+            Debug.LogError("I am master");
         }
-
         else
         {
-            Debug.LogError(photonView.ControllerActorNr.ToString());
-            Debug.LogError(photonView.OwnerActorNr.ToString());
-            Debug.LogError(photonView.CreatorActorNr.ToString());
-            while (players.Count != 2 && !NetworkManager.Instance.isPhotonOffline)
-            {
-                yield return null;
-            }
-
-            yield return shortWait;
-
-            //TurnManager.Instance.Initialize(1);
-            TurnManager.Instance.photonView.RPC("RPCSetPlayerColors", RpcTarget.All);
-            TurnManager.Instance.photonView.RPC("RPCSetCurrentPlayer", RpcTarget.All, 2);
-            Debug.LogError("client");
-
-            foreach (Player player in players)
-            {
-                player.photonView.RPC("RPCSetTayogReserve", RpcTarget.All);
-                player.photonView.RPC("RPCGenerateTayogReserve", RpcTarget.All);
-                Debug.LogError("client2");
-            }
-            Debug.LogError("client worked");
+            Debug.LogError("I am client");
         }
+        yield return null;
     }
+    /* if (PhotonNetwork.IsMasterClient)
+     {
+         while (players.Count != 2 && !NetworkManager.Instance.isPhotonOffline)
+         {
+             yield return null;
+         }
+
+         yield return shortWait;
+
+         //TurnManager.Instance.Initialize(1);
+         TurnManager.Instance.photonView.RPC("RPCSetPlayerColors", RpcTarget.All);
+         TurnManager.Instance.photonView.RPC("RPCSetCurrentPlayer", RpcTarget.All, 1);*/
+
+    //foreach (Player player in players)
+    //  {
+    //     player.photonView.RPC("RPCSetTayogReserve", RpcTarget.All);
+    //     player.photonView.RPC("RPCGenerateTayogReserve", RpcTarget.All);
+    //player.RPCGenerateTayogReserve();
+    //}
 }
+        /* Debug.LogError("master");
+
+         foreach(Player player in players)
+         {
+             player.photonView.RPC("RPCSetTayogReserve", RpcTarget.All);
+             player.photonView.RPC("RPCGenerateTayogReserve", RpcTarget.All);
+             Debug.LogError("master2");
+         }
+         Debug.LogError("master worked");
+         //InitialSetup();
+
+
+         ///yield return shortWait;
+
+
+         /* _currentGameState = GameState.Setup;
+          UIManager.Instance.SetPlayerHeaderTexts();
+          UIManager.Instance.UpdateStateText();
+
+          while (!players[0].GetReserveCountOfPieceType(PieceType.Manok).Equals(0) || !players[1].GetReserveCountOfPieceType(PieceType.Manok).Equals(0))
+          {
+              yield return null;
+          }
+
+          yield return shortWait;
+
+          UIManager.Instance.EnableEverythingElse();
+          TurnManager.Instance.SetCurrentPlayer(2);
+          UIManager.Instance.UpdateStateText();
+
+          _currentGameState = GameState.GoingOn;
+     }
+
+     else
+     {
+         Debug.LogError(photonView.ControllerActorNr.ToString());
+         Debug.LogError(photonView.OwnerActorNr.ToString());
+         Debug.LogError(photonView.CreatorActorNr.ToString());
+         while (players.Count != 2 && !NetworkManager.Instance.isPhotonOffline)
+         {
+             yield return null;
+         }
+
+         yield return shortWait;
+
+         //TurnManager.Instance.Initialize(1);
+         TurnManager.Instance.photonView.RPC("RPCSetPlayerColors", RpcTarget.All);
+         TurnManager.Instance.photonView.RPC("RPCSetCurrentPlayer", RpcTarget.All, 2);
+         Debug.LogError("client");
+
+         foreach (Player player in players)
+         {
+             player.photonView.RPC("RPCSetTayogReserve", RpcTarget.All);
+             player.photonView.RPC("RPCGenerateTayogReserve", RpcTarget.All);
+             Debug.LogError("client2");
+         }
+         Debug.LogError("client worked");
+     }*/
+

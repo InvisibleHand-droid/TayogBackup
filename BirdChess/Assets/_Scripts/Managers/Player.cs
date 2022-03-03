@@ -9,7 +9,7 @@ public enum TeamColor
     White = 0,
     Black = 1
 }
-public class Player : MonoBehaviourPun
+public class Player : MonoBehaviourPun, IPunInstantiateMagicCallback
 {
     public PlayerMove playerMove;
     public GameEventChannel gameEventChannel;
@@ -24,13 +24,33 @@ public class Player : MonoBehaviourPun
 
     public TayogPiece previouslyPlayedTayogPiece;
 
-    public virtual void Awake()
-    {
-    }
     public virtual void Start()
     {
         playerMove = GetComponent<PlayerMove>();
 
+        if (this.photonView.IsMine)
+        {
+            this.photonView.RPC(nameof(SetColor), RpcTarget.All);
+
+            this.photonView.RPC(nameof(RPCSetTayogReserve), RpcTarget.All);
+            //this.photonView.RPC(nameof(RPCGenerateTayogReserve), RpcTarget.All);
+            RPCGenerateTayogReserve();
+        }
+    }
+
+    [PunRPC]
+    public void SetColor()
+    {
+        if (this.tag == "Player1")
+        {
+            this._teamColor = TeamColor.White;
+        }
+        else
+        {
+            this._teamColor = TeamColor.Black;
+        }
+
+        this.name = this._teamColor + "Player" + this.photonView.CreatorActorNr;
     }
 
     [PunRPC]
@@ -58,11 +78,9 @@ public class Player : MonoBehaviourPun
         }
     }
 
-    [PunRPC]
+    //[PunRPC]
     public void RPCGenerateTayogReserve()
     {
-        Debug.Log("generated tayog");
-        if (!this.photonView.IsMine) return;
         GameSettings gameSettings = GameManager.Instance.gameSettings;
         int amountToPool = 0;
         foreach (GeneratedTayogPiece generatedTayogPiece in _tayogSet.generatedTayogPieces)
@@ -88,29 +106,34 @@ public class Player : MonoBehaviourPun
 
             for (int i = 0; i < amountToPool; i++)
             {
-                this.photonView.RPC(nameof(RPCGenerateTayogPiece), RpcTarget.All, prefabPieceSetTarget, prefabPieceTarget);
+                // this.photonView.RPC(nameof(RPCGenerateTayogPiece), RpcTarget.All, prefabPieceSetTarget, prefabPieceTarget);
+                object[] instanceData = new object[1];
+                instanceData[0] = this.tag;
+
+                GameObject pooledPhotonTayogPiece = PhotonNetwork.Instantiate(Path.Combine("PiecePrefabs", prefabPieceSetTarget, prefabPieceTarget)
+                , transform.position, Quaternion.identity, 0, instanceData);
             }
         }
     }
 
-    [PunRPC]
+
+
+    /*[PunRPC]
     public void RPCGenerateTayogPiece(string prefabPieceSetTarget, string prefabPieceTarget)
     {
-        if (!this.photonView.IsMine) return;
         GameObject pooledPhotonTayogPiece;
 
         pooledPhotonTayogPiece = PhotonNetwork.Instantiate(Path.Combine("PiecePrefabs", prefabPieceSetTarget, prefabPieceTarget)
         , transform.position, Quaternion.identity);
-
         pooledPhotonTayogPiece.GetComponent<TayogPiece>().SetTeamColor(_teamColor);
 
-        pooledPhotonTayogPiece.transform.parent = this.gameObject.transform;
+        pooledPhotonTayogPiece.transform.SetParent(this.transform);
 
         pooledPhotonTayogPiece.gameObject.SetActive(false);
 
         _reserveTayogPiece.Add(pooledPhotonTayogPiece.GetComponent<TayogPiece>());
     }
-
+*/
     private bool CheckIfNoMoreManok()
     {
         if (!GetManokActiveCount().Equals(0)) return false;
@@ -204,5 +227,19 @@ public class Player : MonoBehaviourPun
         tayogPiece.SetTeamColor(_teamColor);
         tayogPiece.SetPieceState(PieceState.Reserve);
         tayogPiece.transform.SetParent(this.transform);
+    }
+
+    public void OnPhotonInstantiate(PhotonMessageInfo info)
+    {
+        MultiplayerPlayerManager.playerCount++;
+        GameManager.Instance.players.Add(this);
+        if (PhotonNetwork.OfflineMode)
+        {
+            this.tag = "Player" + MultiplayerPlayerManager.playerCount.ToString();
+        }
+        else{
+            this.tag = "Player" + this.photonView.CreatorActorNr;
+        }
+
     }
 }

@@ -17,7 +17,7 @@ public enum PieceType
     Lawin = 2,
     Agila = 3
 }
-public abstract class TayogPiece : MonoBehaviour, ITayogMove, ITayogRange
+public abstract class TayogPiece : MonoBehaviourPun, ITayogMove, ITayogRange, IPunInstantiateMagicCallback
 {
     #region Serialized Properties
     [SerializeField] protected TeamColor _pieceTeamColor;
@@ -269,5 +269,20 @@ public abstract class TayogPiece : MonoBehaviour, ITayogMove, ITayogRange
     }
 
     public abstract List<Tile> GetValidCaptureOrPerchTiles();
+
+    public void OnPhotonInstantiate(PhotonMessageInfo info)
+    {
+        object[] data = info.photonView.InstantiationData;
+
+        string playerTargetTag = (string) data[0];
+        this._assignedPlayer = GameObject.FindGameObjectWithTag(playerTargetTag).GetComponent<Player>();
+        //this.SetTeamColor(_assignedPlayer._teamColor);
+        this.transform.SetParent(_assignedPlayer.transform);
+        this.transform.SetPositionAndRotation(this.transform.parent.position, Quaternion.identity);
+        this.gameObject.SetActive(false);
+        this._assignedPlayer._reserveTayogPiece.Add(this);
+    }
     #endregion
+
+
 }

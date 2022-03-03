@@ -13,12 +13,13 @@ public class TurnManager : Singleton<TurnManager>
         base.Awake();
     }
 
-    [PunRPC]
-    public void RPCSetPlayerColors()
+    public void SetPlayerColors()
     {
-        Debug.Log("called");
-        //Decide the player
-        _playerNumber = Random.Range(0, GameManager.Instance.players.Count);
+       // //for(int i = 0; i < GameManager.Instance.players.Count; i++)
+       // {
+        //    GameManager.Instance.players[i].photonView.RPC("SetPlayerColor", RpcTarget.All, i);
+        //}
+       /* _playerNumber = Random.Range(0, GameManager.Instance.players.Count);
         Player playerTarget = GameManager.Instance.players[_playerNumber];
         Player playerFromList = null;
 
@@ -29,11 +30,11 @@ public class TurnManager : Singleton<TurnManager>
             {
                 playerFromList = playerTarget;
             }
-            player._teamColor = TeamColor.White;
+            player.photonView.RPC(nameof(SetPlayerColors), RpcTarget.All, 0);
             player.name = player._teamColor.ToString() + " Player";
         }
-        playerFromList._teamColor = TeamColor.Black;
-        playerFromList.name = playerFromList._teamColor.ToString() + " Player";
+        playerFromList.photonView.RPC(nameof(SetPlayerColors), RpcTarget.All, 1);
+        playerFromList.name = playerFromList._teamColor.ToString() + " Player";*/
     }
 
     [PunRPC]

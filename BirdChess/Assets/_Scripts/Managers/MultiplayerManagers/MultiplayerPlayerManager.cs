@@ -3,31 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
-public class MultiplayerPlayerManager : MonoBehaviour
+public class MultiplayerPlayerManager : MonoBehaviourPun
 {
     public GameObject playerPrefab;
     public GameObject playerUI;
+    public static int playerCount =0;
 
     // Start is called before the first frame update
     void Start()
     {
+
         if (NetworkManager.Instance.isPhotonOffline)
         {
-            for (int i = 1; i < 3; i++)
+            for (int i = 0; i < 2; i++)
             {
-                MakePlayer(i);
+                MakePlayer();
             }
         }
         else
         {
-            MakePlayer(PhotonNetwork.LocalPlayer.ActorNumber);
+            MakePlayer();
         }
 
     }
 
-    private void MakePlayer(int i)
+    private void MakePlayer()
     {
         GameObject player = PhotonNetwork.Instantiate(playerPrefab.name, this.transform.position, Quaternion.identity);
-        player.tag = "Player" + i;
     }
 }
