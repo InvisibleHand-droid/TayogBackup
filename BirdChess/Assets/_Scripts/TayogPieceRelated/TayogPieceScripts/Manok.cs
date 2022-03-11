@@ -60,9 +60,12 @@ public class Manok : TayogPiece
 
             foreach (Tile tile in TileManager.Instance.allTiles)
             {
-                if (tile.rowID == startingRow && tile.tayogPiecesAboveMe.Count <= 0)
+                if (_assignedPlayer.GetManokActiveCount() < 1)
                 {
-                    validRallyTiles.Add(tile);
+                    if (tile.rowID == startingRow && tile.tayogPiecesAboveMe.Count <= 0)
+                    {
+                        validRallyTiles.Add(tile);
+                    }
                 }
             }
         }

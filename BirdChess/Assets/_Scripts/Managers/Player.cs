@@ -34,8 +34,12 @@ public class Player : MonoBehaviourPun, IPunInstantiateMagicCallback
 
             this.photonView.RPC(nameof(RPCSetTayogReserve), RpcTarget.All);
             //this.photonView.RPC(nameof(RPCGenerateTayogReserve), RpcTarget.All);
-            RPCGenerateTayogReserve();
+            GenerateTayogReserve();
         }
+    }
+
+    public void InitializeUI()
+    {
     }
 
     [PunRPC]
@@ -79,7 +83,7 @@ public class Player : MonoBehaviourPun, IPunInstantiateMagicCallback
     }
 
     //[PunRPC]
-    public void RPCGenerateTayogReserve()
+    public void GenerateTayogReserve()
     {
         GameSettings gameSettings = GameManager.Instance.gameSettings;
         int amountToPool = 0;
@@ -110,8 +114,15 @@ public class Player : MonoBehaviourPun, IPunInstantiateMagicCallback
                 object[] instanceData = new object[1];
                 instanceData[0] = this.tag;
 
+                Quaternion initialRotation = generatedTayogPiece._tayogPiecePrefab.transform.rotation;
+                
+                if(!PhotonNetwork.IsMasterClient)
+                {      
+                    initialRotation = Quaternion.Euler(-90, 180, -180);
+                }
+
                 GameObject pooledPhotonTayogPiece = PhotonNetwork.Instantiate(Path.Combine("PiecePrefabs", prefabPieceSetTarget, prefabPieceTarget)
-                , transform.position, Quaternion.identity, 0, instanceData);
+                , transform.position, initialRotation, 0, instanceData);
             }
         }
     }
@@ -199,14 +210,11 @@ public class Player : MonoBehaviourPun, IPunInstantiateMagicCallback
     {
         foreach (TayogPiece reservedTayogPiece in _reserveTayogPiece)
         {
-            Debug.Log(reservedTayogPiece);
             if (!reservedTayogPiece.gameObject.activeInHierarchy && reservedTayogPiece.GetPieceType().Equals(targetPieceType))
             {
-                Debug.Log("returned" + reservedTayogPiece);
                 return reservedTayogPiece;
             }
         }
-        Debug.Log("returned null");
         return null;
     }
 
@@ -240,6 +248,5 @@ public class Player : MonoBehaviourPun, IPunInstantiateMagicCallback
         else{
             this.tag = "Player" + this.photonView.CreatorActorNr;
         }
-
     }
 }

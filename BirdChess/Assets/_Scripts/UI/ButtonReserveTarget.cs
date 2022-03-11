@@ -17,7 +17,10 @@ public class ButtonReserveTarget : MonoBehaviour
     {
         if (NetworkManager.Instance.isPhotonOffline)
         {
-            UIManager.Instance.SetUIDependencies();
+            for (int i = 0; i < GameManager.Instance.players.Count; i++)
+            {
+                UIManager.Instance.SetUIDependencies(i, GameManager.Instance.players[i]);
+            }
         }
         else
         {

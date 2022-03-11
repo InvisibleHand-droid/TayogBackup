@@ -55,6 +55,14 @@ MonoBehaviour:
   - RPCSetPlayerColors
   - SetColor
   - SetPlayerColor
+  - SetCurrentGameState
+  - RPCNextTurn
+  - RPCUpdatePlayerReserveText
+  - RPCRally
+  - RPCCapture
+  - RPCPerch
+  - RPCEnableEverythingElse
+  - RPCUpdateStateText
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

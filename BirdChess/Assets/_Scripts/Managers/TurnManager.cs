@@ -13,30 +13,6 @@ public class TurnManager : Singleton<TurnManager>
         base.Awake();
     }
 
-    public void SetPlayerColors()
-    {
-       // //for(int i = 0; i < GameManager.Instance.players.Count; i++)
-       // {
-        //    GameManager.Instance.players[i].photonView.RPC("SetPlayerColor", RpcTarget.All, i);
-        //}
-       /* _playerNumber = Random.Range(0, GameManager.Instance.players.Count);
-        Player playerTarget = GameManager.Instance.players[_playerNumber];
-        Player playerFromList = null;
-
-        //Look through player list, make the selected player's turn bool true
-        foreach (Player player in GameManager.Instance.players)
-        {
-            if (player == playerTarget)
-            {
-                playerFromList = playerTarget;
-            }
-            player.photonView.RPC(nameof(SetPlayerColors), RpcTarget.All, 0);
-            player.name = player._teamColor.ToString() + " Player";
-        }
-        playerFromList.photonView.RPC(nameof(SetPlayerColors), RpcTarget.All, 1);
-        playerFromList.name = playerFromList._teamColor.ToString() + " Player";*/
-    }
-
     [PunRPC]
     public void RPCSetCurrentPlayer(int color)
     {
@@ -46,9 +22,11 @@ public class TurnManager : Singleton<TurnManager>
         {
             case 1:
                 teamColor = TeamColor.White;
+                Debug.LogError(teamColor.ToString() + " is current active player");
                 break;
             case 2:
                 teamColor = TeamColor.Black;
+                Debug.LogError(teamColor.ToString() + " is current active player");
                 break;
             default:
                 break;
@@ -69,8 +47,10 @@ public class TurnManager : Singleton<TurnManager>
     }
 
 
-    public void NextTurn()
+    [PunRPC]
+    public void RPCNextTurn()
     {
+        Debug.LogError(GetCurrentPlayer());
         _playerNumber = GetNextPlayer();
         Player playerTarget = GameManager.Instance.players[_playerNumber];
         Player playerFromList = null;

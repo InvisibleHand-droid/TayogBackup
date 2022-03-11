@@ -130,6 +130,48 @@ public abstract class TayogPiece : MonoBehaviourPun, ITayogMove, ITayogRange, IP
     #region Piece Actions
     public virtual void Capture(Tile tile)
     {
+        this.photonView.RPC(nameof(RPCCapture), RpcTarget.All, tile.columnID, tile.rowID);
+
+        //Update UI (ex. Played manok, -1 manok text ui)
+        UIManager.Instance.photonView.RPC("RPCUpdatePlayerReserveText", RpcTarget.All);
+
+        //Go next turn
+        TurnManager.Instance.photonView.RPC("RPCNextTurn", RpcTarget.All);
+    }
+    public virtual void Perch(Tile tile)
+    {
+        this.photonView.RPC(nameof(RPCPerch), RpcTarget.All, tile.columnID, tile.rowID);
+        //Update UI (ex. Played manok, -1 manok text ui)
+        UIManager.Instance.photonView.RPC("RPCUpdatePlayerReserveText", RpcTarget.All);
+
+        //Go next turn
+        TurnManager.Instance.photonView.RPC("RPCNextTurn", RpcTarget.All);
+    }
+    public virtual void Rally(Tile tile)
+    {
+        this.photonView.RPC(nameof(RPCRally), RpcTarget.All, tile.columnID, tile.rowID);
+
+        //Update UI (ex. Played manok, -1 manok text ui)
+        UIManager.Instance.photonView.RPC("RPCUpdatePlayerReserveText", RpcTarget.All);
+
+        //Go next turn
+        TurnManager.Instance.photonView.RPC("RPCNextTurn", RpcTarget.All);
+    }
+
+    [PunRPC]
+    public void RPCPerch(int columnID, int rowID)
+    {
+        Tile tile = TileManager.Instance.GetTileBasedOnID(columnID, rowID);
+        //Pop self from previous assigned tile because the piece moved
+        _assignedTile.tayogPiecesAboveMe.Pop();
+
+        //Assign piece to new tile
+        AssignSelectedPieceToTile(tile);
+    }
+    [PunRPC]
+    public void RPCCapture(int columnID, int rowID)
+    {
+        Tile tile = TileManager.Instance.GetTileBasedOnID(columnID, rowID);
         //Pop self from previous assigned tile because the piece moved
         _assignedTile.tayogPiecesAboveMe.Pop();
 
@@ -137,29 +179,12 @@ public abstract class TayogPiece : MonoBehaviourPun, ITayogMove, ITayogRange, IP
 
         //Assign capturer to this tile
         AssignSelectedPieceToTile(tile);
-
-        //Update UI (ex. Played manok, -1 manok text ui)
-        UIManager.Instance.UpdatePlayerReserveText();
-
-        //Go next turn
-        TurnManager.Instance.NextTurn();
     }
-    public virtual void Perch(Tile tile)
+
+    [PunRPC]
+    public void RPCRally(int columnID, int rowID)
     {
-        //Pop self from previous assigned tile because the piece moved
-        _assignedTile.tayogPiecesAboveMe.Pop();
-
-        //Assign piece to new tile
-        AssignSelectedPieceToTile(tile);
-
-        //Update UI (ex. Played manok, -1 manok text ui)
-        UIManager.Instance.UpdatePlayerReserveText();
-
-        //Go next turn
-        TurnManager.Instance.NextTurn();
-    }
-    public virtual void Rally(Tile tile)
-    {
+        Tile tile = TileManager.Instance.GetTileBasedOnID(columnID, rowID);
         //From the object pool (inactive), make it active
         this.gameObject.SetActive(true);
 
@@ -171,12 +196,6 @@ public abstract class TayogPiece : MonoBehaviourPun, ITayogMove, ITayogRange, IP
 
         //Assign it to a tile
         AssignSelectedPieceToTile(tile);
-
-        //Update UI (ex. Played manok, -1 manok text ui)
-        UIManager.Instance.UpdatePlayerReserveText();
-
-        //Go next turn
-        TurnManager.Instance.NextTurn();
     }
 
     private void AssignSelectedPieceToTile(Tile tile)
@@ -274,11 +293,11 @@ public abstract class TayogPiece : MonoBehaviourPun, ITayogMove, ITayogRange, IP
     {
         object[] data = info.photonView.InstantiationData;
 
-        string playerTargetTag = (string) data[0];
+        string playerTargetTag = (string)data[0];
         this._assignedPlayer = GameObject.FindGameObjectWithTag(playerTargetTag).GetComponent<Player>();
-        //this.SetTeamColor(_assignedPlayer._teamColor);
+
         this.transform.SetParent(_assignedPlayer.transform);
-        this.transform.SetPositionAndRotation(this.transform.parent.position, Quaternion.identity);
+
         this.gameObject.SetActive(false);
         this._assignedPlayer._reserveTayogPiece.Add(this);
     }

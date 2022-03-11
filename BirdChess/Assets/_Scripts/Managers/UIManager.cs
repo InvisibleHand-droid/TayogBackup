@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 using TMPro;
 using UnityEngine.UI;
 
@@ -49,39 +50,43 @@ public class UIManager : Singleton<UIManager>
 
     }
 
-    public void SetUIDependencies()
+    public void SetUIDependencies(int i, Player player)
     {
-        for (int i = 0; i < GameManager.Instance.players.Count; i++)
+        _playerUI[i].manokButton.GetComponent<ButtonReserveTarget>().player = player;
+        _playerUI[i].bibeButton.GetComponent<ButtonReserveTarget>().player = player;
+        _playerUI[i].agilaButton.GetComponent<ButtonReserveTarget>().player = player;
+        _playerUI[i].lawinButton.GetComponent<ButtonReserveTarget>().player = player;
+
+        if (!player.photonView.IsMine)
         {
-            _playerUI[i].manokButton.GetComponent<ButtonReserveTarget>().player = GameManager.Instance.players[i];
-            _playerUI[i].bibeButton.GetComponent<ButtonReserveTarget>().player = GameManager.Instance.players[i];
-            _playerUI[i].agilaButton.GetComponent<ButtonReserveTarget>().player = GameManager.Instance.players[i];
-            _playerUI[i].lawinButton.GetComponent<ButtonReserveTarget>().player = GameManager.Instance.players[i];
+            _playerUI[i].manokButton.GetComponent<Button>().interactable = false;
+            _playerUI[i].bibeButton.GetComponent<Button>().interactable = false;
+            _playerUI[i].agilaButton.GetComponent<Button>().interactable = false;
+            _playerUI[i].lawinButton.GetComponent<Button>().interactable = false;
         }
     }
 
-    public void UpdatePlayerReserveText()
+    [PunRPC]
+    public void RPCUpdatePlayerReserveText()
     {
         for (int i = 0; i < GameManager.Instance.players.Count; i++)
         {
-            _playerUI[i].manokCountText.SetText(GameManager.Instance.players[i].GetReserveCountOfPieceType(PieceType.Manok).ToString());
-            _playerUI[i].bibeCountText.SetText(GameManager.Instance.players[i].GetReserveCountOfPieceType(PieceType.Bibe).ToString());
-            _playerUI[i].lawinCountText.SetText(GameManager.Instance.players[i].GetReserveCountOfPieceType(PieceType.Lawin).ToString());
-            _playerUI[i].agilaCountText.SetText(GameManager.Instance.players[i].GetReserveCountOfPieceType(PieceType.Agila).ToString());
+            _playerUI[i].manokCountText.SetText(_playerUI[i].manokButton.GetComponent<ButtonReserveTarget>().player.GetReserveCountOfPieceType(PieceType.Manok).ToString());
+            _playerUI[i].bibeCountText.SetText(_playerUI[i].manokButton.GetComponent<ButtonReserveTarget>().player.GetReserveCountOfPieceType(PieceType.Bibe).ToString());
+            _playerUI[i].lawinCountText.SetText(_playerUI[i].manokButton.GetComponent<ButtonReserveTarget>().player.GetReserveCountOfPieceType(PieceType.Lawin).ToString());
+            _playerUI[i].agilaCountText.SetText(_playerUI[i].manokButton.GetComponent<ButtonReserveTarget>().player.GetReserveCountOfPieceType(PieceType.Agila).ToString());
         }
     }
 
-    public void UpdateStateText()
+    [PunRPC]
+    public void RPCUpdateStateText()
     {
         _stateText.SetText(TurnManager.Instance.GetCurrentPlayer().name);
     }
 
-    public void SetPlayerHeaderTexts()
+    public void SetPlayerHeaderTexts(int i, Player player)
     {
-        for (int i = 0; i < GameManager.Instance.players.Count; i++)
-        {
-            _playerUI[i].playerHeaderText.SetText(GameManager.Instance.players[i]._teamColor.ToString());
-        }
+        _playerUI[i].playerHeaderText.SetText(player._teamColor.ToString());
     }
 
     public void EnableVictoryWindow(TeamColor teamColor, string action)
@@ -90,8 +95,8 @@ public class UIManager : Singleton<UIManager>
         _victoryPanel.SetActive(true);
     }
 
-    //placeholder
-    public void EnableEverythingElse()
+    [PunRPC]
+    public void RPCEnableEverythingElse()
     {
         for (int i = 0; i < _playerUI.Length; i++)
         {
