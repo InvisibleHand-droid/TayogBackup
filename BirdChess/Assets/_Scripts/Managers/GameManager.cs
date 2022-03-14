@@ -69,21 +69,21 @@ public class GameManager : Singleton<GameManager>
         {
             if (player.GetReserveCountOfPieceType(PieceType.Manok) >= 8)
             {
-                UIManager.Instance.EnableVictoryWindow(player._teamColor, "win");
+                UIManager.Instance.photonView.RPC("EnableVictoryWindow", RpcTarget.All, player._teamColor, "win");
                 _currentGameState = GameState.End;
                 break;
             }
 
             if (player.GetManokActiveCount() <= 0)
             {
-                UIManager.Instance.EnableVictoryWindow(player._teamColor, "lose");
+                UIManager.Instance.photonView.RPC("EnableVictoryWindow", RpcTarget.All, player._teamColor, "lose");
                 _currentGameState = GameState.End;
                 break;
             }
 
             if (NoValidMoves())
             {
-                UIManager.Instance.EnableVictoryWindow(player._teamColor, " has no valid moves");
+                UIManager.Instance.photonView.RPC("EnableVictoryWindow", RpcTarget.All, player._teamColor, "has no valid moves");
                 _currentGameState = GameState.End;
                 break;
             }

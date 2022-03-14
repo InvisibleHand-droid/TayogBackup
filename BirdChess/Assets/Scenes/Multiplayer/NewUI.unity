@@ -1405,7 +1405,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 2200240122305806981}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: UpdateStateText
+        m_MethodName: RPCUpdateStateText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2971,7 +2971,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1409384297
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2981,7 +2981,7 @@ RectTransform:
   m_GameObject: {fileID: 1409384296}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3.4428, y: 3.4428, z: 3.4428}
   m_Children: []
   m_Father: {fileID: 684270392}
   m_RootOrder: 2
@@ -3020,8 +3020,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278252543
-  m_fontColor: {r: 1, g: 0.9532509, b: 0, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3133,19 +3133,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2449781082819377241, guid: 863b5ff8fb8e73c4696cdd3b4369574d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.8026304
+      value: 0.8026302
       objectReference: {fileID: 0}
     - target: {fileID: 2449781082819377241, guid: 863b5ff8fb8e73c4696cdd3b4369574d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.5964768
+      value: 0.5964771
       objectReference: {fileID: 0}
     - target: {fileID: 2449781082819377241, guid: 863b5ff8fb8e73c4696cdd3b4369574d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000423942
+      value: -0.00000042394188
       objectReference: {fileID: 0}
     - target: {fileID: 2449781082819377241, guid: 863b5ff8fb8e73c4696cdd3b4369574d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.00000032555607
+      value: 0.00000032555621
       objectReference: {fileID: 0}
     - target: {fileID: 2449781082860479385, guid: 863b5ff8fb8e73c4696cdd3b4369574d, type: 3}
       propertyPath: m_Camera
@@ -3273,19 +3273,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2449781083243975370, guid: 863b5ff8fb8e73c4696cdd3b4369574d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.8200418
+      value: 0.82004166
       objectReference: {fileID: 0}
     - target: {fileID: 2449781083243975370, guid: 863b5ff8fb8e73c4696cdd3b4369574d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.5723038
+      value: 0.57230383
       objectReference: {fileID: 0}
     - target: {fileID: 2449781083243975370, guid: 863b5ff8fb8e73c4696cdd3b4369574d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.00000019381945
+      value: -0.00000019381942
       objectReference: {fileID: 0}
     - target: {fileID: 2449781083243975370, guid: 863b5ff8fb8e73c4696cdd3b4369574d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000001617336
+      value: 0.00000016173361
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 863b5ff8fb8e73c4696cdd3b4369574d, type: 3}

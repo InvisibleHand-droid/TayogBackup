@@ -65,7 +65,6 @@ public class TurnManager : Singleton<TurnManager>
         }
 
         playerFromList.playerMove.isMyTurn = true;
-
         onTurnEnd.Raise();
     }
 

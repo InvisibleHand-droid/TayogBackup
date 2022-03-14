@@ -89,6 +89,7 @@ public class UIManager : Singleton<UIManager>
         _playerUI[i].playerHeaderText.SetText(player._teamColor.ToString());
     }
 
+    [PunRPC]
     public void EnableVictoryWindow(TeamColor teamColor, string action)
     {
         _victoryText.SetText($"{teamColor.ToString()} {action}");
