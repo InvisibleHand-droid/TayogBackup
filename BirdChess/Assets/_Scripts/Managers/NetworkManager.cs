@@ -2,14 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;
+using UnityEngine.Events;
 using Photon.Pun;
 using Photon.Realtime;
 
 public class NetworkManager : SingletonPersistent<NetworkManager>, ILobbyCallbacks
 {
-    [SerializeField] TextMeshProUGUI connectionStatus;
-    public GameObject multiplayerPanelUI;
     public bool isPhotonOffline;
     public int multiplayerSceneBuildIndex;
 
@@ -39,22 +37,6 @@ public class NetworkManager : SingletonPersistent<NetworkManager>, ILobbyCallbac
         }
     }
 
-    private void Update()
-    {
-        connectionStatus.SetText(PhotonNetwork.NetworkClientState.ToString());
-    }
-
-    public void Connect()
-    {
-        if (isPhotonOffline) return;
-        PhotonNetwork.ConnectUsingSettings();
-    }
-
-    public void Disconnect()
-    {
-        PhotonNetwork.Disconnect();
-    }
-
     public void StartGame()
     {
         if (!PhotonNetwork.IsMasterClient) return;
@@ -66,15 +48,6 @@ public class NetworkManager : SingletonPersistent<NetworkManager>, ILobbyCallbac
     public override void OnConnectedToMaster()
     {
         Debug.LogError($"Connected to server. Looking for random room");
-
-        if (PhotonNetwork.OfflineMode)
-        {
-            PhotonNetwork.JoinRandomRoom();
-        }
-        else
-        {
-            multiplayerPanelUI.SetActive(true);
-        }
     }
 
     public override void OnJoinRandomFailed(short returnCode, string message)
@@ -91,19 +64,34 @@ public class NetworkManager : SingletonPersistent<NetworkManager>, ILobbyCallbac
     public override void OnLeftRoom()
     {
         Debug.LogError($"Player {PhotonNetwork.LocalPlayer.ActorNumber} left the room");
+        base.OnLeftRoom();
+        PhotonNetwork.LeaveLobby();
+        PhotonNetwork.Disconnect();
+        SceneManager.LoadScene(0);
     }
 
     public override void OnPlayerEnteredRoom(Photon.Realtime.Player newPlayer)
     {
+        Debug.LogError(newPlayer + "entered the room");
         if (PhotonNetwork.CurrentRoom.PlayerCount == 2 || PhotonNetwork.OfflineMode || PhotonNetwork.IsMasterClient)
         {
+            PhotonNetwork.CurrentRoom.IsOpen = false;
+            PhotonNetwork.CurrentRoom.IsVisible = false;
+            Debug.Log("start");
             StartGame();
         }
+    }
+
+    public override void OnPlayerLeftRoom(Photon.Realtime.Player otherPlayer)
+    {
+        Debug.LogError(otherPlayer + "left the room");
+        StartCoroutine(AutoDisconnect());
     }
 
     public override void OnDisconnected(DisconnectCause cause)
     {
         Debug.LogError(($"Player disconnected because of {cause}"));
+
     }
 
     public override void OnLeftLobby()
@@ -121,4 +109,14 @@ public class NetworkManager : SingletonPersistent<NetworkManager>, ILobbyCallbac
         Debug.LogError($"Room creation failed because {message}");
     }
     #endregion
+
+    IEnumerator AutoDisconnect()
+    {
+        yield return new WaitForSeconds(5f);
+
+        PhotonNetwork.LeaveRoom();
+        Debug.LogError("A player has disconnected so room was closed.");
+
+        yield return null;
+    }
 }

@@ -36,11 +36,6 @@ public class GameManager : Singleton<GameManager>
     public override void Awake()
     {
         base.Awake();
-
-#if UNITY_STANDALONE
-        Screen.SetResolution(564, 960, false);
-        Screen.fullScreen = false;
-#endif
     }
 
     void Start()
@@ -69,30 +64,30 @@ public class GameManager : Singleton<GameManager>
         {
             if (player.GetReserveCountOfPieceType(PieceType.Manok) >= 8)
             {
-                UIManager.Instance.photonView.RPC("EnableVictoryWindow", RpcTarget.All, player._teamColor, "win");
+                UIManager.Instance.photonView.RPC("EnableVictoryWindow", RpcTarget.All, player.teamColor, "win");
                 _currentGameState = GameState.End;
                 break;
             }
 
             if (player.GetManokActiveCount() <= 0)
             {
-                UIManager.Instance.photonView.RPC("EnableVictoryWindow", RpcTarget.All, player._teamColor, "lose");
+                UIManager.Instance.photonView.RPC("EnableVictoryWindow", RpcTarget.All, player.teamColor, "lose");
                 _currentGameState = GameState.End;
                 break;
             }
+        }
 
-            if (NoValidMoves())
-            {
-                UIManager.Instance.photonView.RPC("EnableVictoryWindow", RpcTarget.All, player._teamColor, "has no valid moves");
-                _currentGameState = GameState.End;
-                break;
-            }
+        if (NoValidMoves())
+        {
+            UIManager.Instance.photonView.RPC("EnableVictoryWindow", RpcTarget.All, TurnManager.Instance.GetCurrentPlayer(), "has no valid moves");
+            _currentGameState = GameState.End;
         }
     }
 
     public bool NoValidMoves()
     {
         Player player = TurnManager.Instance.GetCurrentPlayer();
+        Debug.Log(player + " turn start");
         List<TayogPiece> allTayogPiece = new List<TayogPiece>();
 
         bool hasNoMoves = false;
@@ -110,10 +105,12 @@ public class GameManager : Singleton<GameManager>
         {
             if (player.previouslyPlayedTayogPiece != tayogPiece)
             {
-                if (tayogPiece.GetValidTiles() == null)
+                if (tayogPiece.GetValidTiles().Count >= 0)
                 {
+                    hasNoMoves = false;
+                }
+                else{
                     hasNoMoves = true;
-                    break;
                 }
             }
         }
@@ -129,14 +126,6 @@ public class GameManager : Singleton<GameManager>
         {
             yield return null;
         }
-
-        /* foreach (Photon.Realtime.Player player in PhotonNetwork.PlayerList)
-         {
-             if (player.IsLocal)
-             {
-                 localPlayer = player.TagObject;
-             }
-         }*/
 
         foreach (Player player in players)
         {
@@ -213,81 +202,4 @@ public class GameManager : Singleton<GameManager>
         _currentGameState = GameState.GoingOn;
     }
 }
-/* if (PhotonNetwork.IsMasterClient)
- {
-     while (players.Count != 2 && !NetworkManager.Instance.isPhotonOffline)
-     {
-         yield return null;
-     }
-
-     yield return shortWait;
-
-     //TurnManager.Instance.Initialize(1);
-     TurnManager.Instance.photonView.RPC("RPCSetPlayerColors", RpcTarget.All);
-     TurnManager.Instance.photonView.RPC("RPCSetCurrentPlayer", RpcTarget.All, 1);*/
-
-//foreach (Player player in players)
-//  {
-//     player.photonView.RPC("RPCSetTayogReserve", RpcTarget.All);
-//     player.photonView.RPC("RPCGenerateTayogReserve", RpcTarget.All);
-//player.RPCGenerateTayogReserve();
-//}
-/* Debug.LogError("master");
-
- foreach(Player player in players)
- {
-     player.photonView.RPC("RPCSetTayogReserve", RpcTarget.All);
-     player.photonView.RPC("RPCGenerateTayogReserve", RpcTarget.All);
-     Debug.LogError("master2");
- }
- Debug.LogError("master worked");
- //InitialSetup();
-
-
- ///yield return shortWait;
-
-
- /* _currentGameState = GameState.Setup;
-  UIManager.Instance.SetPlayerHeaderTexts();
-  UIManager.Instance.UpdateStateText();
-
-  while (!players[0].GetReserveCountOfPieceType(PieceType.Manok).Equals(0) || !players[1].GetReserveCountOfPieceType(PieceType.Manok).Equals(0))
-  {
-      yield return null;
-  }
-
-  yield return shortWait;
-
-  UIManager.Instance.EnableEverythingElse();
-  TurnManager.Instance.SetCurrentPlayer(2);
-  UIManager.Instance.UpdateStateText();
-
-  _currentGameState = GameState.GoingOn;
-}
-
-else
-{
- Debug.LogError(photonView.ControllerActorNr.ToString());
- Debug.LogError(photonView.OwnerActorNr.ToString());
- Debug.LogError(photonView.CreatorActorNr.ToString());
- while (players.Count != 2 && !NetworkManager.Instance.isPhotonOffline)
- {
-     yield return null;
- }
-
- yield return shortWait;
-
- //TurnManager.Instance.Initialize(1);
- TurnManager.Instance.photonView.RPC("RPCSetPlayerColors", RpcTarget.All);
- TurnManager.Instance.photonView.RPC("RPCSetCurrentPlayer", RpcTarget.All, 2);
- Debug.LogError("client");
-
- foreach (Player player in players)
- {
-     player.photonView.RPC("RPCSetTayogReserve", RpcTarget.All);
-     player.photonView.RPC("RPCGenerateTayogReserve", RpcTarget.All);
-     Debug.LogError("client2");
- }
- Debug.LogError("client worked");
-}*/
 

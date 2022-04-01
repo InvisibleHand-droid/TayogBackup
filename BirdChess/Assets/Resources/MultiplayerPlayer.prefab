@@ -69,8 +69,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerMove: {fileID: 0}
   gameEventChannel: {fileID: 0}
-  _teamColor: 0
-  _tayogSet: {fileID: 0}
+  teamColor: 0
+  tayogSet: {fileID: 0}
   _reserveTayogPiece: []
   _activeTayogPiece: []
   chosenWhiteSkinID: StandardWhite

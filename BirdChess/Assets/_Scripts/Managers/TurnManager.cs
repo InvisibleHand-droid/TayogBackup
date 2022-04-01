@@ -22,11 +22,9 @@ public class TurnManager : Singleton<TurnManager>
         {
             case 1:
                 teamColor = TeamColor.White;
-                Debug.LogError(teamColor.ToString() + " is current active player");
                 break;
             case 2:
                 teamColor = TeamColor.Black;
-                Debug.LogError(teamColor.ToString() + " is current active player");
                 break;
             default:
                 break;
@@ -34,7 +32,7 @@ public class TurnManager : Singleton<TurnManager>
 
         foreach (Player player in GameManager.Instance.players)
         {
-            if (player._teamColor.Equals(teamColor))
+            if (player.teamColor.Equals(teamColor))
             {
                 _playerNumber = GameManager.Instance.players.IndexOf(player);
                 player.playerMove.isMyTurn = true;
@@ -50,7 +48,6 @@ public class TurnManager : Singleton<TurnManager>
     [PunRPC]
     public void RPCNextTurn()
     {
-        Debug.LogError(GetCurrentPlayer());
         _playerNumber = GetNextPlayer();
         Player playerTarget = GameManager.Instance.players[_playerNumber];
         Player playerFromList = null;
@@ -94,7 +91,7 @@ public class TurnManager : Singleton<TurnManager>
     {
         foreach (Player player in GameManager.Instance.players)
         {
-            if (player._teamColor.Equals(teamColor))
+            if (player.teamColor.Equals(teamColor))
             {
                 return player;
             }

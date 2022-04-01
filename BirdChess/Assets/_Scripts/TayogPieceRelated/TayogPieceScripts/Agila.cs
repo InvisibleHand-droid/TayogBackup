@@ -17,7 +17,7 @@ public class Agila : TayogPiece
     {
         TayogPiece targetTayogPiece = tile.GetTayogPieceOnTop();
         if (targetTayogPiece == null) return false;
-        return ((_pieceTeamColor.Equals(targetTayogPiece.GetTeamColor()) && targetTayogPiece.GetPieceType().Equals(PieceType.Agila)));
+        return ((_pieceTeamColor.Equals(targetTayogPiece.GetTeamColor()) && targetTayogPiece.GetPieceType().Equals(PieceType.Lawin)));
     }
 
     public override bool CanRally(Tile tile)

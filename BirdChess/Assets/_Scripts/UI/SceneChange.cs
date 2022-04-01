@@ -17,6 +17,4 @@ public class SceneChange : MonoBehaviour
             yield return null;
         }
     }
-
-
 }

@@ -58,11 +58,13 @@ public class LevelGenerator : MonoBehaviour
         {
             if (tile.colorKey.Equals(pixelColor))
             {
-                Vector3 position = new Vector3(x, 0, y);
-                GameObject tileSpawned = Instantiate(tile.prefab, position, Quaternion.identity);
+                Vector3 position = new Vector3(x * 1.5f, 0, y * 1.5f);
+                GameObject tileSpawned = Instantiate(tile.prefab);
                 tileSpawned.transform.SetParent(ParentBasedOnType(tile).transform);
-                tileSpawned.transform.localPosition = new Vector3(tileSpawned.transform.localPosition.x + tileSpawned.transform.parent.transform.parent.localPosition.x,
-                0.5f, tileSpawned.transform.localPosition.z + tileSpawned.transform.parent.transform.parent.localPosition.z);
+                tileSpawned.transform.SetPositionAndRotation(position, Quaternion.identity);
+                tileSpawned.GetComponent<Tile>().rowID = x;
+                tileSpawned.GetComponent<Tile>().columnID = y;
+                tileSpawned.name = $"Tile_{x}_{y}";
             }
         }
     }

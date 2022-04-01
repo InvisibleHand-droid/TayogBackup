@@ -11,11 +11,9 @@ public class PieceManager : Singleton<PieceManager>
     {
         Player targetPlayerReserve = buttonReserveTarget.player;
         TayogPiece targetPooledTayogPiece = targetPlayerReserve.GetPooledTayogPiece(buttonReserveTarget.pieceType);
-        Debug.LogError($"{targetPlayerReserve} {targetPooledTayogPiece}");
         
         if (targetPooledTayogPiece != null)
         {
-            Debug.LogError("Tried to select " + targetPooledTayogPiece);
             targetPooledTayogPiece.Select();
         }
     }

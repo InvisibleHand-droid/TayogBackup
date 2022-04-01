@@ -5,8 +5,10 @@ using UnityEngine;
 [System.Serializable]
 public class GeneratedTayogPiece
 {
-    public TayogPiece _tayogPiecePrefab;
-    public PieceType _pieceType;
+    public TayogPiece tayogPiecePrefab;
+    public PieceType pieceType;
+    public AnimatorOverrideController pieceAnimator;
+    public Sprite pieceSprite;
 }
 
 [CreateAssetMenu(fileName = "TayogSet", menuName = "GameElements/TayogSet", order = 0)]

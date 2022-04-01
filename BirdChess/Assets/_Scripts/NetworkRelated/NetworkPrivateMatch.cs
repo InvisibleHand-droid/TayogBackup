@@ -18,8 +18,11 @@ public class NetworkPrivateMatch : MonoBehaviourPunCallbacks
     public void CreatePrivateRoom()
     {
         string RandomRoomID = GetRandomRoomID();
+        RoomOptions options = new RoomOptions();
+        options.MaxPlayers = 2;
         _roomIDText.SetText(RandomRoomID);
-        PhotonNetwork.CreateRoom(RandomRoomID);
+        PhotonNetwork.CreateRoom(RandomRoomID, options, TypedLobby.Default, null);
+        
     }
 
     public void JoinPrivateRoom()

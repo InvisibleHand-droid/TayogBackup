@@ -8,9 +8,12 @@ public class NetworkQuickMatch : MonoBehaviour
 {
     public void QuickMatch()
     {
-        if (PhotonNetwork.IsConnected || PhotonNetwork.OfflineMode)
+        RoomOptions options = new RoomOptions();
+        options.MaxPlayers = 2;
+        
+        if (PhotonNetwork.IsConnectedAndReady)
         {
-            PhotonNetwork.JoinRandomOrCreateRoom();
+            PhotonNetwork.JoinRandomOrCreateRoom(null,2, MatchmakingMode.FillRoom, TypedLobby.Default, null, null, options);
         }
         else
         {

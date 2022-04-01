@@ -73,7 +73,7 @@ public abstract class TayogPiece : MonoBehaviourPun, ITayogMove, ITayogRange, IP
     public void Select()
     {
         if (!isMoveable() || TurnManager.Instance.GetCurrentPlayer().previouslyPlayedTayogPiece == this ||
-        GameManager._currentGameState == GameState.End) return;
+        GameManager._currentGameState == GameState.End || !this.photonView.IsMine) return;
         PieceManager.Instance.selectedTayogPiece = this;
 
         foreach (Tile tile in PieceManager.Instance.selectedTayogPiece.GetValidTiles())
@@ -85,7 +85,7 @@ public abstract class TayogPiece : MonoBehaviourPun, ITayogMove, ITayogRange, IP
 
     private bool isMoveable()
     {
-        return _pieceTeamColor == TurnManager.Instance.GetCurrentPlayer()._teamColor;
+        return _pieceTeamColor == TurnManager.Instance.GetCurrentPlayer().teamColor;
     }
     #endregion
 
@@ -164,6 +164,10 @@ public abstract class TayogPiece : MonoBehaviourPun, ITayogMove, ITayogRange, IP
         Tile tile = TileManager.Instance.GetTileBasedOnID(columnID, rowID);
         //Pop self from previous assigned tile because the piece moved
         _assignedTile.tayogPiecesAboveMe.Pop();
+        if (_assignedTile.GetTayogPieceOnTop() != null)
+        {
+            _assignedTile.GetTayogPieceOnTop().transform.GetChild(0).gameObject.SetActive(true);
+        }
 
         //Assign piece to new tile
         AssignSelectedPieceToTile(tile);
@@ -174,6 +178,10 @@ public abstract class TayogPiece : MonoBehaviourPun, ITayogMove, ITayogRange, IP
         Tile tile = TileManager.Instance.GetTileBasedOnID(columnID, rowID);
         //Pop self from previous assigned tile because the piece moved
         _assignedTile.tayogPiecesAboveMe.Pop();
+        if (_assignedTile.GetTayogPieceOnTop() != null)
+        {
+            _assignedTile.GetTayogPieceOnTop().transform.GetChild(0).gameObject.SetActive(true);
+        }
 
         CaptureAllPiecesOnTop(tile);
 
@@ -187,6 +195,7 @@ public abstract class TayogPiece : MonoBehaviourPun, ITayogMove, ITayogRange, IP
         Tile tile = TileManager.Instance.GetTileBasedOnID(columnID, rowID);
         //From the object pool (inactive), make it active
         this.gameObject.SetActive(true);
+        this.transform.GetChild(0).gameObject.SetActive(true);
 
         //Move it out of the reserve list
         TurnManager.Instance.GetCurrentPlayer()._reserveTayogPiece.Remove(this);
@@ -203,7 +212,10 @@ public abstract class TayogPiece : MonoBehaviourPun, ITayogMove, ITayogRange, IP
         this._pieceState = PieceState.Placed;
 
         this.transform.SetParent(tile.transform);
-
+        if (tile.GetTayogPieceOnTop() != null)
+        {
+            tile.GetTayogPieceOnTop().transform.GetChild(0).gameObject.SetActive(false);
+        }
         this.transform.position = tile.Top();
 
         this._currentTileColumn = tile.columnID;
@@ -301,7 +313,11 @@ public abstract class TayogPiece : MonoBehaviourPun, ITayogMove, ITayogRange, IP
         this.gameObject.SetActive(false);
         this._assignedPlayer._reserveTayogPiece.Add(this);
     }
+
     #endregion
 
-
+    public bool isExposed()
+    {
+        return (_assignedTile.GetTayogPieceOnTop() == this);
+    }
 }

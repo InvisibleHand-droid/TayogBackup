@@ -7,9 +7,13 @@ public class MultiplayerPlayerManager : MonoBehaviourPun
 {
     public GameObject playerPrefab;
     public GameObject playerUI;
-    public static int playerCount =0;
+    public static int playerCount = 0;
 
     // Start is called before the first frame update
+    private void Awake()
+    {
+        playerCount = 0;
+    }
     void Start()
     {
 

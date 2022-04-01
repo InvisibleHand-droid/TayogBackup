@@ -86,7 +86,7 @@ public class UIManager : Singleton<UIManager>
 
     public void SetPlayerHeaderTexts(int i, Player player)
     {
-        _playerUI[i].playerHeaderText.SetText(player._teamColor.ToString());
+        _playerUI[i].playerHeaderText.SetText(player.teamColor.ToString());
     }
 
     [PunRPC]
