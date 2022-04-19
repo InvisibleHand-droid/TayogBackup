@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26c042501fed40a419b3f69531879b18, type: 3}
+  m_Name: TayogPieceSetCollection
+  m_EditorClassIdentifier: 
+  DeveloperNote: 
+  tayogPieceSets:
+  - {fileID: 11400000, guid: 16ab0f8c9dc0aeb458cb095a51b13482, type: 2}
+  - {fileID: 11400000, guid: 6c53cd4216df6f74894b7cb2321de1de, type: 2}

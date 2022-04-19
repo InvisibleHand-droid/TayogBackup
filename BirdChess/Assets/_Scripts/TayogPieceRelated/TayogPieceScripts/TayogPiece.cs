@@ -39,6 +39,7 @@ public abstract class TayogPiece : MonoBehaviourPun, ITayogMove, ITayogRange, IP
         StoreColor();
     }
 
+
     #region Abstract action conditions
     public abstract bool CanCapture(Tile tile);
     public abstract bool CanPerch(Tile tile);
@@ -309,7 +310,11 @@ public abstract class TayogPiece : MonoBehaviourPun, ITayogMove, ITayogRange, IP
         this._assignedPlayer = GameObject.FindGameObjectWithTag(playerTargetTag).GetComponent<Player>();
 
         this.transform.SetParent(_assignedPlayer.transform);
+        this.SetTeamColor(_assignedPlayer.teamColor);
 
+        AssignSprite();
+        AssignMesh();
+        
         this.gameObject.SetActive(false);
         this._assignedPlayer._reserveTayogPiece.Add(this);
     }
@@ -319,5 +324,52 @@ public abstract class TayogPiece : MonoBehaviourPun, ITayogMove, ITayogRange, IP
     public bool isExposed()
     {
         return (_assignedTile.GetTayogPieceOnTop() == this);
+    }
+
+    public void AssignSprite()
+    {
+        List<GeneratedTayogSprite> spriteTarget = new List<GeneratedTayogSprite>();
+
+        switch (this._pieceTeamColor)
+        {
+            case (TeamColor.White):
+                spriteTarget = _assignedPlayer.tayogSpriteSet.generatedTayogSpriteSetWhite;
+                break;
+            case (TeamColor.Black):
+                spriteTarget = _assignedPlayer.tayogSpriteSet.generatedTayogSpriteSetBlack;
+                break;
+        }
+
+        foreach (GeneratedTayogSprite generatedTayogSprite in spriteTarget)
+        {
+            if (generatedTayogSprite.pieceType == this._piecetype)
+            {
+                this.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = generatedTayogSprite.pieceSprite;
+            }
+        }
+    }
+
+    public void AssignMesh()
+    {
+        List<GeneratedTayogPiece> pieceTarget = new List<GeneratedTayogPiece>();
+
+        switch (this._pieceTeamColor)
+        {
+            case (TeamColor.White):
+                pieceTarget = _assignedPlayer.tayogPieceSet.generatedTayogPiecesWhite;
+                break;
+            case (TeamColor.Black):
+                pieceTarget = _assignedPlayer.tayogPieceSet.generatedTayogPiecesBlack;
+                break;
+        }
+
+        foreach (GeneratedTayogPiece generatedTayogPiece in pieceTarget)
+        {
+            if (generatedTayogPiece.pieceType == this._piecetype)
+            {
+                this.GetComponent<MeshFilter>().sharedMesh = generatedTayogPiece.pieceMesh;
+                this.GetComponent<Renderer>().sharedMaterial = generatedTayogPiece.pieceMaterial;
+            }
+        }
     }
 }

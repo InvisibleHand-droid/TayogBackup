@@ -16,7 +16,6 @@ public class MultiplayerPlayerManager : MonoBehaviourPun
     }
     void Start()
     {
-
         if (NetworkManager.Instance.isPhotonOffline)
         {
             for (int i = 0; i < 2; i++)
@@ -28,11 +27,13 @@ public class MultiplayerPlayerManager : MonoBehaviourPun
         {
             MakePlayer();
         }
-
     }
 
     private void MakePlayer()
     {
-        GameObject player = PhotonNetwork.Instantiate(playerPrefab.name, this.transform.position, Quaternion.identity);
+        object[] instanceData = new object[2];
+        instanceData[0] = PlayerPrefs.GetString("SpriteID");
+        instanceData[1] = PlayerPrefs.GetString("PieceID");
+        GameObject player = PhotonNetwork.Instantiate(playerPrefab.name, this.transform.position, Quaternion.identity, 0, instanceData);
     }
 }

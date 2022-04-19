@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b627d53c8ea67747b248ff9d14cd49a, type: 3}
+  m_Name: StandardPieceSet
+  m_EditorClassIdentifier: 
+  DeveloperNote: 
+  generatedTayogPiecesWhite:
+  - pieceType: 0
+    pieceMesh: {fileID: 5479372859306793245, guid: 8eec64d4362ac854796dea2451207aeb, type: 3}
+    pieceMaterial: {fileID: 8749111527912355754, guid: 8eec64d4362ac854796dea2451207aeb, type: 3}
+    tayogPiecePrefab: {fileID: 1258550324411057616, guid: 2ce86796fa38ba3449ad57f45c9cddd8, type: 3}
+  - pieceType: 1
+    pieceMesh: {fileID: -3106477238746094792, guid: 8eec64d4362ac854796dea2451207aeb, type: 3}
+    pieceMaterial: {fileID: 8749111527912355754, guid: 8eec64d4362ac854796dea2451207aeb, type: 3}
+    tayogPiecePrefab: {fileID: 6523553108664958148, guid: 4addd1c41c15df34081c49bd2d871576, type: 3}
+  - pieceType: 2
+    pieceMesh: {fileID: 1960372504959479045, guid: 8eec64d4362ac854796dea2451207aeb, type: 3}
+    pieceMaterial: {fileID: 8749111527912355754, guid: 8eec64d4362ac854796dea2451207aeb, type: 3}
+    tayogPiecePrefab: {fileID: -7475676872303219504, guid: c2f63764236e6a54d8fd79875e2034ff, type: 3}
+  - pieceType: 3
+    pieceMesh: {fileID: -1794731768876064640, guid: 8eec64d4362ac854796dea2451207aeb, type: 3}
+    pieceMaterial: {fileID: 8749111527912355754, guid: 8eec64d4362ac854796dea2451207aeb, type: 3}
+    tayogPiecePrefab: {fileID: -1617110074044817927, guid: de0249795b6862f45b8714cd16c19c63, type: 3}
+  generatedTayogPiecesBlack:
+  - pieceType: 0
+    pieceMesh: {fileID: -1105509963243994394, guid: 8eec64d4362ac854796dea2451207aeb, type: 3}
+    pieceMaterial: {fileID: -2534211557209431843, guid: 8eec64d4362ac854796dea2451207aeb, type: 3}
+    tayogPiecePrefab: {fileID: -5382110701207105815, guid: 64b3c234d55b68a44842112619b5e77b, type: 3}
+  - pieceType: 1
+    pieceMesh: {fileID: -4011350397525761443, guid: 8eec64d4362ac854796dea2451207aeb, type: 3}
+    pieceMaterial: {fileID: -2534211557209431843, guid: 8eec64d4362ac854796dea2451207aeb, type: 3}
+    tayogPiecePrefab: {fileID: -910155491960092738, guid: 9f77906285e1359419d806b469fdf807, type: 3}
+  - pieceType: 2
+    pieceMesh: {fileID: 7772895600602261734, guid: 8eec64d4362ac854796dea2451207aeb, type: 3}
+    pieceMaterial: {fileID: -2534211557209431843, guid: 8eec64d4362ac854796dea2451207aeb, type: 3}
+    tayogPiecePrefab: {fileID: -2969565110354116509, guid: 6dccb3e7ac5930945bf2148b7027e7ed, type: 3}
+  - pieceType: 3
+    pieceMesh: {fileID: 5064989341281567872, guid: 8eec64d4362ac854796dea2451207aeb, type: 3}
+    pieceMaterial: {fileID: -2534211557209431843, guid: 8eec64d4362ac854796dea2451207aeb, type: 3}
+    tayogPiecePrefab: {fileID: 9045358483908805594, guid: 2136bdb2b8e456d42abe619cdd9505f8, type: 3}
+  ID: Standard

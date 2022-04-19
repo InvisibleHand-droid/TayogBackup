@@ -70,12 +70,14 @@ MonoBehaviour:
   playerMove: {fileID: 0}
   gameEventChannel: {fileID: 0}
   teamColor: 0
-  tayogSet: {fileID: 0}
+  tayogPieceSet: {fileID: 0}
+  tayogSpriteSet: {fileID: 0}
   _reserveTayogPiece: []
   _activeTayogPiece: []
-  chosenWhiteSkinID: StandardWhite
-  chosenBlackSkinID: StandardBlack
+  chosenSpriteID: 
+  chosenPieceID: 
   previouslyPlayedTayogPiece: {fileID: 0}
+  skinTarget: []
 --- !u!114 &7833558914082295167
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -23,8 +23,7 @@ public class GameSettings
 public class GameManager : Singleton<GameManager>
 {
     public GameSettings gameSettings;
-
-    public TayogSetCollection tayogSetCollection;
+    public GameObject boardParent;
 
     public List<Player> players = new List<Player>();
     WaitForSeconds shortWait = new WaitForSeconds(1f);
@@ -109,7 +108,8 @@ public class GameManager : Singleton<GameManager>
                 {
                     hasNoMoves = false;
                 }
-                else{
+                else
+                {
                     hasNoMoves = true;
                 }
             }
@@ -120,6 +120,14 @@ public class GameManager : Singleton<GameManager>
 
     IEnumerator OnlineSetupSequence()
     {
+        foreach (BoardVisual boardVisual in VisualsManager.Instance.boardVisualsCollection.boardVisualsCollection)
+        {
+            if (boardVisual.boardID == VisualsManager.Instance.chosenBoardID)
+            {
+                Instantiate(boardVisual.boardPrefab, boardParent.transform.position, Quaternion.identity);
+                break;
+            }
+        }
         Player localPlayer = null;
         Player nonLocalPlayer = null;
         while (players.Count != 2)
@@ -152,6 +160,8 @@ public class GameManager : Singleton<GameManager>
         //Make active player white
         TurnManager.Instance.photonView.RPC(nameof(TurnManager.Instance.RPCSetCurrentPlayer), RpcTarget.All, 1);
 
+
+
         while (!players[0].GetReserveCountOfPieceType(PieceType.Manok).Equals(0) || !players[1].GetReserveCountOfPieceType(PieceType.Manok).Equals(0))
         {
             yield return null;
@@ -160,6 +170,7 @@ public class GameManager : Singleton<GameManager>
         UIManager.Instance.photonView.RPC(nameof(UIManager.Instance.RPCEnableEverythingElse), RpcTarget.All);
         TurnManager.Instance.photonView.RPC(nameof(TurnManager.Instance.RPCSetCurrentPlayer), RpcTarget.All, 2);
         UIManager.Instance.photonView.RPC(nameof(UIManager.Instance.RPCUpdateStateText), RpcTarget.All);
+
 
         this.photonView.RPC(nameof(SetCurrentGameState), RpcTarget.All, GameState.GoingOn);
 
@@ -170,6 +181,15 @@ public class GameManager : Singleton<GameManager>
 
     IEnumerator LocalSetupSequence()
     {
+        foreach (BoardVisual boardVisual in VisualsManager.Instance.boardVisualsCollection.boardVisualsCollection)
+        {
+            if (boardVisual.boardID == VisualsManager.Instance.chosenBoardID)
+            {
+                Instantiate(boardVisual.boardPrefab, boardParent.transform.position, Quaternion.identity);
+                break;
+            }
+        }
+
         while (players.Count != 2)
         {
             yield return null;
@@ -198,6 +218,8 @@ public class GameManager : Singleton<GameManager>
         UIManager.Instance.photonView.RPC(nameof(UIManager.Instance.RPCEnableEverythingElse), RpcTarget.All);
         TurnManager.Instance.photonView.RPC(nameof(TurnManager.Instance.RPCSetCurrentPlayer), RpcTarget.All, 2);
         UIManager.Instance.photonView.RPC(nameof(UIManager.Instance.RPCUpdateStateText), RpcTarget.All);
+
+
 
         _currentGameState = GameState.GoingOn;
     }

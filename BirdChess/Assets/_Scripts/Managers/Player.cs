@@ -14,15 +14,17 @@ public class Player : MonoBehaviourPun, IPunInstantiateMagicCallback
     public PlayerMove playerMove;
     public GameEventChannel gameEventChannel;
     public TeamColor teamColor;
-    public TayogSet tayogSet;
+    public TayogPieceSet tayogPieceSet;
+    public TayogSpriteSet tayogSpriteSet;
     public List<TayogPiece> _reserveTayogPiece = new List<TayogPiece>();
     public List<TayogPiece> _activeTayogPiece = new List<TayogPiece>();
 
     //Change this later to playerprefs
-    public string chosenWhiteSkinID;
-    public string chosenBlackSkinID;
+    public string chosenSpriteID;
+    public string chosenPieceID;
 
     public TayogPiece previouslyPlayedTayogPiece;
+    public List<GeneratedTayogPiece> skinTarget;
 
     public virtual void Start()
     {
@@ -30,16 +32,12 @@ public class Player : MonoBehaviourPun, IPunInstantiateMagicCallback
 
         if (this.photonView.IsMine)
         {
+            Debug.LogError(chosenPieceID);
+            Debug.LogError(chosenSpriteID);
             this.photonView.RPC(nameof(SetColor), RpcTarget.All);
-
             this.photonView.RPC(nameof(RPCSetTayogReserve), RpcTarget.All);
-            //this.photonView.RPC(nameof(RPCGenerateTayogReserve), RpcTarget.All);
             GenerateTayogReserve();
         }
-    }
-
-    public void InitializeUI()
-    {
     }
 
     [PunRPC]
@@ -60,35 +58,43 @@ public class Player : MonoBehaviourPun, IPunInstantiateMagicCallback
     [PunRPC]
     public void RPCSetTayogReserve()
     {
-        string skinTarget = null;
-        switch (teamColor)
+        foreach (TayogPieceSet tayogPieceSet in VisualsManager.Instance.tayogPieceSetCollection.tayogPieceSets)
         {
-            case (TeamColor.White):
-                skinTarget = chosenWhiteSkinID;
-                break;
-            case (TeamColor.Black):
-                skinTarget = chosenBlackSkinID;
-                break;
-
-        }
-
-        foreach (TayogSet tayogSet in GameManager.Instance.tayogSetCollection.tayogSets)
-        {
-            if (tayogSet.ID == skinTarget)
+            if (tayogPieceSet.ID == chosenPieceID)
             {
-                this.tayogSet = tayogSet;
+                this.tayogPieceSet = tayogPieceSet;
                 break;
             }
         }
+
+        foreach (TayogSpriteSet tayogSpriteSet in VisualsManager.Instance.tayogSpriteSetCollection.tayogSpriteSets)
+        {
+            if (tayogSpriteSet.ID == chosenSpriteID)
+            {
+                this.tayogSpriteSet = tayogSpriteSet;
+                break;
+            }
+        }
+
+        switch (teamColor)
+        {
+            case (TeamColor.White):
+                skinTarget = tayogPieceSet.generatedTayogPiecesWhite;
+                break;
+            case (TeamColor.Black):
+                skinTarget = tayogPieceSet.generatedTayogPiecesBlack;
+                break;
+        }
+
     }
 
     public void GenerateTayogReserve()
     {
         GameSettings gameSettings = GameManager.Instance.gameSettings;
         int amountToPool = 0;
-        foreach (GeneratedTayogPiece generatedTayogPiece in tayogSet.generatedTayogPieces)
+        string prefabPieceSetTarget = "Standard";//chosenPieceID;
+        foreach (GeneratedTayogPiece generatedTayogPiece in skinTarget)
         {
-            string prefabPieceSetTarget = tayogSet.ID;
             string prefabPieceTarget = generatedTayogPiece.tayogPiecePrefab.name;
 
             switch (generatedTayogPiece.pieceType)
@@ -109,8 +115,7 @@ public class Player : MonoBehaviourPun, IPunInstantiateMagicCallback
 
             for (int i = 0; i < amountToPool; i++)
             {
-                // this.photonView.RPC(nameof(RPCGenerateTayogPiece), RpcTarget.All, prefabPieceSetTarget, prefabPieceTarget);
-                object[] instanceData = new object[1];
+                object[] instanceData = new object[2];
                 instanceData[0] = this.tag;
 
                 Quaternion initialRotation = generatedTayogPiece.tayogPiecePrefab.transform.rotation;
@@ -121,7 +126,7 @@ public class Player : MonoBehaviourPun, IPunInstantiateMagicCallback
                 }
 
                 GameObject pooledPhotonTayogPiece = PhotonNetwork.Instantiate(Path.Combine("PiecePrefabs", prefabPieceSetTarget, prefabPieceTarget)
-                , transform.position, initialRotation, 0, instanceData);
+                 , transform.position, initialRotation, 0, instanceData);
             }
         }
     }
@@ -196,23 +201,12 @@ public class Player : MonoBehaviourPun, IPunInstantiateMagicCallback
 
     public void ReconstructTayogPiece(TayogPiece tayogPiece)
     {
-        TayogPiece tayogReference = null;
-        foreach (GeneratedTayogPiece generatedTayogPiece in tayogSet.generatedTayogPieces)
-        {
-            if (generatedTayogPiece.pieceType == tayogPiece.GetPieceType())
-            {
-                tayogReference = generatedTayogPiece.tayogPiecePrefab;
-                tayogPiece.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().sprite = generatedTayogPiece.pieceSprite;
-            }
-        }
-
         tayogPiece.photonView.TransferOwnership(this.photonView.Controller);
 
         if (!PhotonNetwork.IsMasterClient)
         {
             Vector3 euler = tayogPiece.transform.eulerAngles;
             tayogPiece.transform.localEulerAngles = new Vector3(-90, 180, -90);
-            //tayogPiece.transform.rotation = Quaternion.Euler(new Vector3(-90, 180, 180));
         }
         else
         {
@@ -220,16 +214,19 @@ public class Player : MonoBehaviourPun, IPunInstantiateMagicCallback
             tayogPiece.transform.localEulerAngles = new Vector3(-90, 180, 90);
         }
 
-        tayogPiece.name = $"{tayogSet.ID}{tayogReference.GetPieceType().ToString()}";
-        tayogPiece.GetComponent<MeshFilter>().sharedMesh = tayogReference.GetComponent<MeshFilter>().sharedMesh;
-        tayogPiece.GetComponent<Renderer>().sharedMaterial = tayogReference.GetComponent<Renderer>().sharedMaterial;
         tayogPiece.SetTeamColor(teamColor);
+
+        tayogPiece.name = $"{tayogPieceSet.ID}{tayogPiece.GetTeamColor()}{tayogPiece.GetPieceType().ToString()}";
+        tayogPiece.AssignSprite();
+        tayogPiece.AssignMesh();
         tayogPiece.SetPieceState(PieceState.Reserve);
         tayogPiece.transform.SetParent(this.transform);
     }
 
     public void OnPhotonInstantiate(PhotonMessageInfo info)
     {
+        object[] data = info.photonView.InstantiationData;
+
         MultiplayerPlayerManager.playerCount++;
         GameManager.Instance.players.Add(this);
         if (PhotonNetwork.OfflineMode)
@@ -240,5 +237,8 @@ public class Player : MonoBehaviourPun, IPunInstantiateMagicCallback
         {
             this.tag = "Player" + this.photonView.CreatorActorNr;
         }
+
+        chosenSpriteID = data[0].ToString();
+        chosenPieceID = data[1].ToString();
     }
 }
