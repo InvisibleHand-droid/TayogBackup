@@ -27,10 +27,6 @@ public class MainMenuManager : MonoBehaviourPunCallbacks
         {
             PhotonNetwork.JoinRandomRoom();
         }
-        else
-        {
-            multiplayerPanelUI.SetActive(true);
-        }
     }
 
     

@@ -31,7 +31,7 @@ public class GameManager : Singleton<GameManager>
     //at the start of player's turn, if they can't make any action/move, opponent win
     //when a piece is added to reserve, count Manok, if 8, player win
     //at the end of a player's action/move, if no Manok of the opponents send their headcount, player win
-    public static GameState _currentGameState;
+    public static GameState currentGameState;
     public override void Awake()
     {
         base.Awake();
@@ -52,26 +52,26 @@ public class GameManager : Singleton<GameManager>
     [PunRPC]
     public void SetCurrentGameState(GameState gameState)
     {
-        _currentGameState = gameState;
+        currentGameState = gameState;
     }
 
     public void CheckPlayerVictoryConditions()
     {
-        if (GameManager._currentGameState != GameState.GoingOn) return;
+        if (GameManager.currentGameState != GameState.GoingOn) return;
 
         foreach (Player player in players)
         {
             if (player.GetReserveCountOfPieceType(PieceType.Manok) >= 8)
             {
                 UIManager.Instance.photonView.RPC("EnableVictoryWindow", RpcTarget.All, player.teamColor, "win");
-                _currentGameState = GameState.End;
+                currentGameState = GameState.End;
                 break;
             }
 
             if (player.GetManokActiveCount() <= 0)
             {
                 UIManager.Instance.photonView.RPC("EnableVictoryWindow", RpcTarget.All, player.teamColor, "lose");
-                _currentGameState = GameState.End;
+                currentGameState = GameState.End;
                 break;
             }
         }
@@ -79,7 +79,7 @@ public class GameManager : Singleton<GameManager>
         if (NoValidMoves())
         {
             UIManager.Instance.photonView.RPC("EnableVictoryWindow", RpcTarget.All, TurnManager.Instance.GetCurrentPlayer(), "has no valid moves");
-            _currentGameState = GameState.End;
+            currentGameState = GameState.End;
         }
     }
 
@@ -90,12 +90,12 @@ public class GameManager : Singleton<GameManager>
         List<TayogPiece> allTayogPiece = new List<TayogPiece>();
 
         bool hasNoMoves = false;
-        foreach (TayogPiece reserveTayogPiece in player._reserveTayogPiece)
+        foreach (TayogPiece reserveTayogPiece in player.reserveTayogPiece)
         {
             allTayogPiece.Add(reserveTayogPiece);
         }
 
-        foreach (TayogPiece activeTayogPiece in player._activeTayogPiece)
+        foreach (TayogPiece activeTayogPiece in player.activeTayogPiece)
         {
             allTayogPiece.Add(activeTayogPiece);
         }
@@ -122,7 +122,7 @@ public class GameManager : Singleton<GameManager>
     {
         foreach (BoardVisual boardVisual in VisualsManager.Instance.boardVisualsCollection.boardVisualsCollection)
         {
-            if (boardVisual.boardID == VisualsManager.Instance.chosenBoardID)
+            if (boardVisual.boardID == PlayerPrefs.GetString(TayogRef.BOARD_ID))
             {
                 Instantiate(boardVisual.boardPrefab, boardParent.transform.position, Quaternion.identity);
                 break;
@@ -183,7 +183,7 @@ public class GameManager : Singleton<GameManager>
     {
         foreach (BoardVisual boardVisual in VisualsManager.Instance.boardVisualsCollection.boardVisualsCollection)
         {
-            if (boardVisual.boardID == VisualsManager.Instance.chosenBoardID)
+            if (boardVisual.boardID == PlayerPrefs.GetString(TayogRef.BOARD_ID))
             {
                 Instantiate(boardVisual.boardPrefab, boardParent.transform.position, Quaternion.identity);
                 break;
@@ -198,7 +198,7 @@ public class GameManager : Singleton<GameManager>
         yield return shortWait;
 
 
-        _currentGameState = GameState.Setup;
+        currentGameState = GameState.Setup;
         TurnManager.Instance.photonView.RPC(nameof(TurnManager.Instance.RPCSetCurrentPlayer), RpcTarget.All, 1);
 
         for (int i = 0; i < GameManager.Instance.players.Count; i++)
@@ -221,7 +221,7 @@ public class GameManager : Singleton<GameManager>
 
 
 
-        _currentGameState = GameState.GoingOn;
+        currentGameState = GameState.GoingOn;
     }
 }
 

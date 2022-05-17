@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TileManager : Singleton<TileManager>
 {
-    [SerializeField] public List<Tile> allTiles = new List<Tile>();
+    public List<Tile> allTiles = new List<Tile>();
     public Tile selectedTile;
 
     public override void Awake()

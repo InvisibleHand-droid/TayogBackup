@@ -72,3 +72,4 @@ MonoBehaviour:
     attackSound: {fileID: 0}
     captureSound: {fileID: 0}
   ID: Reverse
+  indicator: {fileID: 21300000, guid: da4c939d8640d6a4fbb5cd64d3ebb29b, type: 3}

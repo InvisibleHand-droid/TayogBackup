@@ -6,11 +6,11 @@ using UnityEngine;
 
 public class MultiplayerCameraScript : MonoBehaviour
 {
-    [SerializeField] private CinemachineFreeLook cinemachineCamera;
+    [SerializeField] private CinemachineFreeLook _cinemachineCamera;
 
     private void Awake()
     {
-        cinemachineCamera = FindObjectOfType<CinemachineFreeLook>();
+        _cinemachineCamera = FindObjectOfType<CinemachineFreeLook>();
     }
 
     private void Start() {
@@ -22,6 +22,6 @@ public class MultiplayerCameraScript : MonoBehaviour
 
     private void FlipCamera()
     {
-        cinemachineCamera.m_XAxis.Value = 180;
+        _cinemachineCamera.m_XAxis.Value = 180;
     }
 }

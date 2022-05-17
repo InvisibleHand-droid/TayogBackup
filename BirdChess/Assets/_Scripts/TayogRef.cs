@@ -25,4 +25,11 @@ public class TayogRef
     public const string DIR_TOPRIGHT = "TopRight";
     public const string DIR_TOPLEFT = "TopLeft";
     #endregion
+
+    #region PlayerPrefs
+    public const string PIECE_ID = "PieceID";
+    public const string SPRITE_ID = "SpriteID";
+    public const string BOARD_ID = "BoardID";
+    public const string STANDARD = "Standard";
+    #endregion
 }

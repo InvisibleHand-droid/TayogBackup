@@ -8,7 +8,7 @@ public class Manok : TayogPiece
     public override bool CanCapture(Tile tile)
     {
         TayogPiece targetTayogPiece = tile.GetTayogPieceOnTop();
-        if (targetTayogPiece == null || GameManager._currentGameState == GameState.Setup) return false;
+        if (targetTayogPiece == null || GameManager.currentGameState == GameState.Setup) return false;
         return ((!_pieceTeamColor.Equals(targetTayogPiece.GetTeamColor()) && targetTayogPiece.GetPieceType().Equals(PieceType.Manok)));
     }
 
@@ -28,7 +28,7 @@ public class Manok : TayogPiece
     {
         List<Tile> validCaptureOrPerchTiles = new List<Tile>();
         //if the game hasn't started yet just return the empty list
-        if (GameManager._currentGameState != GameState.GoingOn) return validCaptureOrPerchTiles;
+        if (GameManager.currentGameState != GameState.GoingOn) return validCaptureOrPerchTiles;
 
         Tile currentTile = TileManager.Instance.GetTileBasedOnID(_currentTileColumn, _currentTileRow);
 
@@ -46,7 +46,7 @@ public class Manok : TayogPiece
         List<Tile> validRallyTiles = new List<Tile>();
         int startingRow = 0;
 
-        if (GameManager._currentGameState == GameState.Setup)
+        if (GameManager.currentGameState == GameState.Setup)
         {
             switch (_assignedPlayer.tag)
             {

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TurnManager : Singleton<TurnManager>
 {
-    [SerializeField] private GameEventChannel onTurnEnd;
+    [SerializeField] private GameEventChannel _onTurnEnd;
     private int _playerNumber;
 
     public override void Awake()
@@ -62,7 +62,7 @@ public class TurnManager : Singleton<TurnManager>
         }
 
         playerFromList.playerMove.isMyTurn = true;
-        onTurnEnd.Raise();
+        _onTurnEnd.Raise();
     }
 
     private int GetNextPlayer()

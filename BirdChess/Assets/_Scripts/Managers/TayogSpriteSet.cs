@@ -21,4 +21,5 @@ public class TayogSpriteSet : ScriptableGameObject
     public List<GeneratedTayogSprite> generatedTayogSpriteSetWhite = new List<GeneratedTayogSprite>();
     public List<GeneratedTayogSprite> generatedTayogSpriteSetBlack = new List<GeneratedTayogSprite>();
     public string ID;
+    public Sprite indicator;
 }

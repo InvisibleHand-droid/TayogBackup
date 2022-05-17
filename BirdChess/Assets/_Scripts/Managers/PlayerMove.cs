@@ -15,7 +15,7 @@ public class PlayerMove : MonoBehaviourPun
 
     void Update()
     {
-        if (!isMyTurn || GameManager._currentGameState == GameState.End) return;
+        if (!isMyTurn || GameManager.currentGameState == GameState.End) return;
         HoverTile();
 
         if (Input.GetMouseButtonDown(1))

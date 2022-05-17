@@ -74,7 +74,7 @@ public abstract class TayogPiece : MonoBehaviourPun, ITayogMove, ITayogRange, IP
     public void Select()
     {
         if (!isMoveable() || TurnManager.Instance.GetCurrentPlayer().previouslyPlayedTayogPiece == this ||
-        GameManager._currentGameState == GameState.End || !this.photonView.IsMine) return;
+        GameManager.currentGameState == GameState.End || !this.photonView.IsMine) return;
         PieceManager.Instance.selectedTayogPiece = this;
 
         foreach (Tile tile in PieceManager.Instance.selectedTayogPiece.GetValidTiles())
@@ -199,10 +199,10 @@ public abstract class TayogPiece : MonoBehaviourPun, ITayogMove, ITayogRange, IP
         this.transform.GetChild(0).gameObject.SetActive(true);
 
         //Move it out of the reserve list
-        TurnManager.Instance.GetCurrentPlayer()._reserveTayogPiece.Remove(this);
+        TurnManager.Instance.GetCurrentPlayer().reserveTayogPiece.Remove(this);
 
         //Move it to active list
-        TurnManager.Instance.GetCurrentPlayer()._activeTayogPiece.Add(this);
+        TurnManager.Instance.GetCurrentPlayer().activeTayogPiece.Add(this);
 
         //Assign it to a tile
         AssignSelectedPieceToTile(tile);
@@ -244,11 +244,11 @@ public abstract class TayogPiece : MonoBehaviourPun, ITayogMove, ITayogRange, IP
         for (int i = 0; i < countOnCapture; i++)
         {
             TayogPiece tayogPieceOnTop = tile.GetTayogPieceOnTop();
-            tayogPieceOnTop._assignedPlayer._activeTayogPiece.Remove(tayogPieceOnTop);
+            tayogPieceOnTop._assignedPlayer.activeTayogPiece.Remove(tayogPieceOnTop);
             tayogPieceOnTop._assignedPlayer = TurnManager.Instance.GetCurrentPlayer();
 
             tayogPieceOnTop._assignedPlayer.ReconstructTayogPiece(tayogPieceOnTop);
-            tayogPieceOnTop._assignedPlayer._reserveTayogPiece.Add(tayogPieceOnTop);
+            tayogPieceOnTop._assignedPlayer.reserveTayogPiece.Add(tayogPieceOnTop);
             tayogPieceOnTop.StoreColor();
 
             tayogPieceOnTop.transform.SetParent(_assignedPlayer.transform);
@@ -283,7 +283,6 @@ public abstract class TayogPiece : MonoBehaviourPun, ITayogMove, ITayogRange, IP
             {
                 if (CanRally(tile))
                 {
-                    //Check the surrounding of the tile if its empty make it valid
                     validRallyTiles.Add(tile);
                 }
             }
@@ -316,7 +315,7 @@ public abstract class TayogPiece : MonoBehaviourPun, ITayogMove, ITayogRange, IP
         AssignMesh();
         
         this.gameObject.SetActive(false);
-        this._assignedPlayer._reserveTayogPiece.Add(this);
+        this._assignedPlayer.reserveTayogPiece.Add(this);
     }
 
     #endregion

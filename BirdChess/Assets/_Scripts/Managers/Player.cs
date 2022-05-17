@@ -16,8 +16,8 @@ public class Player : MonoBehaviourPun, IPunInstantiateMagicCallback
     public TeamColor teamColor;
     public TayogPieceSet tayogPieceSet;
     public TayogSpriteSet tayogSpriteSet;
-    public List<TayogPiece> _reserveTayogPiece = new List<TayogPiece>();
-    public List<TayogPiece> _activeTayogPiece = new List<TayogPiece>();
+    public List<TayogPiece> reserveTayogPiece = new List<TayogPiece>();
+    public List<TayogPiece> activeTayogPiece = new List<TayogPiece>();
 
     //Change this later to playerprefs
     public string chosenSpriteID;
@@ -149,7 +149,7 @@ public class Player : MonoBehaviourPun, IPunInstantiateMagicCallback
     {
         int count = 0;
 
-        foreach (TayogPiece tayogPiece in _reserveTayogPiece)
+        foreach (TayogPiece tayogPiece in reserveTayogPiece)
         {
             if (tayogPiece.GetPieceType() == pieceType)
             {
@@ -164,7 +164,7 @@ public class Player : MonoBehaviourPun, IPunInstantiateMagicCallback
     {
         int manokActive = 0;
 
-        foreach (TayogPiece tayogPiece in _activeTayogPiece)
+        foreach (TayogPiece tayogPiece in activeTayogPiece)
         {
             if (tayogPiece.GetPieceType() == PieceType.Manok && tayogPiece.isExposed())
             {
@@ -177,19 +177,19 @@ public class Player : MonoBehaviourPun, IPunInstantiateMagicCallback
 
     public void AddToReserveList(TayogPiece tayogPiece)
     {
-        _activeTayogPiece.Remove(tayogPiece);
-        _reserveTayogPiece.Add(tayogPiece);
+        activeTayogPiece.Remove(tayogPiece);
+        reserveTayogPiece.Add(tayogPiece);
     }
 
     public void AddToActiveList(TayogPiece tayogPiece)
     {
-        _reserveTayogPiece.Remove(tayogPiece);
-        _activeTayogPiece.Add(tayogPiece);
+        reserveTayogPiece.Remove(tayogPiece);
+        activeTayogPiece.Add(tayogPiece);
     }
 
     public TayogPiece GetPooledTayogPiece(PieceType targetPieceType)
     {
-        foreach (TayogPiece reservedTayogPiece in _reserveTayogPiece)
+        foreach (TayogPiece reservedTayogPiece in reserveTayogPiece)
         {
             if (!reservedTayogPiece.gameObject.activeInHierarchy && reservedTayogPiece.GetPieceType().Equals(targetPieceType))
             {
