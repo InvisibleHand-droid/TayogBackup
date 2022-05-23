@@ -1,0 +1,576 @@
+fileFormatVersion: 2
+guid: 4183d581a5ec47c44b516874847ef2c7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7395104828692348932
+    second: Battlepass_exported_0
+  - first:
+      213: -1239522388232732152
+    second: Battlepass_exported_1
+  - first:
+      213: -5196888671509095070
+    second: Battlepass_exported_2
+  - first:
+      213: 7639646509955199869
+    second: Battlepass_exported_3
+  - first:
+      213: 4219489569806686013
+    second: Battlepass_exported_4
+  - first:
+      213: -3528567260117585527
+    second: Battlepass_exported_5
+  - first:
+      213: 7019938805142629708
+    second: Battlepass_exported_6
+  - first:
+      213: -1955546349474821066
+    second: Battlepass_exported_7
+  - first:
+      213: 7903177057440426637
+    second: Battlepass_exported_8
+  - first:
+      213: 2562627298251532693
+    second: Battlepass_exported_9
+  - first:
+      213: 8792166372320104216
+    second: Battlepass_exported_10
+  - first:
+      213: 3795831012045033668
+    second: Battlepass_exported_11
+  - first:
+      213: -8492443930854754105
+    second: Battlepass_exported_12
+  - first:
+      213: 7926734735811652757
+    second: Battlepass_exported_13
+  - first:
+      213: 5706299539329439948
+    second: Battlepass_exported_14
+  - first:
+      213: -3097038021705280657
+    second: Battlepass_exported_15
+  - first:
+      213: -8859087649536655489
+    second: Battlepass_exported_16
+  - first:
+      213: -4850693087501416737
+    second: Battlepass_exported_17
+  - first:
+      213: 6002256314809541905
+    second: Battlepass_exported_18
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Battlepass_exported_0
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 3816
+        width: 3608
+        height: 2051
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cff3409d65f4f5990800000000000000
+      internalID: -7395104828692348932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Battlepass_exported_1
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 3250
+        width: 4091
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8028e3684f45ccee0800000000000000
+      internalID: -1239522388232732152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Battlepass_exported_2
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 2876
+        width: 2036
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26dd27d9941f0e7b0800000000000000
+      internalID: -5196888671509095070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Battlepass_exported_3
+      rect:
+        serializedVersion: 2
+        x: 3233
+        y: 2253
+        width: 855
+        height: 830
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73be63360a750a60800000000000000
+      internalID: 7639646509955199869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Battlepass_exported_4
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 2111
+        width: 712
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d371bcd6863ae8a30800000000000000
+      internalID: 4219489569806686013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Battlepass_exported_5
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 2111
+        width: 737
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9813e96a5c2080fc0800000000000000
+      internalID: -3528567260117585527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Battlepass_exported_6
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 1609
+        width: 596
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4da1896625db6160800000000000000
+      internalID: 7019938805142629708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Battlepass_exported_7
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1569
+        width: 710
+        height: 377
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ccdb1c4f08cd4e0800000000000000
+      internalID: -1955546349474821066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Battlepass_exported_8
+      rect:
+        serializedVersion: 2
+        x: 3046
+        y: 1832
+        width: 192
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ae0c139a9bdad60800000000000000
+      internalID: 7903177057440426637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Battlepass_exported_9
+      rect:
+        serializedVersion: 2
+        x: 3536
+        y: 1817
+        width: 214
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 599600c43f7409320800000000000000
+      internalID: 2562627298251532693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Battlepass_exported_10
+      rect:
+        serializedVersion: 2
+        x: 4020
+        y: 1835
+        width: 204
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81f46449bbc040a70800000000000000
+      internalID: 8792166372320104216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Battlepass_exported_11
+      rect:
+        serializedVersion: 2
+        x: 3287
+        y: 1462
+        width: 206
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c01b5cb1308da430800000000000000
+      internalID: 3795831012045033668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Battlepass_exported_12
+      rect:
+        serializedVersion: 2
+        x: 3777
+        y: 1450
+        width: 172
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8fa726d37c42a80800000000000000
+      internalID: -8492443930854754105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Battlepass_exported_13
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 1030
+        width: 481
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59cadcc9e3b610e60800000000000000
+      internalID: 7926734735811652757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Battlepass_exported_14
+      rect:
+        serializedVersion: 2
+        x: 3211
+        y: 926
+        width: 266
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc8d4bf9239d03f40800000000000000
+      internalID: 5706299539329439948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Battlepass_exported_15
+      rect:
+        serializedVersion: 2
+        x: 3765
+        y: 948
+        width: 263
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f63d06cf35c1505d0800000000000000
+      internalID: -3097038021705280657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Battlepass_exported_16
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 712
+        width: 514
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f315f58b23e0580800000000000000
+      internalID: -8859087649536655489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Battlepass_exported_17
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 400
+        width: 471
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd609054650eeacb0800000000000000
+      internalID: -4850693087501416737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Battlepass_exported_18
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 262
+        width: 505
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1156117215c4c4350800000000000000
+      internalID: 6002256314809541905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: cb4c6dff30f8263458cd4fec8549b21f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

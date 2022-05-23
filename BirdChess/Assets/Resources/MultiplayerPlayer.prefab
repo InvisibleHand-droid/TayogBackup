@@ -72,8 +72,8 @@ MonoBehaviour:
   teamColor: 0
   tayogPieceSet: {fileID: 0}
   tayogSpriteSet: {fileID: 0}
-  _reserveTayogPiece: []
-  _activeTayogPiece: []
+  reserveTayogPiece: []
+  activeTayogPiece: []
   chosenSpriteID: 
   chosenPieceID: 
   previouslyPlayedTayogPiece: {fileID: 0}
