@@ -1,0 +1,441 @@
+fileFormatVersion: 2
+guid: 738db574a6042a74ebe465cdd8028330
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1814161490700793602
+    second: Quest_exported_0
+  - first:
+      213: 432272433186206605
+    second: Quest_exported_1
+  - first:
+      213: 7383970179182879278
+    second: Quest_exported_2
+  - first:
+      213: 8641929753939107186
+    second: Quest_exported_3
+  - first:
+      213: -647508829922309951
+    second: Quest_exported_4
+  - first:
+      213: -6233975605009587831
+    second: Quest_exported_5
+  - first:
+      213: 8392702643072568780
+    second: Quest_exported_6
+  - first:
+      213: -830587863231357345
+    second: Quest_exported_7
+  - first:
+      213: 114284167227126666
+    second: Quest_exported_8
+  - first:
+      213: -3790870821820467007
+    second: Quest_exported_9
+  - first:
+      213: 3523354464753806786
+    second: Quest_exported_10
+  - first:
+      213: 2841750050698505492
+    second: Quest_exported_11
+  - first:
+      213: 773683935889204399
+    second: Quest_exported_12
+  - first:
+      213: 5270121876115087374
+    second: Quest_exported_13
+  - first:
+      213: 5208230706593094977
+    second: Quest_exported_14
+  - first:
+      213: -6657394152263384358
+    second: Quest_exported_15
+  - first:
+      213: 3550888773304824842
+    second: Quest_exported_16
+  - first:
+      213: 8887347480408212277
+    second: Quest_exported_17
+  - first:
+      213: 207305489675922660
+    second: Quest_exported_18
+  - first:
+      213: 8647524155551730344
+    second: Quest_exported_19
+  - first:
+      213: -6066026193660323934
+    second: Quest_exported_20
+  - first:
+      213: 2812569301867298616
+    second: Quest_exported_21
+  - first:
+      213: 7405001823005765430
+    second: Quest_exported_22
+  - first:
+      213: 3455576496170269706
+    second: Quest_exported_23
+  - first:
+      213: 8229424696764527702
+    second: Quest_exported_24
+  - first:
+      213: -7879966531201784900
+    second: Quest_exported_25
+  - first:
+      213: 4165564488101163104
+    second: Quest_exported_26
+  - first:
+      213: 4428277376824600886
+    second: Quest_exported_27
+  - first:
+      213: -136280109788559234
+    second: Quest_exported_28
+  - first:
+      213: -9082237479041591607
+    second: Quest_exported_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Quest_exported_0
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 2594
+        width: 1525
+        height: 1222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 207f96293423d2910800000000000000
+      internalID: 1814161490700793602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quest_exported_1
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 2651
+        width: 63
+        height: 1152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d83f14adc7dbff500800000000000000
+      internalID: 432272433186206605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quest_exported_2
+      rect:
+        serializedVersion: 2
+        x: 2206
+        y: 3574
+        width: 93
+        height: 234
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e22e54a81c1297660800000000000000
+      internalID: 7383970179182879278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quest_exported_3
+      rect:
+        serializedVersion: 2
+        x: 2142
+        y: 3097
+        width: 1318
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d5b65035d4ee770800000000000000
+      internalID: 8641929753939107186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quest_exported_4
+      rect:
+        serializedVersion: 2
+        x: 2152
+        y: 2731
+        width: 1318
+        height: 173
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c84d8b56269307f0800000000000000
+      internalID: -647508829922309951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quest_exported_5
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 981
+        width: 1954
+        height: 1436
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981e3fc57387c79a0800000000000000
+      internalID: -6233975605009587831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quest_exported_6
+      rect:
+        serializedVersion: 2
+        x: 2579
+        y: 2182
+        width: 537
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd82d1669ed87470800000000000000
+      internalID: 8392702643072568780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quest_exported_7
+      rect:
+        serializedVersion: 2
+        x: 2567
+        y: 1208
+        width: 563
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e18513db82974f0800000000000000
+      internalID: -830587863231357345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quest_exported_10
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 311
+        width: 371
+        height: 376
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cdef69d73875e030800000000000000
+      internalID: 3523354464753806786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quest_exported_11
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 309
+        width: 397
+        height: 377
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d25586d9cef6720800000000000000
+      internalID: 2841750050698505492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quest_exported_12
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 315
+        width: 372
+        height: 371
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa42a17c07dacba00800000000000000
+      internalID: 773683935889204399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ac8e56fff47af2f46bba26d06a65b072
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
