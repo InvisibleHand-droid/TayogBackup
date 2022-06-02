@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6cc1f95b0eaaab7498d4327dc829f717
+guid: 7bc1e85362187284284ae7ae6ee1d59e
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -68,7 +68,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -104,7 +104,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -116,7 +116,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -128,7 +128,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -142,10 +142,10 @@ TextureImporter:
       name: Achievement_exported_0
       rect:
         serializedVersion: 2
-        x: 185
-        y: 3960
-        width: 3604
-        height: 335
+        x: 184
+        y: 3959
+        width: 3606
+        height: 338
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,10 +163,10 @@ TextureImporter:
       name: Achievement_exported_1
       rect:
         serializedVersion: 2
-        x: 185
-        y: 2267
-        width: 3604
-        height: 223
+        x: 184
+        y: 2266
+        width: 3606
+        height: 225
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,10 +184,10 @@ TextureImporter:
       name: Achievement_exported_2
       rect:
         serializedVersion: 2
-        x: 179
-        y: 507
-        width: 791
-        height: 1370
+        x: 178
+        y: 506
+        width: 794
+        height: 1372
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,10 +205,10 @@ TextureImporter:
       name: Achievement_exported_3
       rect:
         serializedVersion: 2
-        x: 1301
+        x: 1300
         y: 1365
-        width: 505
-        height: 512
+        width: 507
+        height: 513
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,10 +226,10 @@ TextureImporter:
       name: Achievement_exported_4
       rect:
         serializedVersion: 2
-        x: 2034
-        y: 1365
-        width: 542
-        height: 512
+        x: 2032
+        y: 1364
+        width: 545
+        height: 514
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,10 +247,10 @@ TextureImporter:
       name: Achievement_exported_5
       rect:
         serializedVersion: 2
-        x: 2858
-        y: 1330
-        width: 386
-        height: 236
+        x: 2857
+        y: 1329
+        width: 388
+        height: 238
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,10 +268,10 @@ TextureImporter:
       name: Achievement_exported_6
       rect:
         serializedVersion: 2
-        x: 3483
+        x: 3481
         y: 1413
-        width: 33
-        height: 40
+        width: 36
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,10 +289,10 @@ TextureImporter:
       name: Achievement_exported_7
       rect:
         serializedVersion: 2
-        x: 3644
-        y: 1405
-        width: 55
-        height: 55
+        x: 3643
+        y: 1404
+        width: 57
+        height: 57
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,10 +310,10 @@ TextureImporter:
       name: Achievement_exported_8
       rect:
         serializedVersion: 2
-        x: 3833
-        y: 1398
-        width: 71
-        height: 71
+        x: 3832
+        y: 1397
+        width: 73
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,10 +331,10 @@ TextureImporter:
       name: Achievement_exported_9
       rect:
         serializedVersion: 2
-        x: 4016
-        y: 1411
-        width: 36
-        height: 38
+        x: 4015
+        y: 1410
+        width: 38
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,10 +352,10 @@ TextureImporter:
       name: Achievement_exported_10
       rect:
         serializedVersion: 2
-        x: 1315
+        x: 1313
         y: 679
-        width: 505
-        height: 505
+        width: 508
+        height: 506
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,10 +373,10 @@ TextureImporter:
       name: Achievement_exported_11
       rect:
         serializedVersion: 2
-        x: 2073
+        x: 2072
         y: 679
-        width: 503
-        height: 505
+        width: 505
+        height: 506
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -393,7 +393,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 9b49646e2b8ae5b4884ed562d0e68f33
+    spriteID: 4982bfed7da9be4488b99df6f8b89e8d
     internalID: 0
     vertices: []
     indices: 

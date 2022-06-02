@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: db52cc86e92b3a14fbdbe24c3cc29ae6
+guid: e50c3abca351bdb46afd894d9b53f8e2
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -65,7 +65,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -101,7 +101,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,7 +113,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -125,7 +125,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -139,10 +139,10 @@ TextureImporter:
       name: Battlepass 2_Exported_0
       rect:
         serializedVersion: 2
-        x: 515
-        y: 2214
-        width: 3605
-        height: 2028
+        x: 514
+        y: 2213
+        width: 3608
+        height: 2030
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,9 +161,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 212
-        y: 338
-        width: 1763
-        height: 1575
+        y: 336
+        width: 1764
+        height: 1579
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,10 +181,10 @@ TextureImporter:
       name: Battlepass 2_Exported_2
       rect:
         serializedVersion: 2
-        x: 2246
-        y: 379
-        width: 64
-        height: 1258
+        x: 2245
+        y: 377
+        width: 65
+        height: 1262
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,10 +202,10 @@ TextureImporter:
       name: Battlepass 2_Exported_3
       rect:
         serializedVersion: 2
-        x: 2511
-        y: 1405
-        width: 91
-        height: 232
+        x: 2509
+        y: 1404
+        width: 94
+        height: 235
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,10 +223,10 @@ TextureImporter:
       name: Battlepass 2_Exported_4
       rect:
         serializedVersion: 2
-        x: 2880
-        y: 1466
-        width: 1546
-        height: 272
+        x: 2879
+        y: 1465
+        width: 1548
+        height: 274
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,10 +244,10 @@ TextureImporter:
       name: Battlepass 2_Exported_5
       rect:
         serializedVersion: 2
-        x: 2529
-        y: 1165
-        width: 55
-        height: 55
+        x: 2528
+        y: 1164
+        width: 57
+        height: 57
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,10 +265,10 @@ TextureImporter:
       name: Battlepass 2_Exported_6
       rect:
         serializedVersion: 2
-        x: 2880
-        y: 1051
-        width: 1546
-        height: 272
+        x: 2879
+        y: 1050
+        width: 1548
+        height: 274
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,10 +286,10 @@ TextureImporter:
       name: Battlepass 2_Exported_7
       rect:
         serializedVersion: 2
-        x: 2529
-        y: 867
-        width: 55
-        height: 54
+        x: 2528
+        y: 866
+        width: 57
+        height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,10 +307,10 @@ TextureImporter:
       name: Battlepass 2_Exported_8
       rect:
         serializedVersion: 2
-        x: 3005
-        y: 691
-        width: 493
-        height: 144
+        x: 3004
+        y: 690
+        width: 495
+        height: 146
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,10 +328,10 @@ TextureImporter:
       name: Battlepass 2_Exported_9
       rect:
         serializedVersion: 2
-        x: 3699
-        y: 452
-        width: 706
-        height: 376
+        x: 3698
+        y: 450
+        width: 709
+        height: 379
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -349,10 +349,10 @@ TextureImporter:
       name: Battlepass 2_Exported_10
       rect:
         serializedVersion: 2
-        x: 3005
-        y: 440
-        width: 493
-        height: 144
+        x: 3004
+        y: 439
+        width: 495
+        height: 146
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -369,7 +369,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d7b3dd9098d8aaf42954dcdce83dfd68
+    spriteID: 94a05bd92c6028e4eb0691992f0de878
     internalID: 0
     vertices: []
     indices: 

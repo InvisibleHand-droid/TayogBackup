@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7550e5c8e8da5b64988574f2a0d5edfc
+guid: 738db574a6042a74ebe465cdd8028330
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -27,6 +27,12 @@ TextureImporter:
       213: -830587863231357345
     second: Quest_exported_7
   - first:
+      213: 114284167227126666
+    second: Quest_exported_8
+  - first:
+      213: -3790870821820467007
+    second: Quest_exported_9
+  - first:
       213: 3523354464753806786
     second: Quest_exported_10
   - first:
@@ -35,6 +41,57 @@ TextureImporter:
   - first:
       213: 773683935889204399
     second: Quest_exported_12
+  - first:
+      213: 5270121876115087374
+    second: Quest_exported_13
+  - first:
+      213: 5208230706593094977
+    second: Quest_exported_14
+  - first:
+      213: -6657394152263384358
+    second: Quest_exported_15
+  - first:
+      213: 3550888773304824842
+    second: Quest_exported_16
+  - first:
+      213: 8887347480408212277
+    second: Quest_exported_17
+  - first:
+      213: 207305489675922660
+    second: Quest_exported_18
+  - first:
+      213: 8647524155551730344
+    second: Quest_exported_19
+  - first:
+      213: -6066026193660323934
+    second: Quest_exported_20
+  - first:
+      213: 2812569301867298616
+    second: Quest_exported_21
+  - first:
+      213: 7405001823005765430
+    second: Quest_exported_22
+  - first:
+      213: 3455576496170269706
+    second: Quest_exported_23
+  - first:
+      213: 8229424696764527702
+    second: Quest_exported_24
+  - first:
+      213: -7879966531201784900
+    second: Quest_exported_25
+  - first:
+      213: 4165564488101163104
+    second: Quest_exported_26
+  - first:
+      213: 4428277376824600886
+    second: Quest_exported_27
+  - first:
+      213: -136280109788559234
+    second: Quest_exported_28
+  - first:
+      213: -9082237479041591607
+    second: Quest_exported_29
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -101,7 +158,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,7 +170,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -125,7 +182,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -144,7 +201,7 @@ TextureImporter:
         width: 1525
         height: 1222
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -165,7 +222,7 @@ TextureImporter:
         width: 63
         height: 1152
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -184,9 +241,9 @@ TextureImporter:
         x: 2206
         y: 3574
         width: 93
-        height: 233
+        height: 234
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -207,7 +264,7 @@ TextureImporter:
         width: 1318
         height: 312
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -228,7 +285,7 @@ TextureImporter:
         width: 1318
         height: 173
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,7 +306,7 @@ TextureImporter:
         width: 1954
         height: 1436
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -270,7 +327,7 @@ TextureImporter:
         width: 537
         height: 215
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -291,7 +348,7 @@ TextureImporter:
         width: 563
         height: 614
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -312,7 +369,7 @@ TextureImporter:
         width: 371
         height: 376
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -333,7 +390,7 @@ TextureImporter:
         width: 397
         height: 377
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -354,7 +411,7 @@ TextureImporter:
         width: 372
         height: 371
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -369,7 +426,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: af0903d2511b9224f80017c9a9361766
+    spriteID: ac8e56fff47af2f46bba26d06a65b072
     internalID: 0
     vertices: []
     indices: 
