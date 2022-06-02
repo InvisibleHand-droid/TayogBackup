@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b627d53c8ea67747b248ff9d14cd49a, type: 3}
   m_Name: ReversePieceSet
   m_EditorClassIdentifier: 
-  DeveloperNote: 
+  _DeveloperNote: 
   generatedTayogPiecesWhite:
   - pieceType: 0
     pieceMesh: {fileID: -1105509963243994394, guid: 8eec64d4362ac854796dea2451207aeb, type: 3}
@@ -47,4 +47,4 @@ MonoBehaviour:
     pieceMesh: {fileID: -1794731768876064640, guid: 8eec64d4362ac854796dea2451207aeb, type: 3}
     pieceMaterial: {fileID: 8749111527912355754, guid: 8eec64d4362ac854796dea2451207aeb, type: 3}
     tayogPiecePrefab: {fileID: -1617110074044817927, guid: de0249795b6862f45b8714cd16c19c63, type: 3}
-  ID: Reverse
+  ID: REVERSE

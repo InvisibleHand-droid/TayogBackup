@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86a7fd121a5437a43b8eaccab82b7e06, type: 3}
   m_Name: TayogSpriteSetCollection
   m_EditorClassIdentifier: 
-  DeveloperNote: 
+  _DeveloperNote: 
   tayogSpriteSets:
   - {fileID: 11400000, guid: 2bdb30404ac58f64993f9beb99187aef, type: 2}
-  - {fileID: 11400000, guid: bda1f3fb453168443bcc70e74017d110, type: 2}
+  - {fileID: 11400000, guid: 421aa3f25036aae4b863a0b84545f840, type: 2}
+  - {fileID: 11400000, guid: 33dbea4cb90f48b40baebe7a5f4e339c, type: 2}
+  - {fileID: 11400000, guid: 24677283a94b0d74fbe08f3a7ff283a4, type: 2}
+  - {fileID: 11400000, guid: 70e1f7261aaf221409f514499cecf475, type: 2}

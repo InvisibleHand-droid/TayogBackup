@@ -8,4 +8,5 @@ public class BoardVisual: ScriptableGameObject
     public GameObject boardPrefab;
     public string boardID;
     public AudioClip boardTheme;
+    public Vector3 offset;
 }

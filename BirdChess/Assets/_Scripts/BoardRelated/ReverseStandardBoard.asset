@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 256fe2236ab50e448a17ba1c45efa7b0, type: 3}
   m_Name: ReverseStandardBoard
   m_EditorClassIdentifier: 
-  DeveloperNote: 
+  _DeveloperNote: 
   boardPrefab: {fileID: 3904790716617809834, guid: a46ae8d12caab54469bc8d697fc46859, type: 3}
-  boardID: Reverse
+  boardID: REVERSE
   boardTheme: {fileID: 0}

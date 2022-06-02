@@ -12,71 +12,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b627d53c8ea67747b248ff9d14cd49a, type: 3}
   m_Name: ReverseStandard
   m_EditorClassIdentifier: 
-  DeveloperNote: 
+  _DeveloperNote: 
   generatedTayogPiecesWhite:
-  - tayogPiecePrefab: {fileID: -5382110701207105815, guid: 64b3c234d55b68a44842112619b5e77b, type: 3}
-    pieceType: 0
-    pieceAnimator: {fileID: 0}
-    pieceSprite: {fileID: 21300000, guid: da4c939d8640d6a4fbb5cd64d3ebb29b, type: 3}
-    summonSound: {fileID: 0}
-    selectSound: {fileID: 0}
-    attackSound: {fileID: 0}
-    captureSound: {fileID: 0}
-  - tayogPiecePrefab: {fileID: -910155491960092738, guid: 9f77906285e1359419d806b469fdf807, type: 3}
-    pieceType: 1
-    pieceAnimator: {fileID: 0}
-    pieceSprite: {fileID: 21300000, guid: ed1ddeb463ef868418d296e6a238d93a, type: 3}
-    summonSound: {fileID: 0}
-    selectSound: {fileID: 0}
-    attackSound: {fileID: 0}
-    captureSound: {fileID: 0}
-  - tayogPiecePrefab: {fileID: -2969565110354116509, guid: 6dccb3e7ac5930945bf2148b7027e7ed, type: 3}
-    pieceType: 2
-    pieceAnimator: {fileID: 0}
-    pieceSprite: {fileID: 21300000, guid: 2f69fc3236e240940bd5d1a63e29cbcf, type: 3}
-    summonSound: {fileID: 0}
-    selectSound: {fileID: 0}
-    attackSound: {fileID: 0}
-    captureSound: {fileID: 0}
-  - tayogPiecePrefab: {fileID: 9045358483908805594, guid: 2136bdb2b8e456d42abe619cdd9505f8, type: 3}
-    pieceType: 3
-    pieceAnimator: {fileID: 0}
-    pieceSprite: {fileID: 21300000, guid: d7ab400c12ff784449caee40ecad4307, type: 3}
-    summonSound: {fileID: 0}
-    selectSound: {fileID: 0}
-    attackSound: {fileID: 0}
-    captureSound: {fileID: 0}
+  - pieceType: 0
+    pieceMesh: {fileID: 0}
+    pieceMaterial: {fileID: 0}
+    tayogPiecePrefab: {fileID: -5382110701207105815, guid: 64b3c234d55b68a44842112619b5e77b, type: 3}
+  - pieceType: 1
+    pieceMesh: {fileID: 0}
+    pieceMaterial: {fileID: 0}
+    tayogPiecePrefab: {fileID: -910155491960092738, guid: 9f77906285e1359419d806b469fdf807, type: 3}
+  - pieceType: 2
+    pieceMesh: {fileID: 0}
+    pieceMaterial: {fileID: 0}
+    tayogPiecePrefab: {fileID: -2969565110354116509, guid: 6dccb3e7ac5930945bf2148b7027e7ed, type: 3}
+  - pieceType: 3
+    pieceMesh: {fileID: 0}
+    pieceMaterial: {fileID: 0}
+    tayogPiecePrefab: {fileID: 9045358483908805594, guid: 2136bdb2b8e456d42abe619cdd9505f8, type: 3}
   generatedTayogPiecesBlack:
-  - tayogPiecePrefab: {fileID: 1258550324411057616, guid: 2ce86796fa38ba3449ad57f45c9cddd8, type: 3}
-    pieceType: 0
-    pieceAnimator: {fileID: 0}
-    pieceSprite: {fileID: 21300000, guid: 911b35044b34b744ea1c07a60009f210, type: 3}
-    summonSound: {fileID: 0}
-    selectSound: {fileID: 0}
-    attackSound: {fileID: 0}
-    captureSound: {fileID: 0}
-  - tayogPiecePrefab: {fileID: 6523553108664958148, guid: 4addd1c41c15df34081c49bd2d871576, type: 3}
-    pieceType: 1
-    pieceAnimator: {fileID: 0}
-    pieceSprite: {fileID: 21300000, guid: e738f026c008e0448ac50fa77df4c0e1, type: 3}
-    summonSound: {fileID: 0}
-    selectSound: {fileID: 0}
-    attackSound: {fileID: 0}
-    captureSound: {fileID: 0}
-  - tayogPiecePrefab: {fileID: -7475676872303219504, guid: c2f63764236e6a54d8fd79875e2034ff, type: 3}
-    pieceType: 2
-    pieceAnimator: {fileID: 0}
-    pieceSprite: {fileID: 21300000, guid: 6a5adcd1eac69184aa6db423b3a77132, type: 3}
-    summonSound: {fileID: 0}
-    selectSound: {fileID: 0}
-    attackSound: {fileID: 0}
-    captureSound: {fileID: 0}
-  - tayogPiecePrefab: {fileID: -1617110074044817927, guid: de0249795b6862f45b8714cd16c19c63, type: 3}
-    pieceType: 3
-    pieceAnimator: {fileID: 0}
-    pieceSprite: {fileID: 21300000, guid: 082352a49f4182b419469f4d19d00705, type: 3}
-    summonSound: {fileID: 0}
-    selectSound: {fileID: 0}
-    attackSound: {fileID: 0}
-    captureSound: {fileID: 0}
-  ID: Reverse
+  - pieceType: 0
+    pieceMesh: {fileID: 0}
+    pieceMaterial: {fileID: 0}
+    tayogPiecePrefab: {fileID: 1258550324411057616, guid: 2ce86796fa38ba3449ad57f45c9cddd8, type: 3}
+  - pieceType: 1
+    pieceMesh: {fileID: 0}
+    pieceMaterial: {fileID: 0}
+    tayogPiecePrefab: {fileID: 6523553108664958148, guid: 4addd1c41c15df34081c49bd2d871576, type: 3}
+  - pieceType: 2
+    pieceMesh: {fileID: 0}
+    pieceMaterial: {fileID: 0}
+    tayogPiecePrefab: {fileID: -7475676872303219504, guid: c2f63764236e6a54d8fd79875e2034ff, type: 3}
+  - pieceType: 3
+    pieceMesh: {fileID: 0}
+    pieceMaterial: {fileID: 0}
+    tayogPiecePrefab: {fileID: -1617110074044817927, guid: de0249795b6862f45b8714cd16c19c63, type: 3}
+  ID: REVERSE

@@ -24,6 +24,7 @@ public class GameManager : Singleton<GameManager>
 {
     public GameSettings gameSettings;
     public GameObject boardParent;
+    [SerializeField] private CameraController _cameraController;
 
     public List<Player> players = new List<Player>();
     WaitForSeconds shortWait = new WaitForSeconds(1f);
@@ -32,6 +33,7 @@ public class GameManager : Singleton<GameManager>
     //when a piece is added to reserve, count Manok, if 8, player win
     //at the end of a player's action/move, if no Manok of the opponents send their headcount, player win
     public static GameState currentGameState;
+
     public override void Awake()
     {
         base.Awake();
@@ -120,16 +122,11 @@ public class GameManager : Singleton<GameManager>
 
     IEnumerator OnlineSetupSequence()
     {
-        foreach (BoardVisual boardVisual in VisualsManager.Instance.boardVisualsCollection.boardVisualsCollection)
-        {
-            if (boardVisual.boardID == PlayerPrefs.GetString(TayogRef.BOARD_ID))
-            {
-                Instantiate(boardVisual.boardPrefab, boardParent.transform.position, Quaternion.identity);
-                break;
-            }
-        }
+        SpawnBoard();
+
         Player localPlayer = null;
         Player nonLocalPlayer = null;
+
         while (players.Count != 2)
         {
             yield return null;
@@ -148,10 +145,10 @@ public class GameManager : Singleton<GameManager>
         }
 
         UIManager.Instance.SetUIDependencies(0, localPlayer);
-        UIManager.Instance.SetPlayerHeaderTexts(0, localPlayer);
+        //UIManager.Instance.SetPlayerHeaderTexts(0, localPlayer);
 
         UIManager.Instance.SetUIDependencies(1, nonLocalPlayer);
-        UIManager.Instance.SetPlayerHeaderTexts(1, nonLocalPlayer);
+        //UIManager.Instance.SetPlayerHeaderTexts(1, nonLocalPlayer);
 
         if (!PhotonNetwork.IsMasterClient) yield break;
 
@@ -181,14 +178,7 @@ public class GameManager : Singleton<GameManager>
 
     IEnumerator LocalSetupSequence()
     {
-        foreach (BoardVisual boardVisual in VisualsManager.Instance.boardVisualsCollection.boardVisualsCollection)
-        {
-            if (boardVisual.boardID == PlayerPrefs.GetString(TayogRef.BOARD_ID))
-            {
-                Instantiate(boardVisual.boardPrefab, boardParent.transform.position, Quaternion.identity);
-                break;
-            }
-        }
+        SpawnBoard();
 
         while (players.Count != 2)
         {
@@ -222,6 +212,32 @@ public class GameManager : Singleton<GameManager>
 
 
         currentGameState = GameState.GoingOn;
+    }
+
+    private void SpawnBoard()
+    {
+        Debug.Log(PlayerPrefs.GetString(TayogRef.BOARD_ID));
+        foreach (BoardVisual boardVisual in VisualsManager.Instance.boardVisualsCollection.boardVisualsCollection)
+        {
+            if (boardVisual.boardID == PlayerPrefs.GetString(TayogRef.BOARD_ID))
+            {
+                if (boardParent.transform.childCount > 0)
+                {
+                    foreach (Transform child in boardParent.transform)
+                    {
+                        Destroy(child.gameObject);
+                    }
+                }
+                Debug.Log("something");
+                GameObject board = Instantiate(boardVisual.boardPrefab);
+                board.transform.SetParent(boardParent.transform);
+                board.transform.localPosition = new Vector3(0, 0, 0) + boardVisual.offset;
+                board.transform.localRotation = new Quaternion(0, 0, 0, 0);
+                board.transform.localScale = new Vector3(board.transform.localScale.x, board.transform.localScale.y, board.transform.localScale.z);
+                _cameraController.UpdateCameraTarget();
+                break;
+            }
+        }
     }
 }
 

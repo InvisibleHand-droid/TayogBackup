@@ -109,7 +109,7 @@ public class MainMenuUIManager : MonoBehaviour
 
                     GameObject board = Instantiate(boardVisual.boardPrefab);
                     board.transform.SetParent(_boardIndicator.transform);
-                    board.transform.localPosition = new Vector3(0, 0, 0);
+                    board.transform.localPosition = new Vector3(0, 0, 0) + boardVisual.offset;
                     board.transform.localRotation = new Quaternion(0,0,0,0);
                     board.transform.localScale = new Vector3(1,1,1);
                 }

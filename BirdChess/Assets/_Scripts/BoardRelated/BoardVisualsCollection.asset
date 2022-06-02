@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4285a525489a374aae77e2deb476b80, type: 3}
   m_Name: BoardVisualsCollection
   m_EditorClassIdentifier: 
-  DeveloperNote: 
+  _DeveloperNote: 
   boardVisualsCollection:
   - {fileID: 11400000, guid: c12af93358ac882428288ac6e76747e3, type: 2}
   - {fileID: 11400000, guid: 4099d63f1c01a3d48b810903d9a1f0ac, type: 2}
+  - {fileID: 11400000, guid: cf1f66a635a4be64b8cb1379d92af25e, type: 2}
+  - {fileID: 11400000, guid: e22094b10d25b724196030a66dd9c9e3, type: 2}
+  - {fileID: 11400000, guid: e4a7b0daf6403f74fa95df005ef8153d, type: 2}

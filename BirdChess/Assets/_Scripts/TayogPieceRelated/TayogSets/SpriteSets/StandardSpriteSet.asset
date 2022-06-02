@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc8bb4b9f64d23429182e21a7d8cfc4, type: 3}
   m_Name: StandardSpriteSet
   m_EditorClassIdentifier: 
-  DeveloperNote: 
+  _DeveloperNote: 
   generatedTayogSpriteSetWhite:
   - pieceType: 0
     pieceSprite: {fileID: 21300000, guid: 911b35044b34b744ea1c07a60009f210, type: 3}
@@ -71,5 +71,5 @@ MonoBehaviour:
     selectSound: {fileID: 0}
     attackSound: {fileID: 0}
     captureSound: {fileID: 0}
-  ID: Standard
+  ID: STANDARD
   indicator: {fileID: 21300000, guid: 911b35044b34b744ea1c07a60009f210, type: 3}

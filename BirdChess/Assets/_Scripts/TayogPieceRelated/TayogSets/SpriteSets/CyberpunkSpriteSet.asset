@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc8bb4b9f64d23429182e21a7d8cfc4, type: 3}
+  m_Name: CyberpunkSpriteSet
+  m_EditorClassIdentifier: 
+  _DeveloperNote: 
+  generatedTayogSpriteSetWhite:
+  - pieceType: 0
+    pieceSprite: {fileID: 21300000, guid: 109052b91b90c7045bea87146c3fdcc4, type: 3}
+    pieceAnimator: {fileID: 0}
+    summonSound: {fileID: 0}
+    selectSound: {fileID: 0}
+    attackSound: {fileID: 0}
+    captureSound: {fileID: 0}
+  - pieceType: 1
+    pieceSprite: {fileID: 21300000, guid: 7590744f833034f4097bf7353b468181, type: 3}
+    pieceAnimator: {fileID: 0}
+    summonSound: {fileID: 0}
+    selectSound: {fileID: 0}
+    attackSound: {fileID: 0}
+    captureSound: {fileID: 0}
+  - pieceType: 2
+    pieceSprite: {fileID: 21300000, guid: 60a6d97d07a38474d8369b64241aeca6, type: 3}
+    pieceAnimator: {fileID: 0}
+    summonSound: {fileID: 0}
+    selectSound: {fileID: 0}
+    attackSound: {fileID: 0}
+    captureSound: {fileID: 0}
+  - pieceType: 3
+    pieceSprite: {fileID: 21300000, guid: 1f05ee94ee201594cb398b10f6a66d04, type: 3}
+    pieceAnimator: {fileID: 0}
+    summonSound: {fileID: 0}
+    selectSound: {fileID: 0}
+    attackSound: {fileID: 0}
+    captureSound: {fileID: 0}
+  generatedTayogSpriteSetBlack:
+  - pieceType: 0
+    pieceSprite: {fileID: 21300000, guid: a19b8480323b1e745bcd30a999e1a713, type: 3}
+    pieceAnimator: {fileID: 0}
+    summonSound: {fileID: 0}
+    selectSound: {fileID: 0}
+    attackSound: {fileID: 0}
+    captureSound: {fileID: 0}
+  - pieceType: 1
+    pieceSprite: {fileID: 21300000, guid: 1d4dc3a0357843f4a8d225fef3aee620, type: 3}
+    pieceAnimator: {fileID: 0}
+    summonSound: {fileID: 0}
+    selectSound: {fileID: 0}
+    attackSound: {fileID: 0}
+    captureSound: {fileID: 0}
+  - pieceType: 2
+    pieceSprite: {fileID: 21300000, guid: eb8f9fe46ee329a4585e03ca74164b07, type: 3}
+    pieceAnimator: {fileID: 0}
+    summonSound: {fileID: 0}
+    selectSound: {fileID: 0}
+    attackSound: {fileID: 0}
+    captureSound: {fileID: 0}
+  - pieceType: 3
+    pieceSprite: {fileID: 21300000, guid: 440c5abc771360f4bbe929d17d62560f, type: 3}
+    pieceAnimator: {fileID: 0}
+    summonSound: {fileID: 0}
+    selectSound: {fileID: 0}
+    attackSound: {fileID: 0}
+    captureSound: {fileID: 0}
+  ID: CYBERPUNK
+  indicator: {fileID: 0}

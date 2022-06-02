@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc8bb4b9f64d23429182e21a7d8cfc4, type: 3}
+  m_Name: RoyaltySpriteSet
+  m_EditorClassIdentifier: 
+  _DeveloperNote: 
+  generatedTayogSpriteSetWhite:
+  - pieceType: 0
+    pieceSprite: {fileID: 21300000, guid: d8beee5cc404e424a931b08375893523, type: 3}
+    pieceAnimator: {fileID: 0}
+    summonSound: {fileID: 0}
+    selectSound: {fileID: 0}
+    attackSound: {fileID: 0}
+    captureSound: {fileID: 0}
+  - pieceType: 1
+    pieceSprite: {fileID: 21300000, guid: a1a93d24cedb92e4a8d0cd412c7bbda8, type: 3}
+    pieceAnimator: {fileID: 0}
+    summonSound: {fileID: 0}
+    selectSound: {fileID: 0}
+    attackSound: {fileID: 0}
+    captureSound: {fileID: 0}
+  - pieceType: 2
+    pieceSprite: {fileID: 21300000, guid: 5c067ef0402d78640ab9b5b5166bb298, type: 3}
+    pieceAnimator: {fileID: 0}
+    summonSound: {fileID: 0}
+    selectSound: {fileID: 0}
+    attackSound: {fileID: 0}
+    captureSound: {fileID: 0}
+  - pieceType: 3
+    pieceSprite: {fileID: 21300000, guid: b4630e8c84cafad43ab072e9f1ad7c35, type: 3}
+    pieceAnimator: {fileID: 0}
+    summonSound: {fileID: 0}
+    selectSound: {fileID: 0}
+    attackSound: {fileID: 0}
+    captureSound: {fileID: 0}
+  generatedTayogSpriteSetBlack:
+  - pieceType: 0
+    pieceSprite: {fileID: 21300000, guid: 38c3febd7c81f1b4e84ef9f198e33f12, type: 3}
+    pieceAnimator: {fileID: 0}
+    summonSound: {fileID: 0}
+    selectSound: {fileID: 0}
+    attackSound: {fileID: 0}
+    captureSound: {fileID: 0}
+  - pieceType: 1
+    pieceSprite: {fileID: 21300000, guid: 493f682806b133643a9449353cf4994e, type: 3}
+    pieceAnimator: {fileID: 0}
+    summonSound: {fileID: 0}
+    selectSound: {fileID: 0}
+    attackSound: {fileID: 0}
+    captureSound: {fileID: 0}
+  - pieceType: 2
+    pieceSprite: {fileID: 21300000, guid: 706d4967fc3990044af420b2820ca055, type: 3}
+    pieceAnimator: {fileID: 0}
+    summonSound: {fileID: 0}
+    selectSound: {fileID: 0}
+    attackSound: {fileID: 0}
+    captureSound: {fileID: 0}
+  - pieceType: 3
+    pieceSprite: {fileID: 21300000, guid: 10cefe1a98f6c654193a6ab11d5f5aba, type: 3}
+    pieceAnimator: {fileID: 0}
+    summonSound: {fileID: 0}
+    selectSound: {fileID: 0}
+    attackSound: {fileID: 0}
+    captureSound: {fileID: 0}
+  ID: ROYALTY
+  indicator: {fileID: 0}

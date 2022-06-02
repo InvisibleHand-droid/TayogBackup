@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc8bb4b9f64d23429182e21a7d8cfc4, type: 3}
+  m_Name: NinjaSpriteSet
+  m_EditorClassIdentifier: 
+  _DeveloperNote: 
+  generatedTayogSpriteSetWhite:
+  - pieceType: 0
+    pieceSprite: {fileID: 21300000, guid: 541aea97abcc55540a8c615120535158, type: 3}
+    pieceAnimator: {fileID: 0}
+    summonSound: {fileID: 0}
+    selectSound: {fileID: 0}
+    attackSound: {fileID: 0}
+    captureSound: {fileID: 0}
+  - pieceType: 1
+    pieceSprite: {fileID: 21300000, guid: d1a2787681533e545b7c0cb87997f363, type: 3}
+    pieceAnimator: {fileID: 0}
+    summonSound: {fileID: 0}
+    selectSound: {fileID: 0}
+    attackSound: {fileID: 0}
+    captureSound: {fileID: 0}
+  - pieceType: 2
+    pieceSprite: {fileID: 21300000, guid: 9e2ff1aac4b44b04db204397a6022811, type: 3}
+    pieceAnimator: {fileID: 0}
+    summonSound: {fileID: 0}
+    selectSound: {fileID: 0}
+    attackSound: {fileID: 0}
+    captureSound: {fileID: 0}
+  - pieceType: 3
+    pieceSprite: {fileID: 21300000, guid: cb118deca03c80c478da87383103731d, type: 3}
+    pieceAnimator: {fileID: 0}
+    summonSound: {fileID: 0}
+    selectSound: {fileID: 0}
+    attackSound: {fileID: 0}
+    captureSound: {fileID: 0}
+  generatedTayogSpriteSetBlack:
+  - pieceType: 0
+    pieceSprite: {fileID: 21300000, guid: 146563326c3eec748913468fad9d7612, type: 3}
+    pieceAnimator: {fileID: 0}
+    summonSound: {fileID: 0}
+    selectSound: {fileID: 0}
+    attackSound: {fileID: 0}
+    captureSound: {fileID: 0}
+  - pieceType: 1
+    pieceSprite: {fileID: 21300000, guid: d1a2787681533e545b7c0cb87997f363, type: 3}
+    pieceAnimator: {fileID: 0}
+    summonSound: {fileID: 0}
+    selectSound: {fileID: 0}
+    attackSound: {fileID: 0}
+    captureSound: {fileID: 0}
+  - pieceType: 2
+    pieceSprite: {fileID: 21300000, guid: 37d14e019bdd32d42aba73794d89f04e, type: 3}
+    pieceAnimator: {fileID: 0}
+    summonSound: {fileID: 0}
+    selectSound: {fileID: 0}
+    attackSound: {fileID: 0}
+    captureSound: {fileID: 0}
+  - pieceType: 3
+    pieceSprite: {fileID: 21300000, guid: cb118deca03c80c478da87383103731d, type: 3}
+    pieceAnimator: {fileID: 0}
+    summonSound: {fileID: 0}
+    selectSound: {fileID: 0}
+    attackSound: {fileID: 0}
+    captureSound: {fileID: 0}
+  ID: NINJA
+  indicator: {fileID: 0}

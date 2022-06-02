@@ -30,6 +30,6 @@ public class TayogRef
     public const string PIECE_ID = "PieceID";
     public const string SPRITE_ID = "SpriteID";
     public const string BOARD_ID = "BoardID";
-    public const string STANDARD = "Standard";
+    public const string STANDARD = "STANDARD";
     #endregion
 }

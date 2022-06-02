@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 256fe2236ab50e448a17ba1c45efa7b0, type: 3}
   m_Name: StandardBoard
   m_EditorClassIdentifier: 
-  DeveloperNote: 
+  _DeveloperNote: 
   boardPrefab: {fileID: 3904790716617809834, guid: 3aeb0304816d17c49a7267e11ce217c3, type: 3}
-  boardID: Standard
+  boardID: STANDARD
+  boardTheme: {fileID: 0}

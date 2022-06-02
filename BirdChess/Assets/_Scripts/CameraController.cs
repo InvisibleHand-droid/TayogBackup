@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 using UnityEngine.InputSystem;
+
 public class CameraController : MonoBehaviour
 {
     [Range(0f, 10f)] public float LookSpeed = 1f;
@@ -93,5 +94,15 @@ public class CameraController : MonoBehaviour
                 //switch from p2 to p1 always turn to the right
                 break;
         }
+    }
+
+    public void UpdateCameraTarget()
+    {
+        GameObject target = GameObject.FindGameObjectWithTag("Board");
+
+        cinemachineVirtualCamera.m_LookAt = target.transform;
+        cinemachineVirtualCamera.m_Follow = target.transform;
+
+        Debug.Log(cinemachineVirtualCamera.m_LookAt.name);
     }
 }

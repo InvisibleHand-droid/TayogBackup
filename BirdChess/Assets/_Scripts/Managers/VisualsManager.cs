@@ -10,28 +10,34 @@ public class VisualsManager : SingletonPersistent<VisualsManager>
     [SerializeField] private List<string> _tayogSpriteSetIDs = new List<string>();
     [SerializeField] private List<string> _tayogPieceSetIDs = new List<string>();
     [SerializeField] private List<string> _tayogBoardIDs = new List<string>();
+    [SerializeField] private GameObject _debugPanel;
 
     private void Start()
     {
         StoreIDs();
 
-        if(!PlayerPrefs.HasKey(TayogRef.SPRITE_ID))
+        if (!PlayerPrefs.HasKey(TayogRef.SPRITE_ID))
         {
             Debug.LogError("Set Sprite skin to Standard");
             PlayerPrefs.SetString(TayogRef.SPRITE_ID, TayogRef.STANDARD);
         }
 
-        if(!PlayerPrefs.HasKey(TayogRef.PIECE_ID))
+        if (!PlayerPrefs.HasKey(TayogRef.PIECE_ID))
         {
             Debug.LogError("Set Piece Skin to Standard");
             PlayerPrefs.SetString(TayogRef.PIECE_ID, TayogRef.STANDARD);
         }
 
-        if(!PlayerPrefs.HasKey(TayogRef.BOARD_ID))
+        if (!PlayerPrefs.HasKey(TayogRef.BOARD_ID))
         {
             Debug.LogError("Set Piece Skin to Standard");
-            PlayerPrefs.SetString(TayogRef.PIECE_ID, TayogRef.STANDARD);
+            PlayerPrefs.SetString(TayogRef.BOARD_ID, TayogRef.STANDARD);
         }
+    }
+
+    private void Update()
+    {
+        EnableDebugPanel();
     }
 
     private void StoreIDs()
@@ -63,9 +69,9 @@ public class VisualsManager : SingletonPersistent<VisualsManager>
 
     public void SetSpriteSkin(string ID)
     {
-        if (_tayogSpriteSetIDs.Contains(ID))
+        if (_tayogSpriteSetIDs.Contains(ID.ToUpper()))
         {
-            PlayerPrefs.SetString(TayogRef.SPRITE_ID, ID);
+            PlayerPrefs.SetString(TayogRef.SPRITE_ID, ID.ToUpper());
             Debug.LogError($"{ID} is set.");
         }
         else
@@ -77,9 +83,9 @@ public class VisualsManager : SingletonPersistent<VisualsManager>
 
     public void SetPieceSkin(string ID)
     {
-        if (_tayogPieceSetIDs.Contains(ID))
+        if (_tayogPieceSetIDs.Contains(ID.ToUpper()))
         {
-            PlayerPrefs.SetString(TayogRef.PIECE_ID, ID);
+            PlayerPrefs.SetString(TayogRef.PIECE_ID, ID.ToUpper());
             Debug.LogError($"{ID} is set.");
         }
         else
@@ -91,9 +97,9 @@ public class VisualsManager : SingletonPersistent<VisualsManager>
 
     public void SetBoardSkin(string ID)
     {
-        if (_tayogPieceSetIDs.Contains(ID))
+        if (_tayogPieceSetIDs.Contains(ID.ToUpper()))
         {
-            PlayerPrefs.SetString(TayogRef.BOARD_ID, ID);
+            PlayerPrefs.SetString(TayogRef.BOARD_ID, ID.ToUpper());
             Debug.LogError($"{ID} Board is set.");
         }
         else
@@ -103,8 +109,16 @@ public class VisualsManager : SingletonPersistent<VisualsManager>
         }
     }
 
-    private void OnApplicationQuit() {
+    private void OnApplicationQuit()
+    {
         PlayerPrefs.DeleteAll();
     }
 
+    public void EnableDebugPanel()
+    {
+        if (Input.GetKeyDown(KeyCode.F2))
+        {
+            _debugPanel.SetActive(!_debugPanel.activeSelf);
+        }
+    }
 }

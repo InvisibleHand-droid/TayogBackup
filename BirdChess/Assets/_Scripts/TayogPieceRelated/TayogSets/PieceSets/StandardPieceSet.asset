@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b627d53c8ea67747b248ff9d14cd49a, type: 3}
   m_Name: StandardPieceSet
   m_EditorClassIdentifier: 
-  DeveloperNote: 
+  _DeveloperNote: 
   generatedTayogPiecesWhite:
   - pieceType: 0
     pieceMesh: {fileID: 5479372859306793245, guid: 8eec64d4362ac854796dea2451207aeb, type: 3}
@@ -47,4 +47,4 @@ MonoBehaviour:
     pieceMesh: {fileID: 5064989341281567872, guid: 8eec64d4362ac854796dea2451207aeb, type: 3}
     pieceMaterial: {fileID: -2534211557209431843, guid: 8eec64d4362ac854796dea2451207aeb, type: 3}
     tayogPiecePrefab: {fileID: 9045358483908805594, guid: 2136bdb2b8e456d42abe619cdd9505f8, type: 3}
-  ID: Standard
+  ID: STANDARD
