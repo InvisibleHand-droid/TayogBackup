@@ -82,6 +82,7 @@ public class UIManager : Singleton<UIManager>
     public void RPCUpdateStateText()
     {
         _stateText.SetText(TurnManager.Instance.GetCurrentPlayer().name);
+        _stateText.GetComponent<FadeText>().StartFade();
     }
 
     public void SetPlayerHeaderTexts(int i, Player player)
