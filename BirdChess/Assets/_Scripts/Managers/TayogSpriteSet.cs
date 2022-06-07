@@ -8,6 +8,7 @@ public class GeneratedTayogSprite
     public PieceType pieceType;
     public Sprite pieceSprite;
     public AnimatorOverrideController pieceAnimator;
+    
 
     public AudioClip summonSound;
     public AudioClip selectSound;

@@ -114,9 +114,14 @@ public class NetworkManager : SingletonPersistent<NetworkManager>, ILobbyCallbac
     {
         yield return new WaitForSeconds(5f);
 
-        PhotonNetwork.LeaveRoom();
+        LeaveRoom();
         Debug.LogError("A player has disconnected so room was closed.");
 
         yield return null;
+    }
+
+    public void LeaveRoom()
+    {
+        PhotonNetwork.LeaveRoom();
     }
 }

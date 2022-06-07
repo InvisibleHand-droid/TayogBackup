@@ -22,6 +22,6 @@ public class MultiplayerCameraScript : MonoBehaviour
 
     private void FlipCamera()
     {
-        _cinemachineCamera.m_XAxis.Value = 180;
+        _cinemachineCamera.m_XAxis.Value = 0;
     }
 }

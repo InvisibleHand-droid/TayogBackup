@@ -232,12 +232,17 @@ public class GameManager : Singleton<GameManager>
                 GameObject board = Instantiate(boardVisual.boardPrefab);
                 board.transform.SetParent(boardParent.transform);
                 board.transform.localPosition = new Vector3(0, 0, 0) + boardVisual.offset;
-                board.transform.localRotation = new Quaternion(0, 0, 0, 0);
+                board.transform.localRotation = new Quaternion(board.transform.localRotation.x, board.transform.localRotation.y, board.transform.localRotation.z, board.transform.localRotation.w);
                 board.transform.localScale = new Vector3(board.transform.localScale.x, board.transform.localScale.y, board.transform.localScale.z);
                 _cameraController.UpdateCameraTarget();
                 break;
             }
         }
+    }
+
+    public void LeaveRoom()
+    {
+        PhotonNetwork.LeaveRoom();
     }
 }
 

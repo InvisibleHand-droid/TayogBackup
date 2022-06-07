@@ -16,7 +16,7 @@ public class TweenScale : MonoBehaviour
     }
 
     private void OnDisable() {
-        this.transform.localScale = new Vector3(0,0,0);
+        //this.transform.localScale = new Vector3(0,0,0);
     }
 
     public void ScaleOutGameObject()

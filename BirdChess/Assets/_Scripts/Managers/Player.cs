@@ -122,7 +122,7 @@ public class Player : MonoBehaviourPun, IPunInstantiateMagicCallback
 
                 if (!PhotonNetwork.IsMasterClient)
                 {
-                    initialRotation = Quaternion.Euler(-90, 180, -180);
+                    initialRotation = Quaternion.Euler(-90, 0, -180);
                 }
 
                 GameObject pooledPhotonTayogPiece = PhotonNetwork.Instantiate(Path.Combine("PiecePrefabs", prefabPieceSetTarget, prefabPieceTarget)
