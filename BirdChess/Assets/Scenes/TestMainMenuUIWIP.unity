@@ -37,8 +37,8 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_Sun: {fileID: 303809232}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 74e92c41ecaab424196d85cab7c52f67, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 763dcfcb10917524bab5cedc763709ab, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1681,7 +1681,7 @@ RectTransform:
   - {fileID: 536749366}
   - {fileID: 1580222966}
   m_Father: {fileID: 1765296289}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1875,7 +1875,7 @@ MonoBehaviour:
   _tayogSpriteSetIDs: []
   _tayogPieceSetIDs: []
   _tayogBoardIDs: []
-  _debugPanel: {fileID: 0}
+  _debugPanel: {fileID: 1334805513}
 --- !u!1 &108049673
 GameObject:
   m_ObjectHideFlags: 0
@@ -8189,13 +8189,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ButtonSelectManager, Assembly-CSharp
-        m_MethodName: MakeButtonActive
-        m_Mode: 2
+      - m_Target: {fileID: 2047616554}
+        m_TargetAssemblyTypeName: NetworkQuickMatch, Assembly-CSharp
+        m_MethodName: QuickMatch
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 369953539}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -8496,7 +8496,7 @@ RectTransform:
   - {fileID: 1778274825}
   - {fileID: 1708850701}
   m_Father: {fileID: 1765296289}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -18918,7 +18918,7 @@ RectTransform:
   - {fileID: 1207899807}
   - {fileID: 1815697726}
   m_Father: {fileID: 1765296289}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -20610,7 +20610,7 @@ RectTransform:
   - {fileID: 1368168281}
   - {fileID: 865235000}
   m_Father: {fileID: 1765296289}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -21838,7 +21838,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1048630108}
   m_HandleRect: {fileID: 1048630107}
   m_Direction: 2
-  m_Value: 0.999999
+  m_Value: 1
   m_Size: 0.9080034
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -24131,7 +24131,7 @@ RectTransform:
   - {fileID: 2104777548}
   - {fileID: 854445701}
   m_Father: {fileID: 1765296289}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -25262,7 +25262,7 @@ RectTransform:
   m_Father: {fileID: 207066460}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.09199651}
+  m_AnchorMin: {x: 0, y: 0.091996565}
   m_AnchorMax: {x: 1, y: 0.9999999}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 49.585, y: 123.94397}
@@ -31228,7 +31228,7 @@ RectTransform:
   - {fileID: 987710946}
   - {fileID: 1994479840}
   m_Father: {fileID: 1765296289}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -32020,7 +32020,7 @@ RectTransform:
   - {fileID: 1185758196}
   - {fileID: 976487905}
   m_Father: {fileID: 1765296289}
-  m_RootOrder: 7
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -41110,14 +41110,13 @@ RectTransform:
   - {fileID: 618589959}
   - {fileID: 1484932822}
   - {fileID: 1420587734}
-  - {fileID: 1334805514}
   - {fileID: 101612871}
   - {fileID: 861398955}
   - {fileID: 1018506549}
   - {fileID: 381378864}
   - {fileID: 1300002505}
   - {fileID: 788212209}
-  - {fileID: 1886896305}
+  - {fileID: 1334805514}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

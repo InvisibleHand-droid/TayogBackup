@@ -5065,9 +5065,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 796921089}
-  m_LocalRotation: {x: -0.50000006, y: -0.50000006, z: -0.49999997, w: 0.49999997}
+  m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: 0.007055282, y: 192.2, z: -0.014831543}
-  m_LocalScale: {x: 100.000015, y: 100.000015, z: 100}
+  m_LocalScale: {x: -100, y: 100.000015, z: 100}
   m_Children:
   - {fileID: 2133267436}
   - {fileID: 2127743339}
@@ -5135,7 +5135,7 @@ Transform:
   - {fileID: 2016446995}
   m_Father: {fileID: 0}
   m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: -90}
 --- !u!114 &810987845 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4590396227898939347, guid: 4073075903266514287a4e85abcb2393, type: 3}
@@ -5918,6 +5918,22 @@ PrefabInstance:
       value: 9.000061
       objectReference: {fileID: 0}
     - target: {fileID: 4590396227269490290, guid: 4073075903266514287a4e85abcb2393, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590396227269490290, guid: 4073075903266514287a4e85abcb2393, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590396227269490290, guid: 4073075903266514287a4e85abcb2393, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590396227269490290, guid: 4073075903266514287a4e85abcb2393, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590396227269490290, guid: 4073075903266514287a4e85abcb2393, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2056638921}
@@ -5944,6 +5960,22 @@ PrefabInstance:
     - target: {fileID: 4590396227394691010, guid: 4073075903266514287a4e85abcb2393, type: 3}
       propertyPath: player
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590396227394691011, guid: 4073075903266514287a4e85abcb2393, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590396227394691011, guid: 4073075903266514287a4e85abcb2393, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590396227394691011, guid: 4073075903266514287a4e85abcb2393, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590396227394691011, guid: 4073075903266514287a4e85abcb2393, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4590396227394691011, guid: 4073075903266514287a4e85abcb2393, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -6130,6 +6162,22 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4590396227689481716, guid: 4073075903266514287a4e85abcb2393, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590396227689481716, guid: 4073075903266514287a4e85abcb2393, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590396227689481716, guid: 4073075903266514287a4e85abcb2393, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590396227689481716, guid: 4073075903266514287a4e85abcb2393, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590396227689481716, guid: 4073075903266514287a4e85abcb2393, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2056638921}
@@ -6240,6 +6288,22 @@ PrefabInstance:
     - target: {fileID: 4590396228042097550, guid: 4073075903266514287a4e85abcb2393, type: 3}
       propertyPath: player
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590396228042097551, guid: 4073075903266514287a4e85abcb2393, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590396228042097551, guid: 4073075903266514287a4e85abcb2393, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590396228042097551, guid: 4073075903266514287a4e85abcb2393, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590396228042097551, guid: 4073075903266514287a4e85abcb2393, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4590396228042097551, guid: 4073075903266514287a4e85abcb2393, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -6822,10 +6886,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1107186393}
-        m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
-        m_MethodName: Btn_LoadScene
-        m_Mode: 3
+      - m_Target: {fileID: 2200240122305806982}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LeaveRoom
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8246,6 +8310,10 @@ PrefabInstance:
     - target: {fileID: 2449781082860479391, guid: 863b5ff8fb8e73c4696cdd3b4369574d, type: 3}
       propertyPath: m_CommonLens
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2449781082860479391, guid: 863b5ff8fb8e73c4696cdd3b4369574d, type: 3}
+      propertyPath: m_XAxis.Value
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 2449781082860479391, guid: 863b5ff8fb8e73c4696cdd3b4369574d, type: 3}
       propertyPath: m_YAxis.Value
@@ -12733,6 +12801,38 @@ PrefabInstance:
       propertyPath: _victoryPanel
       value: 
       objectReference: {fileID: 755841344}
+    - target: {fileID: 2200240122306321856, guid: 49e96fccb280f8840801613fe1006647, type: 3}
+      propertyPath: blackBibeButton
+      value: 
+      objectReference: {fileID: 8165331259468973443, guid: 690e4a988fc78ff4d9f281ef0917ed59, type: 3}
+    - target: {fileID: 2200240122306321856, guid: 49e96fccb280f8840801613fe1006647, type: 3}
+      propertyPath: whiteBibeButton
+      value: 
+      objectReference: {fileID: -51933582081177773, guid: 690e4a988fc78ff4d9f281ef0917ed59, type: 3}
+    - target: {fileID: 2200240122306321856, guid: 49e96fccb280f8840801613fe1006647, type: 3}
+      propertyPath: blackAgilaButton
+      value: 
+      objectReference: {fileID: -3436326926003205240, guid: 690e4a988fc78ff4d9f281ef0917ed59, type: 3}
+    - target: {fileID: 2200240122306321856, guid: 49e96fccb280f8840801613fe1006647, type: 3}
+      propertyPath: blackLawinButton
+      value: 
+      objectReference: {fileID: 4228421369593234339, guid: 690e4a988fc78ff4d9f281ef0917ed59, type: 3}
+    - target: {fileID: 2200240122306321856, guid: 49e96fccb280f8840801613fe1006647, type: 3}
+      propertyPath: blackManokButton
+      value: 
+      objectReference: {fileID: -6516819235284414882, guid: 690e4a988fc78ff4d9f281ef0917ed59, type: 3}
+    - target: {fileID: 2200240122306321856, guid: 49e96fccb280f8840801613fe1006647, type: 3}
+      propertyPath: whiteAgilaButton
+      value: 
+      objectReference: {fileID: 1468966120084733650, guid: 690e4a988fc78ff4d9f281ef0917ed59, type: 3}
+    - target: {fileID: 2200240122306321856, guid: 49e96fccb280f8840801613fe1006647, type: 3}
+      propertyPath: whiteLawinButton
+      value: 
+      objectReference: {fileID: 8985215198530347185, guid: 690e4a988fc78ff4d9f281ef0917ed59, type: 3}
+    - target: {fileID: 2200240122306321856, guid: 49e96fccb280f8840801613fe1006647, type: 3}
+      propertyPath: whiteManokButton
+      value: 
+      objectReference: {fileID: 6379261182475336646, guid: 690e4a988fc78ff4d9f281ef0917ed59, type: 3}
     - target: {fileID: 2200240122306321856, guid: 49e96fccb280f8840801613fe1006647, type: 3}
       propertyPath: _playerUI.Array.data[0].panel
       value: 

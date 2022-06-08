@@ -36,6 +36,16 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject _victoryPanel;
     [SerializeField] private TextMeshProUGUI _victoryText;
     // Start is called before the first frame update
+    [SerializeField] private Sprite blackManokButton;
+    [SerializeField] private Sprite blackBibeButton;
+    [SerializeField] private Sprite blackLawinButton;
+    [SerializeField] private Sprite blackAgilaButton;
+
+    [SerializeField] private Sprite whiteManokButton;
+    [SerializeField] private Sprite whiteBibeButton;
+    [SerializeField] private Sprite whiteLawinButton;
+    [SerializeField] private Sprite whiteAgilaButton;
+
 
     public override void Awake()
     {
@@ -50,12 +60,22 @@ public class UIManager : Singleton<UIManager>
 
     }
 
+    private void SetButtonSprites()
+    {
+
+    }
+
     public void SetUIDependencies(int i, Player player)
     {
         _playerUI[i].manokButton.GetComponent<ButtonReserveTarget>().player = player;
         _playerUI[i].bibeButton.GetComponent<ButtonReserveTarget>().player = player;
         _playerUI[i].agilaButton.GetComponent<ButtonReserveTarget>().player = player;
         _playerUI[i].lawinButton.GetComponent<ButtonReserveTarget>().player = player;
+
+        _playerUI[i].manokButton.GetComponent<Image>().sprite = i == 0 ? whiteManokButton : blackManokButton;
+        _playerUI[i].bibeButton.GetComponent<Image>().sprite = i == 0 ? whiteBibeButton : blackBibeButton;
+        _playerUI[i].lawinButton.GetComponent<Image>().sprite = i == 0 ? whiteLawinButton : blackLawinButton;
+        _playerUI[i].agilaButton.GetComponent<Image>().sprite = i == 0 ? whiteAgilaButton : blackAgilaButton;
 
         if (!player.photonView.IsMine)
         {
