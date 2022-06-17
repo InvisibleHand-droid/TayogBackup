@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class SFX_Manager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip genericBtn;
 
-    // Update is called once per frame
-    void Update()
+    public void Play_GenericBtn()
     {
-        
+        audioSource.clip = genericBtn;
+        audioSource.Play();
     }
 }
