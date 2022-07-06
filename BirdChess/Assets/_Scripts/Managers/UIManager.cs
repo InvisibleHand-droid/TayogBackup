@@ -25,6 +25,8 @@ public class PlayerUI
 
     [Header("Panel")]
     public GameObject panel;
+    public TextMeshProUGUI timerText;
+    public InGameTimer timer;
 }
 
 
@@ -60,11 +62,6 @@ public class UIManager : Singleton<UIManager>
 
     }
 
-    private void SetButtonSprites()
-    {
-
-    }
-
     public void SetUIDependencies(int i, Player player)
     {
         _playerUI[i].manokButton.GetComponent<ButtonReserveTarget>().player = player;
@@ -72,10 +69,10 @@ public class UIManager : Singleton<UIManager>
         _playerUI[i].agilaButton.GetComponent<ButtonReserveTarget>().player = player;
         _playerUI[i].lawinButton.GetComponent<ButtonReserveTarget>().player = player;
 
-        _playerUI[i].manokButton.GetComponent<Image>().sprite = i == 0 ? whiteManokButton : blackManokButton;
-        _playerUI[i].bibeButton.GetComponent<Image>().sprite = i == 0 ? whiteBibeButton : blackBibeButton;
-        _playerUI[i].lawinButton.GetComponent<Image>().sprite = i == 0 ? whiteLawinButton : blackLawinButton;
-        _playerUI[i].agilaButton.GetComponent<Image>().sprite = i == 0 ? whiteAgilaButton : blackAgilaButton;
+        _playerUI[i].manokButton.GetComponent<Image>().sprite = player.teamColor == TeamColor.White ? whiteManokButton : blackManokButton;
+        _playerUI[i].bibeButton.GetComponent<Image>().sprite = player.teamColor == TeamColor.White ? whiteBibeButton : blackBibeButton;
+        _playerUI[i].lawinButton.GetComponent<Image>().sprite = player.teamColor == TeamColor.White ? whiteLawinButton : blackLawinButton;
+        _playerUI[i].agilaButton.GetComponent<Image>().sprite = player.teamColor == TeamColor.White ? whiteAgilaButton : blackAgilaButton;
 
         if (!player.photonView.IsMine)
         {
@@ -107,7 +104,7 @@ public class UIManager : Singleton<UIManager>
 
     public void SetPlayerHeaderTexts(int i, Player player)
     {
-       // _playerUI[i].playerHeaderText.SetText(player.teamColor.ToString());
+        // _playerUI[i].playerHeaderText.SetText(player.teamColor.ToString());
     }
 
     [PunRPC]
@@ -128,4 +125,9 @@ public class UIManager : Singleton<UIManager>
         }
     }
 
+    [PunRPC]
+    public void RPCUpdateTimerText(int i, string text)
+    {
+        _playerUI[i].timerText.SetText(text);
+    }
 }

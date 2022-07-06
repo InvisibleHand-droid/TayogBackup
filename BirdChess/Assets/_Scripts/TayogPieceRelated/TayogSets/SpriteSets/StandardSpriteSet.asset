@@ -16,28 +16,28 @@ MonoBehaviour:
   generatedTayogSpriteSetWhite:
   - pieceType: 0
     pieceSprite: {fileID: 21300000, guid: 911b35044b34b744ea1c07a60009f210, type: 3}
-    pieceAnimator: {fileID: 0}
+    pieceAnimator: {fileID: 22100000, guid: ea75756dc920bb448bcc8bb62fb28b3d, type: 2}
     summonSound: {fileID: 0}
     selectSound: {fileID: 0}
     attackSound: {fileID: 0}
     captureSound: {fileID: 0}
   - pieceType: 1
     pieceSprite: {fileID: 21300000, guid: e738f026c008e0448ac50fa77df4c0e1, type: 3}
-    pieceAnimator: {fileID: 0}
+    pieceAnimator: {fileID: 22100000, guid: 081d60fbf33b6174d83a5ff965f5807c, type: 2}
     summonSound: {fileID: 0}
     selectSound: {fileID: 0}
     attackSound: {fileID: 0}
     captureSound: {fileID: 0}
   - pieceType: 2
     pieceSprite: {fileID: 21300000, guid: 6a5adcd1eac69184aa6db423b3a77132, type: 3}
-    pieceAnimator: {fileID: 0}
+    pieceAnimator: {fileID: 22100000, guid: afe7f408dd01e104aad08b7a14e0b405, type: 2}
     summonSound: {fileID: 0}
     selectSound: {fileID: 0}
     attackSound: {fileID: 0}
     captureSound: {fileID: 0}
   - pieceType: 3
     pieceSprite: {fileID: 21300000, guid: 082352a49f4182b419469f4d19d00705, type: 3}
-    pieceAnimator: {fileID: 0}
+    pieceAnimator: {fileID: 22100000, guid: c49d96818780a6b4d9bb9dd9359b90c6, type: 2}
     summonSound: {fileID: 0}
     selectSound: {fileID: 0}
     attackSound: {fileID: 0}
@@ -45,28 +45,28 @@ MonoBehaviour:
   generatedTayogSpriteSetBlack:
   - pieceType: 0
     pieceSprite: {fileID: 21300000, guid: da4c939d8640d6a4fbb5cd64d3ebb29b, type: 3}
-    pieceAnimator: {fileID: 0}
+    pieceAnimator: {fileID: 22100000, guid: 5256dd425b04ac64796bc9230f934803, type: 2}
     summonSound: {fileID: 0}
     selectSound: {fileID: 0}
     attackSound: {fileID: 0}
     captureSound: {fileID: 0}
   - pieceType: 1
     pieceSprite: {fileID: 21300000, guid: ed1ddeb463ef868418d296e6a238d93a, type: 3}
-    pieceAnimator: {fileID: 0}
+    pieceAnimator: {fileID: 22100000, guid: 3d1ee07901c8a6d479f2129591a352b4, type: 2}
     summonSound: {fileID: 0}
     selectSound: {fileID: 0}
     attackSound: {fileID: 0}
     captureSound: {fileID: 0}
   - pieceType: 2
     pieceSprite: {fileID: 21300000, guid: 2f69fc3236e240940bd5d1a63e29cbcf, type: 3}
-    pieceAnimator: {fileID: 0}
+    pieceAnimator: {fileID: 22100000, guid: 1b9251e9b1ce0e64391d009a3a3cf8ba, type: 2}
     summonSound: {fileID: 0}
     selectSound: {fileID: 0}
     attackSound: {fileID: 0}
     captureSound: {fileID: 0}
   - pieceType: 3
     pieceSprite: {fileID: 21300000, guid: d7ab400c12ff784449caee40ecad4307, type: 3}
-    pieceAnimator: {fileID: 0}
+    pieceAnimator: {fileID: 22100000, guid: 2563d22e6d90b1a4695115de0bbb1c5c, type: 2}
     summonSound: {fileID: 0}
     selectSound: {fileID: 0}
     attackSound: {fileID: 0}

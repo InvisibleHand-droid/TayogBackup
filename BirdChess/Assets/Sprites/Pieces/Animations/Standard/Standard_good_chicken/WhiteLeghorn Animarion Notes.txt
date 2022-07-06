@@ -1,0 +1,70 @@
+WhiteLeghorn Animation Notes
+
+Attack
+
+WhiteLeghorn_Attack_0001 : 4 frames
+WhiteLeghorn_Attack_0002 : 4 frames
+WhiteLeghorrn_Attack_0003 : 16 frames
+
+
+Captured
+
+Whiteleghorn_Captured_0001 : 4 frames
+Whiteleghorn_Captured_0002 : 2 frames
+Whiteleghorn_Captured_0003 : 4 frames
+Whiteleghorn_Captured_0004 : 2 frames
+Whiteleghorn_Captured_0005 : 2 frames
+Whiteleghorn_Captured_0006 : 10 frames 
+
+
+Exhausted
+
+Whiteleghorn_Exhausted_0001 : 5 frames
+Whiteleghorn_Exhausted_0002 : 3 frames
+Whiteleghorn_Exhausted_0003 : 4 frames
+Whiteleghorn_Exhausted_0004 : 5 frames
+Whiteleghorn_Exhausted_0005 : 3 frames
+Whiteleghorn_Exhausted_0006 : 4 frames
+
+
+Flying
+
+Whiteleghorn_Flying_0001 : 1 frame
+Whiteleghorn_Flying_0002 : 1 frame
+Whiteleghorn_Flying_0003 : 1 frame
+Whiteleghorn_Flying_0004 : 1 frame
+Whiteleghorn_Flying_0005 : 1 frame
+
+
+Idle
+
+Whiteleghorn_Idle_0001 : 4 frames
+Whiteleghorn_Idle_0002 : 2 frames
+Whiteleghorn_Idle_0003 : 2 frames
+Whiteleghorn_Idle_0004 : 2 frames
+Whiteleghorn_Idle_0005 : 2 frames
+
+Landing
+
+Whiteleghorn_Landing_0001 : 4 frames
+Whiteleghorn_Landing_0002 : 4 frames
+Whiteleghorn_Landing_0003 : 4 frames
+Whiteleghorn_Landing_0004 : 4 frames
+Whiteleghorn_Landing_0005 : 4 frames
+
+Random
+
+Whiteleghorn_Random_0001 : 12 frames
+Whiteleghorn_Random_0002 : 3 frames
+Whiteleghorn_Random_0003 : 3 frames
+Whiteleghorn_Random_0004 : 3 frames
+Whiteleghorn_Random_0005 : 3 frames
+
+
+Summoning
+
+Whiteleghorn_Summoning_0001 : 8 frames
+Whiteleghorn_Summoning_0002 : 4 frames
+Whiteleghorn_Summoning_0003 : 6 frames
+Whiteleghorn_Summoning_0004 : 2 frames
+Whiteleghorn_Summoning_0005 : 6 frames

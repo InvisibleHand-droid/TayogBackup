@@ -67,6 +67,8 @@ MonoBehaviour:
   - RPCAutoDisconnect
   - RPCTEST
   - RPCAssignVisuals
+  - SetTimer
+  - RPCUpdateTimerText
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

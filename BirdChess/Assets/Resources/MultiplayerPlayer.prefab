@@ -78,6 +78,7 @@ MonoBehaviour:
   chosenPieceID: 
   previouslyPlayedTayogPiece: {fileID: 0}
   skinTarget: []
+  timer: {fileID: 0}
 --- !u!114 &7833558914082295167
 MonoBehaviour:
   m_ObjectHideFlags: 0

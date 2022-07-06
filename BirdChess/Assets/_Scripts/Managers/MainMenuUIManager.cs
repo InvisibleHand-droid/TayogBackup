@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using UnityEngine.UI;
 using DG.Tweening;
 public enum Difficulty
@@ -17,6 +18,7 @@ public class MainMenuUIManager : MonoBehaviour
     private bool _isCoroutineRunning;
     [SerializeField] private Image _skinImage;
     [SerializeField] private GameObject _boardIndicator;
+    public TextMeshProUGUI timerText;
     private UIInteractionEvent _confirm;
     private UIInteractionEvent _goBack;
 

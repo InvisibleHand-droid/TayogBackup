@@ -344,6 +344,7 @@ public abstract class TayogPiece : MonoBehaviourPun, ITayogMove, ITayogRange, IP
             if (generatedTayogSprite.pieceType == this._piecetype)
             {
                 this.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = generatedTayogSprite.pieceSprite;
+                this.transform.GetChild(0).GetComponent<Animator>().runtimeAnimatorController = generatedTayogSprite.pieceAnimator;
             }
         }
     }

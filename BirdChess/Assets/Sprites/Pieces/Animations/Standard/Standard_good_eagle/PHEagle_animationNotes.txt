@@ -1,0 +1,75 @@
+PHEagle Animation Notes:
+
+Idle
+
+PHEagle_Idle_001 = 8 frames
+PHEagle_Idle_002 = 7 frames
+PHEagle_Idle_003 = 9 frames
+
+
+Random
+
+PHEagle_Random_001 = 2 frames
+PHEagle_Random_002 = 10 frames
+PHEagle_Random_003 = 9 frames
+PHEagle_Random_004 = 2 frames
+PHEagle_Random_005 = 1 frames
+
+
+Attack
+
+PHEagle_Attack_001 = 2 frames
+PHEagle_Attack_002 = 2 frames
+PHEagle_Attack_003 = 4 frames
+PHEagle_Attack_004 = 3 frames
+PHEagle_Attack_005 = 3 frames
+PHEagle_Attack_006 = 5 frames
+PHEagle_Attack_007 = 5 frames
+
+
+Flying
+
+PHEagle_Flying_001 = 3 frames
+PHEagle_Flying_002 = 2 frames
+PHEagle_Flying_003 = 3 frames
+PHEagle_Flying_004 = 6 frames
+PHEagle_Flying_005 = 3 frames
+PHEagle_Flying_006 = 4 frames
+PHEagle_Flying_007 = 3 frames
+
+
+Landing
+
+PHEagle_Landing_001 = 2 frames
+PHEagle_Landing_002 = 4 frames
+PHEagle_Landing_003 = 4 frames
+PHEagle_Landing_004 = 5 frames
+PHEagle_Landing_005 = 5 frames
+PHEagle_Landing_006 = 4 frames
+
+
+Summon
+
+PHEagle_Summon_001 = 6 frames
+PHEagle_Summon_002 = 6 frames
+PHEagle_Summon_003 = 5 frames
+PHEagle_Summon_004 = 4 frames
+PHEagle_Summon_005 = 3 frames
+
+
+Exhausted
+
+PHEagle_Exhausted_001 = 6 frames
+PHEagle_Exhausted_002 = 2 frames
+PHEagle_Exhausted_003 = 11 frames
+PHEagle_Exhausted_004 = 2 frames
+PHEagle_Exhausted_005 = 3 frames
+
+
+Capture
+
+PHEagle_Capture_001 = 2 frames
+PHEagle_Capture_002 = 4 frames
+PHEagle_Capture_003 = 6 frames
+PHEagle_Capture_004 = 2 frames
+PHEagle_Capture_005 = 10 frames

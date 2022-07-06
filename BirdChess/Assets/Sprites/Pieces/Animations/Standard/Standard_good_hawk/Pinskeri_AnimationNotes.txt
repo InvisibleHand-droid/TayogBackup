@@ -1,0 +1,68 @@
+Pinskeri Animation Notes:
+
+Idle
+Pinskeri_Idle_001 = 3 frames
+Pinskeri_Idle_002 = 3 frames
+Pinskeri_Idle_003 = 3 frames
+Pinskeri_Idle_004 = 6 frames
+Pinskeri_Idle_005 = 3 frames
+Pinskeri_Idle_006 = 3 frames
+Pinskeri_Idle_007 = 3 frames 
+
+Random
+Pinskeri_Random_001 = 2 frames
+Pinskeri_Random_002 = 3 frames
+Pinskeri_Random_003 = 3 frames
+Pinskeri_Random_004 = 6 frames
+Pinskeri_Random_005 = 3 frames
+Pinskeri_Random_006 = 3 frames
+Pinskeri_Random_007 = 2 frames
+Attack
+Pinskeri_Attack_001 = 3 frames
+Pinskeri_Attack_002 = 2 frames
+Pinskeri_Attack_003 = 2 frames
+Pinskeri_Attack_004 = 3 frames
+Pinskeri_Attack_005 = 2 frames
+Pinskeri_Attack_006 = 2 frames
+Pinskeri_Attack_007 = 3 frames
+
+Flying
+Pinskeri_Flying_001 = 3 frames
+Pinskeri_Flying_002 = 3 frames
+Pinskeri_Flying_003 = 3 frames
+Pinskeri_Flying_004 = 3 frames
+Pinskeri_Flying_005 = 3 frames
+Pinskeri_Flying_006 = 3 frames
+Pinskeri_Flying_007 = 3 frames
+
+Landing
+Pinskeri_Landing_001 = 3 frames
+Pinskeri_Landing_002 = 3 frames
+Pinskeri_Landing_003 = 2 frames
+Pinskeri_Landing_004 = 2 frames
+Pinskeri_Landing_005 = 3 frames
+Pinskeri_Landing_006 = 3 frames
+
+Summon
+Pinskeri_Summon_001 = 5 frames
+Pinskeri_Summon_002 = 3 frames
+Pinskeri_Summon_003 = 3 frames
+Pinskeri_Summon_004 = 4 frames
+Pinskeri_Summon_005 = 3 frames 
+
+Exhausted
+Pinskeri_Exhausted_001 = 3 frames
+Pinskeri_Exhausted_002 = 2 frames
+Pinskeri_Exhausted_003 = 2 frames
+Pinskeri_Exhausted_004 = 6 frames
+Pinskeri_Exhausted_005 = 2 frames
+Pinskeri_Exhausted_006 = 2 frames
+Pinskeri_Exhausted_007 = 3 frames
+
+Capture
+Pinskeri_Captured_001 = 2 frames
+Pinskeri_Captured_002 = 3 frames
+Pinskeri_Captured_003 = 2 frames
+Pinskeri_Captured_004 = 2 frames
+Pinskeri_Captured_005 = 3 frames
+Pinskeri_Captured_006 = 10 frames
