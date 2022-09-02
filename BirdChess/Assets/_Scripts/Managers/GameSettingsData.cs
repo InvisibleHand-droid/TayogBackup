@@ -10,4 +10,8 @@ public class GameSettingsData : ScriptableGameObject
     public int BibeReserve;
     public int LawinReserve;
     public int AgilaReserve;
+
+    [Header("Timer")]
+    public int minutes;
+    public int seconds;
 }

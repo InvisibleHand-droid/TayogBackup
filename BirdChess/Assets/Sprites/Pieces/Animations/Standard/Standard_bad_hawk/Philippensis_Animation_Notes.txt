@@ -1,0 +1,71 @@
+Philippensis
+
+Idle
+Philippensis_Idle_0001 = 3 frames
+Philippensis_Idle_0002 = 3 frames
+Philippensis_Idle_0003 = 3 frames
+Philippensis_Idle_0004 = 3 frames
+Philippensis_Idle_0005 = 3 frames
+Philippensis_Idle_0006 = 3 frames
+Philippensis_Idle_0007 = 3 frames
+Philippensis_Idle_0008 = 3 frames
+
+Random
+Philippensis_Random_0001 = 3 frames
+Philippensis_Random_0002 = 3 frames
+Philippensis_Random_0003 = 3 frames
+Philippensis_Random_0004 = 6 frames
+Philippensis_Random_0005 = 3 frames
+Philippensis_Random_0006 = 3 frames
+Philippensis_Random_0007 = 3 frames
+
+Attack 
+Philippensis_Attack_001 = 3 frames
+Philippensis_Attack_002 = 2 frames
+Philippensis_Attack_003 = 2 frames
+Philippensis_Attack_004 = 3 frames
+Philippensis_Attack_005 = 2 frames
+Philippensis_Attack_006 = 2 frames
+Philippensis_Attack_007 = 3 frames
+
+Flying
+Philippensis_Flying_0001 = 3 frames
+Philippensis_Flying_0002 = 3 frames
+Philippensis_Flying_0003 = 3 frames
+Philippensis_Flying_0004 = 3 frames
+Philippensis_Flying_0005 = 3 frames
+Philippensis_Flying_0006 = 3 frames
+Philippensis_Flying_0007 = 3 frames
+Philippensis_Flying_0008 = 3 frames
+
+Landing
+Philippensis_Landing_001 = 3 frames
+Philippensis_Landing_002 = 3 frames
+Philippensis_Landing_003 = 2 frames
+Philippensis_Landing_004 = 2 frames
+Philippensis_Landing_005 = 3 frames
+Philippensis_Landing_006 = 3 frames
+
+Summon
+Philippensis_summon_001 = 5 frames
+Philippensis_summon_002 = 3 frames
+Philippensis_summon_003 = 3 frames
+Philippensis_summon_004 = 4 frames
+Philippensis_summon_005 = 3 frames
+
+Exhausted
+Philippensis_Exhausted_0001 = 3 frames
+Philippensis_Exhausted_0002 = 2 frames
+Philippensis_Exhausted_0003 = 2 frames
+Philippensis_Exhausted_0004 = 6 frames
+Philippensis_Exhausted_0005 = 2 frames
+Philippensis_Exhausted_0006 = 2 frames
+Philippensis_Exhausted_0007 = 7 frames
+
+Captured
+Philippensis_Captured_001 = 2 frames
+Philippensis_Captured_002 = 3 frames
+Philippensis_Captured_003 = 2 frames
+Philippensis_Captured_004 = 2 frames
+Philippensis_Captured_005 = 3 frames
+Philippensis_Captured_006 = 10 frames

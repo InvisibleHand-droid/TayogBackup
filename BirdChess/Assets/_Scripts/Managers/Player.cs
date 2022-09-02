@@ -25,6 +25,7 @@ public class Player : MonoBehaviourPun, IPunInstantiateMagicCallback
 
     public TayogPiece previouslyPlayedTayogPiece;
     public List<GeneratedTayogPiece> skinTarget;
+    public Timer timer;
 
     public virtual void Start()
     {
@@ -32,9 +33,10 @@ public class Player : MonoBehaviourPun, IPunInstantiateMagicCallback
 
         if (this.photonView.IsMine)
         {
-            Debug.LogError(chosenPieceID);
-            Debug.LogError(chosenSpriteID);
+            //Debug.LogError(chosenPieceID);
+            //Debug.LogError(chosenSpriteID);
             this.photonView.RPC(nameof(SetColor), RpcTarget.All);
+            this.photonView.RPC(nameof(SetTimer), RpcTarget.All);
             this.photonView.RPC(nameof(RPCSetTayogReserve), RpcTarget.All);
             GenerateTayogReserve();
         }
@@ -42,6 +44,21 @@ public class Player : MonoBehaviourPun, IPunInstantiateMagicCallback
 
     [PunRPC]
     public void SetColor()
+    {
+        if (this.tag == "Player1")
+        {
+            this.teamColor = TeamColor.White;
+        }
+        else
+        {
+            this.teamColor = TeamColor.Black;
+        }
+
+        this.name = this.teamColor + "Player" + this.photonView.CreatorActorNr;
+    }
+
+    [PunRPC]
+    public void SetTimer()
     {
         if (this.tag == "Player1")
         {
@@ -90,7 +107,7 @@ public class Player : MonoBehaviourPun, IPunInstantiateMagicCallback
 
     public void GenerateTayogReserve()
     {
-        GameSettings gameSettings = GameManager.Instance.gameSettings;
+        GameSettingsData gameSettings = GameManager.Instance.gameSettingsData;
         int amountToPool = 0;
         string prefabPieceSetTarget = "Standard";//chosenPieceID;
         foreach (GeneratedTayogPiece generatedTayogPiece in skinTarget)
@@ -100,16 +117,16 @@ public class Player : MonoBehaviourPun, IPunInstantiateMagicCallback
             switch (generatedTayogPiece.pieceType)
             {
                 case PieceType.Manok:
-                    amountToPool = gameSettings.ManokCount;
+                    amountToPool = gameSettings.ManokReserve;
                     break;
                 case PieceType.Bibe:
-                    amountToPool = gameSettings.BibeCount;
+                    amountToPool = gameSettings.BibeReserve;
                     break;
                 case PieceType.Lawin:
-                    amountToPool = gameSettings.LawinCount;
+                    amountToPool = gameSettings.LawinReserve;
                     break;
                 case PieceType.Agila:
-                    amountToPool = gameSettings.AgilaCount;
+                    amountToPool = gameSettings.AgilaReserve;
                     break;
             }
 

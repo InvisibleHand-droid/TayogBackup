@@ -1,0 +1,75 @@
+BlackEagle Animation Notes:
+
+Idle
+
+BlackEagle_Idle_001 = 8 frames
+BlackEagle_Idle_002 = 7 frames
+BlackEagle_Idle_003 = 9 frames
+
+
+Random
+
+BlackEagle_Random_001 = 2 frames
+BlackEagle_Random_002 = 10 frames
+BlackEagle_Random_003 = 9 frames
+BlackEagle_Random_004 = 2 frames
+BlackEagle_Random_005 = 1 frames
+
+
+Attack
+
+BlackEagle_Attack_001 = 2 frames
+BlackEagle_Attack_002 = 2 frames
+BlackEagle_Attack_003 = 4 frames
+BlackEagle_Attack_004 = 3 frames
+BlackEagle_Attack_005 = 3 frames
+BlackEagle_Attack_006 = 5 frames
+BlackEagle_Attack_007 = 5 frames
+
+
+Flying
+
+BlackEagle_Flying_001 = 3 frames
+BlackEagle_Flying_002 = 2 frames
+BlackEagle_Flying_003 = 3 frames
+BlackEagle_Flying_004 = 6 frames
+BlackEagle_Flying_005 = 3 frames
+BlackEagle_Flying_006 = 4 frames
+BlackEagle_Flying_007 = 3 frames
+
+
+Landing
+
+BlackEagle_Landing_001 = 2 frames
+BlackEagle_Landing_002 = 4 frames
+BlackEagle_Landing_003 = 4 frames
+BlackEagle_Landing_004 = 5 frames
+BlackEagle_Landing_005 = 5 frames
+BlackEagle_Landing_006 = 4 frames
+
+
+Summon
+
+BlackEagle_Summon_001 = 6 frames
+BlackEagle_Summon_002 = 6 frames
+BlackEagle_Summon_003 = 5 frames
+BlackEagle_Summon_004 = 4 frames
+BlackEagle_Summon_005 = 3 frames
+
+
+Exhausted
+
+BlackEagle_Exhausted_001 = 6 frames
+BlackEagle_Exhausted_002 = 2 frames
+BlackEagle_Exhausted_003 = 11 frames
+BlackEagle_Exhausted_004 = 2 frames
+BlackEagle_Exhausted_005 = 3 frames
+
+
+Capture
+
+BlackEagle_Capture_001 = 2 frames
+BlackEagle_Capture_002 = 4 frames
+BlackEagle_Capture_003 = 6 frames
+BlackEagle_Capture_004 = 2 frames
+BlackEagle_Capture_005 = 10 frames

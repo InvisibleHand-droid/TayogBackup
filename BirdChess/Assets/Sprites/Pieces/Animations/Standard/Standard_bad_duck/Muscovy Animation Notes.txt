@@ -1,0 +1,67 @@
+Muscovy (bad duck) Animation Notes
+
+1. Idle
+Muscovy_Idle_001 = 4 frames
+Muscovy_Idle_002 = 2 frames
+Muscovy_Idle_003 = 4 frames
+Muscovy_Idle_004 = 2 frames
+Muscovy_Idle_005 = 4 frames
+Muscovy_Idle_006 = 2 frames
+Muscovy_Idle_007 = 4 frames
+Muscovy_Idle_008 = 2 frames
+
+2. Random Moment
+Muscovy_Random_001 = 2 frames
+Muscovy_Random_002 = 6 frames
+Muscovy_Random_003 = 2 frames
+Muscovy_Random_004 = 3 frames
+Muscovy_Random_005 = 2 frames
+Muscovy_Random_006 = 6 frames
+Muscovy_Random_007 = 2 frames
+
+3. Attack
+Muscovy_Attack_001 = 3 frames
+Muscovy_Attack_002 = 2 frames
+Muscovy_Attack_003 = 3 frames
+Muscovy_Attack_004 = 2 frames
+Muscovy_Attack_005 = 2 frames
+Muscovy_Attack_006 = 3 frames
+
+4. Flying
+Muscovy_Flying_001 = 2 frames
+Muscovy_Flying_002 = 2 frames
+Muscovy_Flying_003 = 2 frames
+Muscovy_Flying_004 = 2 frames
+
+5. Landing 
+Muscovy_Landing_001 = 2 frames
+Muscovy_Landing_002 = 3 frames
+Muscovy_Landing_003 = 2 frames
+Muscovy_Landing_004 = 3 frames
+Muscovy_Landing_005 = 4 frames
+Muscovy_Landing_006 = 3 frames
+
+6. Summon
+Muscovy_Summon_001 = 2 frames
+Muscovy_Summon_002 = 1 frame
+Muscovy_Summon_003 = 3 frames
+Muscovy_Summon_004 = 5 frames
+Muscovy_Summon_005 = 3 frames
+
+7. Exhausted
+Muscovy_Exhausted_001 = 2 frames
+Muscovy_Exhausted_002 = 2 frames
+Muscovy_Exhausted_003 = 2 frames
+Muscovy_Exhausted_004 = 2 frames
+Muscovy_Exhausted_005 = 4 frames
+Muscovy_Exhausted_006 = 2 frames
+Muscovy_Exhausted_007 = 2 frames
+Muscovy_Exhausted_008 = 2 frames
+Muscovy_Exhausted_009 = 2 frames
+
+8. Capture
+Muscovy_Captured_001 = 2 frames
+Muscovy_captured_002 = 2 frames
+Muscovy_Captured_003 = 2 frames
+Muscovy_Captured_004 = 4 frames
+Muscovy_Captured_005 = 10 frames

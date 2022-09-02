@@ -59,9 +59,11 @@ public class TurnManager : Singleton<TurnManager>
                 playerFromList = player;
             }
             player.playerMove.isMyTurn = false;
+//            player.timer.isTimerOn = false;
         }
 
         playerFromList.playerMove.isMyTurn = true;
+//        playerFromList.timer.isTimerOn = false;
         _onTurnEnd.Raise();
     }
 

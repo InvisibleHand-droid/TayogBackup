@@ -1,0 +1,67 @@
+Animation Notes
+
+Idle
+Papan_Idle_001 = 4 frames
+Papan_Idle_002 = 2 frames
+Papan_Idle_003 = 4 frames
+Papan_Idle_004 = 2 frames
+Papan_Idle_005 = 4 frames
+Papan_Idle_006 = 2 frames
+Papan_Idle_007 = 4 frames
+Papan_Idle_008 = 2 frames
+
+Random Moment
+Papan_Random_001 = 2 frames
+Papan_Random_002 = 6 frames
+Papan_Random_003 = 2 frames
+Papan_Random_004 = 3 frames
+Papan_Random_005 = 2 frames
+Papan_Random_006 = 6 frames
+Papan_Random_007 = 2 frames
+
+Attack
+Papan_Attack_001 = 3 frames
+Papan_Attack_002 = 2 frames
+Papan_Attack_003 = 3 frames
+Papan_Attack_004 = 2 frames
+Papan_Attack_005 = 2 frames
+Papan_Attack_006 = 3 frames
+
+Flying
+Papan_Flying_001 = 2 frames
+Papan_Flying_002 = 2 frames
+Papan_Flying_003 = 2 frames
+Papan_Flying_004 = 2 frames
+
+Landing 
+Papan_Landing_001 = 2 frames
+Papan_Landing_002 = 3 frames
+Papan_Landing_003 = 2 frames
+Papan_Landing_004 = 3 frames
+Papan_Landing_005 = 4 frames
+Papan_Landing_006 = 3 frames 
+
+Summon
+Papan_Summon_001 = 2 frames
+Papan_Summon_002 = 1 frame
+Papan_Summon_003 = 3 frames
+Papan_Summon_004 = 5 frames
+Papan_Summon_005 = 3 frames
+
+Exhausted
+Papan_Exhausted_001 = 2 frames
+Papan_Exhausted_002 = 2 frames
+Papan_Exhausted_003 = 2 frames
+Papan_Exhausted_004 = 2 frames
+Papan_Exhausted_005 = 4 frames
+Papan Exhausted_006 = 2 frames
+Papan_Exhausted_007 = 2 frames
+Papan_Exhausted_008 = 2 frames
+Papan_Exhausted_009 = 2 frames
+
+Capture
+Papan_Captured_001 = 3 frames
+Papan_captured_002 = 2 frames
+Papan_Captured_003 = 2 frames
+Papan_Captured_004 = 4 frames
+Papan_Captured_005 = 10 frames

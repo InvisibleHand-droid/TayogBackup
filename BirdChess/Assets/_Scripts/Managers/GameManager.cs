@@ -22,7 +22,7 @@ public class GameSettings
 
 public class GameManager : Singleton<GameManager>
 {
-    public GameSettings gameSettings;
+    public GameSettingsData gameSettingsData;
     public GameObject boardParent;
     [SerializeField] private CameraController _cameraController;
 
@@ -228,7 +228,6 @@ public class GameManager : Singleton<GameManager>
                         Destroy(child.gameObject);
                     }
                 }
-                Debug.Log("something");
                 GameObject board = Instantiate(boardVisual.boardPrefab);
                 board.transform.SetParent(boardParent.transform);
                 board.transform.localPosition = new Vector3(0, 0, 0) + boardVisual.offset;

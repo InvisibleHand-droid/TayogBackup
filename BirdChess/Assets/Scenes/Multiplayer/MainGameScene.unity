@@ -9166,6 +9166,7 @@ GameObject:
   - component: {fileID: 1644053796}
   - component: {fileID: 1644053798}
   - component: {fileID: 1644053797}
+  - component: {fileID: 1644053799}
   m_Layer: 5
   m_Name: green timer
   m_TagString: Untagged
@@ -9231,6 +9232,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1644053795}
   m_CullTransparentMesh: 1
+--- !u!114 &1644053799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644053795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ef6ca0ec5e776f458659400679ac4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _minutes: 1
+  _seconds: 0
+  isIncrement: 0
+  isTimerOn: 0
+  targetUI: 0
 --- !u!1 &1666340344
 GameObject:
   m_ObjectHideFlags: 0
@@ -10639,6 +10657,7 @@ GameObject:
   - component: {fileID: 1803665723}
   - component: {fileID: 1803665725}
   - component: {fileID: 1803665724}
+  - component: {fileID: 1803665726}
   m_Layer: 5
   m_Name: red timer
   m_TagString: Untagged
@@ -10704,6 +10723,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1803665722}
   m_CullTransparentMesh: 1
+--- !u!114 &1803665726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803665722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ef6ca0ec5e776f458659400679ac4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _minutes: 1
+  _seconds: 0
+  isIncrement: 0
+  isTimerOn: 0
+  targetUI: 1
 --- !u!1 &1808243376
 GameObject:
   m_ObjectHideFlags: 0
@@ -12838,9 +12874,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1297836700}
     - target: {fileID: 2200240122306321856, guid: 49e96fccb280f8840801613fe1006647, type: 3}
+      propertyPath: _playerUI.Array.data[0].timer
+      value: 
+      objectReference: {fileID: 458265035}
+    - target: {fileID: 2200240122306321856, guid: 49e96fccb280f8840801613fe1006647, type: 3}
       propertyPath: _playerUI.Array.data[1].panel
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2200240122306321856, guid: 49e96fccb280f8840801613fe1006647, type: 3}
+      propertyPath: _playerUI.Array.data[1].timer
+      value: 
+      objectReference: {fileID: 1197760948}
     - target: {fileID: 2200240122306321856, guid: 49e96fccb280f8840801613fe1006647, type: 3}
       propertyPath: _playerUI.Array.data[0].bibeButton
       value: 
@@ -12961,6 +13005,10 @@ PrefabInstance:
       propertyPath: boardParent
       value: 
       objectReference: {fileID: 107891974}
+    - target: {fileID: 2200240122306321861, guid: 49e96fccb280f8840801613fe1006647, type: 3}
+      propertyPath: gameSettingsData
+      value: 
+      objectReference: {fileID: 11400000, guid: 13eada0eefd785245b0f2c8e2fb74911, type: 2}
     - target: {fileID: 2200240122306321861, guid: 49e96fccb280f8840801613fe1006647, type: 3}
       propertyPath: _cameraController
       value: 
