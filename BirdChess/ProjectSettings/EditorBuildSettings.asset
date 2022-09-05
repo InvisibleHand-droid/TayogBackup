@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TestMainMenuUIWIP.unity
+    path: Assets/Scenes/TestMainMenuUIWIP(OG).unity
     guid: e5b4e7f5edaf9b44392f8e11732dcad8
   - enabled: 1
     path: Assets/Scenes/Multiplayer/MainGameScene.unity
