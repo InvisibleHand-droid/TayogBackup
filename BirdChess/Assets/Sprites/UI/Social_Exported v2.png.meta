@@ -1,0 +1,720 @@
+fileFormatVersion: 2
+guid: 88015fb3ca34d3149a3578897b18b8dd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1047494395683183264
+    second: Social_Exported 1_0
+  - first:
+      213: -5069644254365508207
+    second: Social_Exported 1_1
+  - first:
+      213: 9021478597617822433
+    second: Social_Exported 1_2
+  - first:
+      213: 8744906281547295384
+    second: Social_Exported 1_3
+  - first:
+      213: 175597048062709767
+    second: Social_Exported 1_4
+  - first:
+      213: -6228643928405951201
+    second: Social_Exported 1_5
+  - first:
+      213: 243563045113835497
+    second: Social_Exported 1_6
+  - first:
+      213: -2719938770206604296
+    second: Social_Exported 1_7
+  - first:
+      213: -1423687282989287126
+    second: Social_Exported 1_8
+  - first:
+      213: 1420134265299522540
+    second: Social_Exported 1_9
+  - first:
+      213: 7673750457608214709
+    second: Social_Exported 1_10
+  - first:
+      213: 5349779493230225621
+    second: Social_Exported 1_11
+  - first:
+      213: 7450248623639517504
+    second: Social_Exported 1_12
+  - first:
+      213: -4755129953706338585
+    second: Social_Exported 1_13
+  - first:
+      213: -5332790355342039353
+    second: Social_Exported 1_14
+  - first:
+      213: -7359704700253151503
+    second: Social_Exported 1_15
+  - first:
+      213: -7425727274459878629
+    second: Social_Exported 1_16
+  - first:
+      213: 4352572870722774380
+    second: Social_Exported 1_17
+  - first:
+      213: -8464592631514842229
+    second: Social_Exported 1_18
+  - first:
+      213: -3323757803117633151
+    second: Social_Exported 1_19
+  - first:
+      213: -7052934965936931621
+    second: Social_Exported 1_20
+  - first:
+      213: 8824886146861640439
+    second: Social_Exported 1_21
+  - first:
+      213: -2311212577393419852
+    second: Social_Exported 1_22
+  - first:
+      213: -7722552121331883592
+    second: Social_Exported 1_23
+  - first:
+      213: -2293198174804399835
+    second: Social_Exported 1_42
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Social_Exported 1_0
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 5448
+        width: 1203
+        height: 1579
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aa98ee5a92798e00800000000000000
+      internalID: 1047494395683183264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Social_Exported 1_1
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 5448
+        width: 2205
+        height: 1579
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d91f8296105a9b0800000000000000
+      internalID: -5069644254365508207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Social_Exported 1_2
+      rect:
+        serializedVersion: 2
+        x: 4348
+        y: 6386
+        width: 1202
+        height: 623
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eaacc79cfab23d70800000000000000
+      internalID: 9021478597617822433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Social_Exported 1_3
+      rect:
+        serializedVersion: 2
+        x: 4337
+        y: 6067
+        width: 1214
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a65b93ee52c5970800000000000000
+      internalID: 8744906281547295384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Social_Exported 1_4
+      rect:
+        serializedVersion: 2
+        x: 4659
+        y: 5505
+        width: 576
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7009269b598df6200800000000000000
+      internalID: 175597048062709767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Social_Exported 1_5
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 5072
+        width: 163
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d38fe09596f89a0800000000000000
+      internalID: -6228643928405951201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Social_Exported 1_6
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 5072
+        width: 161
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef2c609c4f416300800000000000000
+      internalID: 243563045113835497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Social_Exported 1_7
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 5072
+        width: 161
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3c50f6916d04ad0800000000000000
+      internalID: -2719938770206604296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Social_Exported 1_8
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 5072
+        width: 161
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a29be2a85fb0e3ce0800000000000000
+      internalID: -1423687282989287126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Social_Exported 1_9
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 5072
+        width: 161
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce3d980179455b310800000000000000
+      internalID: 1420134265299522540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Social_Exported 1_10
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 5075
+        width: 207
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b89ab84263ae7a60800000000000000
+      internalID: 7673750457608214709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Social_Exported 1_11
+      rect:
+        serializedVersion: 2
+        x: 4638
+        y: 5212
+        width: 608
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d828a0da1c3e3a40800000000000000
+      internalID: 5349779493230225621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Social_Exported 1_12
+      rect:
+        serializedVersion: 2
+        x: 4588
+        y: 4979
+        width: 272
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049506c66a9946760800000000000000
+      internalID: 7450248623639517504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Social_Exported 1_13
+      rect:
+        serializedVersion: 2
+        x: 5060
+        y: 4807
+        width: 215
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e693883082620eb0800000000000000
+      internalID: -4755129953706338585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Social_Exported 1_14
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 4721
+        width: 207
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c665381d6f1ef5b0800000000000000
+      internalID: -5332790355342039353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Social_Exported 1_15
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 4703
+        width: 1156
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe53a981931dd990800000000000000
+      internalID: -7359704700253151503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Social_Exported 1_16
+      rect:
+        serializedVersion: 2
+        x: 4562
+        y: 4757
+        width: 326
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1ba3e6136482f890800000000000000
+      internalID: -7425727274459878629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Social_Exported 1_17
+      rect:
+        serializedVersion: 2
+        x: 4502
+        y: 4413
+        width: 146
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c65ee6a07f1776c30800000000000000
+      internalID: 4352572870722774380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Social_Exported 1_18
+      rect:
+        serializedVersion: 2
+        x: 4781
+        y: 4413
+        width: 150
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b3b2659d9b78a80800000000000000
+      internalID: -8464592631514842229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Social_Exported 1_19
+      rect:
+        serializedVersion: 2
+        x: 5039
+        y: 4413
+        width: 361
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181adb953e3afd1d0800000000000000
+      internalID: -3323757803117633151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Social_Exported 1_20
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 2727
+        width: 2091
+        height: 1657
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdcb56b3401fe1e90800000000000000
+      internalID: -7052934965936931621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Social_Exported 1_21
+      rect:
+        serializedVersion: 2
+        x: 2518
+        y: 3600
+        width: 1661
+        height: 784
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa24feb13b487a70800000000000000
+      internalID: 8824886146861640439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Social_Exported 1_22
+      rect:
+        serializedVersion: 2
+        x: 4727
+        y: 4080
+        width: 437
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b9dc0cf76cecefd0800000000000000
+      internalID: -2311212577393419852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Social_Exported 1_23
+      rect:
+        serializedVersion: 2
+        x: 2601
+        y: 3292
+        width: 805
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b1e290f2cbf3d490800000000000000
+      internalID: -7722552121331883592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Social_Exported 1_42
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 353
+        width: 3608
+        height: 1987
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 529a53fe86cec20e0800000000000000
+      internalID: -2293198174804399835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 87bb2d6dc46c5bb46a8f2117bba92e61
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
